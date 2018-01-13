@@ -61,6 +61,7 @@ public class MainActivity extends AppCompatActivity {
 
                 FragmentTransaction transaction = fragmentManager.beginTransaction();
                 transaction.replace(R.id.main_container_wrapper, fragment);
+                transaction.addToBackStack("Added the frag to bstack");
                 transaction.commit();
                 DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
                 assert drawer != null;
