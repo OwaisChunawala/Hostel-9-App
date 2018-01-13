@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_calender"
+            android:icon="@drawable/ic_calendar"
+            android:title="Calendar" />
+        <item
+            android:id="@+id/nav_cms"
+            android:icon="@drawable/ic_cms"
+            android:title="CMS" />
+        <item
+            android:id="@+id/nav_council"
+            android:icon="@drawable/ic_council"
+            android:title="Council" />
+
+        <item
+            android:id="@+id/nav_helpline"
+            android:icon="@drawable/ic_emergency"
+            android:title="Helpline" />
+
+        <item
+            android:id="@+id/nav_events"
+            android:icon="@drawable/ic_events"
+            android:title="Events" />
+        <item
+            android:id="@+id/nav_facilities"
+            android:title="Facilities"
+            android:icon="@drawable/ic_facilites"/>
+        <item
+            android:id="@+id/nav_mess"
+            android:title="Mess"
+            android:icon="@drawable/ic_mess"/>
+    </group>
+
+
+
+</menu>
