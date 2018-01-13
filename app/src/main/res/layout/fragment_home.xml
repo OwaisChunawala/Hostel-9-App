@@ -8,7 +8,6 @@
     tools:context="com.hostel9.android.hostel9app.Fragments.HomeFragment">
     <android.support.design.widget.TabLayout
         android:id="@+id/tabs"
-        android:padding="@dimen/_6sdp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@color/colorPrimary"/>
