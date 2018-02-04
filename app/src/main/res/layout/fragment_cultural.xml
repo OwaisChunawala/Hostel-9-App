@@ -1,0 +1,117 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.hostel9.android.hostel9app.CulturalFragment">
+
+
+
+         <ScrollView
+             android:layout_width="match_parent"
+             android:layout_height="match_parent">
+
+             <RelativeLayout
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content">
+
+                 <ImageView
+                     android:id="@+id/imageView8"
+                     android:layout_width="100dp"
+                     android:layout_height="100dp"
+                     android:layout_alignParentTop="true"
+                     android:layout_centerHorizontal="true"
+                     android:layout_marginTop="29dp"
+                     android:src="@drawable/shyam" />
+
+                 <TextView
+                     android:id="@+id/textView8"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:layout_alignEnd="@+id/imageView9"
+                     android:layout_alignRight="@+id/imageView9"
+                     android:layout_below="@+id/imageView8"
+                     android:layout_marginTop="11dp"
+                     android:text="Cultural Councillor\nShyam Patel\nRoom No. 276\n+919769217121\nshyambharatpatel@gmail.com" />
+
+                 <ImageView
+                     android:id="@+id/imageView9"
+                     android:layout_width="100dp"
+                     android:layout_height="100dp"
+                     android:layout_alignBottom="@+id/imageView10"
+                     android:layout_toEndOf="@+id/imageView8"
+                     android:layout_toRightOf="@+id/imageView8"
+                     android:src="@drawable/abhishek" />
+
+                 <ImageView
+                     android:id="@+id/imageView10"
+                     android:layout_width="100dp"
+                     android:layout_height="100dp"
+                     android:layout_alignParentLeft="true"
+                     android:layout_alignParentStart="true"
+                     android:layout_below="@+id/textView8"
+                     android:src="@drawable/ram" />
+
+                 <TextView
+                     android:id="@+id/textView9"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:layout_alignParentLeft="true"
+                     android:layout_alignParentStart="true"
+                     android:layout_below="@+id/imageView10"
+                     android:text="Social Secretary\nRam Phal Suthar\nRoom No. 104\n+91 9987991947\nramphalsuthar@gmail.com" />
+
+                 <TextView
+                     android:id="@+id/textView10"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:layout_alignBaseline="@+id/textView9"
+                     android:layout_alignBottom="@+id/textView9"
+                     android:layout_alignEnd="@+id/textView12"
+                     android:layout_alignRight="@+id/textView12"
+                     android:text="Social Secretary\nAbhishek bhagat\nRoom No. 379\n+91 7067648262\nabhishekbhagat4159@gmail.com" />
+
+                 <ImageView
+                     android:id="@+id/imageView11"
+                     android:layout_width="100dp"
+                     android:layout_height="100dp"
+                     android:layout_alignParentLeft="true"
+                     android:layout_alignParentStart="true"
+                     android:layout_below="@+id/textView9"
+                     android:src="@drawable/prajjwal" />
+
+                 <ImageView
+                     android:id="@+id/imageView12"
+                     android:layout_width="100dp"
+                     android:layout_height="100dp"
+                     android:layout_alignLeft="@+id/imageView9"
+                     android:layout_alignStart="@+id/imageView9"
+                     android:layout_below="@+id/textView9"
+                     android:src="@drawable/harshit" />
+
+                 <TextView
+                     android:id="@+id/textView12"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:layout_alignParentBottom="true"
+                     android:layout_alignParentEnd="true"
+                     android:layout_alignParentRight="true"
+                     android:layout_marginEnd="14dp"
+                     android:layout_marginRight="14dp"
+                     android:text=" Music Secretary\nHarshit Baranwal\nRoom No. 390\n+91 7506376720\nh.baranwal98@gmail.com " />
+
+                 <TextView
+                     android:id="@+id/textView11"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:layout_below="@+id/imageView11"
+                     android:layout_toLeftOf="@+id/textView10"
+                     android:layout_toStartOf="@+id/textView10"
+                     android:text=" Dance Secretary\nPrajjwal Choudhary\nRoom No. 388\n+91 9967806776\nprajjwal.14nov@gmail.com" />
+
+             </RelativeLayout>
+
+         </ScrollView>
+
+
+</FrameLayout>
