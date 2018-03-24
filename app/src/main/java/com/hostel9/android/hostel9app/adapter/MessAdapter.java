@@ -52,6 +52,7 @@ public class MessAdapter extends RecyclerView.Adapter<MessAdapter.MessViewHolder
         public MessViewHolder(View v) {
             super(v);
             MessLayout = (LinearLayout) v.findViewById(R.id.messList);
+            day = (TextView) v.findViewById(R.id.day);
             break1 = (TextView) v.findViewById(R.id.break1);
             lunch1 = (TextView) v.findViewById(R.id.lunch1);
             tiffin1 = (TextView) v.findViewById(R.id.tiffin1);
@@ -77,11 +78,15 @@ public class MessAdapter extends RecyclerView.Adapter<MessAdapter.MessViewHolder
 
     @Override
     public void onBindViewHolder(MessViewHolder holder, final int position) {
-        holder.day.setText(Mess.get(position).getDay());
-        holder.break1.setText(Mess.get(position).getBreak1()+" "+Mess.get(position).getBreak2() );
-        holder.lunch1.setText(Mess.get(position).getLunch1()+" "+Mess.get(position).getLunch2() );
-        holder.tiffin1.setText(Mess.get(position).getTiffin1()+" "+Mess.get(position).getTiffin2() );
-        holder.dinner1.setText(Mess.get(position).getDinner1()+" "+Mess.get(position).getDinner2() );
+        holder.day.setText(Mess.get(position).getDay().substring(0,3));
+        String break12 = Mess.get(position).getBreak1()+" "+Mess.get(position).getBreak2();
+        holder.break1.setText(break12);
+        String lunch12 = Mess.get(position).getLunch1()+" "+Mess.get(position).getLunch2();
+        holder.lunch1.setText(lunch12 );
+        String tiffin12 = Mess.get(position).getTiffin1()+" "+Mess.get(position).getTiffin2();
+        holder.tiffin1.setText(tiffin12);
+        String dinner12 = Mess.get(position).getDinner1()+" "+Mess.get(position).getDinner2();
+        holder.dinner1.setText(dinner12);
 
 //        Boolean is_on = Mess.get(position).getIs_on();
 //        Mess newMess = new Mess(Mess.get(position).getName(), Mess.get(position).getMess_type());

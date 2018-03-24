@@ -45,13 +45,15 @@ public class MessFragment extends Fragment {
         db = new DatabaseHelper(getActivity());
         messs = db.getAllMesses();
 
-        final RecyclerView recyclerView = (RecyclerView) getView().findViewById(R.id.RecyclerView);
-        recyclerView.setLayoutManager(new LinearLayoutManager(getActivity()));
+        Log.d("Mess fragment", "onCreate reached" );
 
         if (messs.size()==0)
         {
+
             ApiInterface apiService =
                     ApiClient.getClient().create(ApiInterface.class);
+
+            Log.d("Mess fragment", "downloading the MESS DATA" );
 
             Call<List<Mess>> call = apiService.getMessWeek(/*API_KEY*/);
             call.enqueue(new Callback<List<Mess>>() {
@@ -59,6 +61,9 @@ public class MessFragment extends Fragment {
                 public void onResponse(Call<List<Mess>>call, Response<List<Mess>> response) {
                     //  Collection<Mess> messs =response.body().getResults();
                     List<Mess> api_messs = response.body();
+
+                    Log.d("Mess fragment", "downloading the data2" );
+
 
                     int updated=0;
                     for (int i=0; i<api_messs.size(); i++)
@@ -68,7 +73,7 @@ public class MessFragment extends Fragment {
                     }
 //                    recyclerView.setAdapter(new MessAdapter(messs, R.layout.list_messs, getApplicationContext()));
                     messs = api_messs;
-                    Toast.makeText(getActivity(), "loaded from api", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getActivity(), "loaded from api", Toast.LENGTH_LONG).show();
 
 
                     Log.d("Mess fragment", "Number of messs received: " + messs.size());
@@ -84,7 +89,14 @@ public class MessFragment extends Fragment {
         }
 
 
-        recyclerView.setAdapter(new MessAdapter(messs, R.layout.list_mess, getActivity()));
+
+
+    }
+
+    @Override
+    public void onViewCreated(View view, Bundle savedInstanceState) {
+        super.onViewCreated(view, savedInstanceState);
+//        RecyclerView recyclerView = (RecyclerView) view.findViewById(R.id.RecyclerView);
 
 
     }
@@ -93,7 +105,20 @@ public class MessFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for getActivity() fragment
-        return inflater.inflate(R.layout.fragment_mess, container, false);
+//
+        Log.d("Mess fragment", "onCreateView reached" );
+
+
+        View view = inflater.inflate(R.layout.fragment_mess, container, false);
+        RecyclerView recyclerView = (RecyclerView) view.findViewById(R.id.RecyclerView);
+        recyclerView.setLayoutManager(new LinearLayoutManager(getActivity()));
+
+        recyclerView.setAdapter(new MessAdapter(messs, R.layout.list_mess, getActivity()));
+
+return view;
+
+
+
     }
 
 

@@ -1,5 +1,6 @@
 package com.hostel9.android.hostel9app.rest;
 
+import com.hostel9.android.hostel9app.model.Event;
 import com.hostel9.android.hostel9app.model.Mess;
 
 import java.util.List;
@@ -22,6 +23,10 @@ public interface ApiInterface {
 
     @GET("messapi_week.php")
     Call<List<Mess>> getMessWeek(/*@Query("api_key") String apiKey*/);
+
+    @GET("event_api.php")
+    Call<List<Event>> getEvents(/*@Query("api_key") String apiKey*/);
+
 
 //    @GET("switches/{id}")
 //    Call<List<Mess>> getMessDetails(@Path("id") int id/*, @Query("api_key") String apiKey*/);
