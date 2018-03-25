@@ -79,7 +79,30 @@ public class MessAdapter extends RecyclerView.Adapter<MessAdapter.MessViewHolder
 
     @Override
     public void onBindViewHolder(MessViewHolder holder, final int position) {
-        holder.day.setText(Mess.get(position).getDay().substring(0,3));
+        String day1 = Mess.get(position).getDay().substring(0,3);
+        String day="";
+        if ("Mon".equals(day1 )) {
+            day = "Monday";
+        }
+        else if ("Tue".equals(day1 )) {
+            day = "Tuesday";
+        }
+        else if ("Wed".equals(day1 )) {
+            day = "Wednesday";
+        }
+        else if ("Thu".equals(day1 )) {
+            day = "Thursday";
+        }
+        else if ("Fri".equals(day1 )) {
+            day = "Friday";
+        }
+        else if ("Sat".equals(day1 )) {
+            day = "Saturday";
+        }
+        else if ("Sun".equals(day1 )) {
+            day = "Sunday";
+        }
+        holder.day.setText(day);
         String break12 = Mess.get(position).getBreak1()+" "+Mess.get(position).getBreak2();
         holder.break1.setText(break12);
         String lunch12 = Mess.get(position).getLunch1()+" "+Mess.get(position).getLunch2();
@@ -89,26 +112,6 @@ public class MessAdapter extends RecyclerView.Adapter<MessAdapter.MessViewHolder
         String dinner12 = Mess.get(position).getDinner1()+" "+Mess.get(position).getDinner2();
         holder.dinner1.setText(dinner12);
 
-//        Boolean is_on = Mess.get(position).getIs_on();
-//        Mess newMess = new Mess(Mess.get(position).getName(), Mess.get(position).getMess_type());
-
-//        holder.is_on.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
-//            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
-//                if (isChecked) {
-//                    // The toggle is enabled
-//                    Mess newMess = new Mess(Mess.get(position).getId(),Mess.get(position).getName(), Mess.get(position).getMess_type(), true);
-//                    sendNetworkRequest(newMess);
-//                    db.updateMess(newMess);
-//
-//                } else {
-//                    // The toggle is disabled
-//                    Mess newMess = new Mess(Mess.get(position).getId(),Mess.get(position).getName(), Mess.get(position).getMess_type(), false);
-//                    sendNetworkRequest(newMess);
-//                    db.updateMess(newMess);
-//
-//                }
-//            }
-//        });
 
 
 
@@ -119,27 +122,5 @@ public class MessAdapter extends RecyclerView.Adapter<MessAdapter.MessViewHolder
         return Mess.size();
     }
 
-//    public void sendNetworkRequest(Mess newMess)
-//    {
-//        ApiInterface apiService = ApiClient.getClient().create(ApiInterface.class);
-//        Call<Mess> call = apiService.updateMess(newMess, newMess.getId());
-//        call.enqueue(new Callback<Mess>() {
-//            @Override
-//            public void onResponse(Call<Mess>call, Response<Mess> response) {
-//                Mess NewMess = response.body();
-//
-//                Toast.makeText(context.getApplicationContext(), "switch updated : "+NewMess.getId()+","+NewMess.getName()+", "+NewMess.getIs_on().toString(), Toast.LENGTH_SHORT).show();
-//
-//                Log.d(TAG, "Number of switches received: " +"with ID :" );
-//            }
-//
-//            @Override
-//            public void onFailure(Call<Mess>call, Throwable t) {
-//                // Log error here since request failed
-//                Log.e(TAG, t.toString());
-//                Toast.makeText(context.getApplicationContext(), "something wrong happened, cant make the new switch", Toast.LENGTH_LONG).show();
-//            }
-//        });
-//
-//    }
+
 }
