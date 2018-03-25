@@ -14,13 +14,10 @@ import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.util.Log;
-import android.view.Menu;
 import android.view.MenuItem;
-import android.view.View;
 import android.widget.Toast;
 
 import com.hostel9.android.hostel9app.Fragments.CMSFragment;
-import com.hostel9.android.hostel9app.Fragments.CalenderFragment;
 import com.hostel9.android.hostel9app.Fragments.CouncilFragment;
 import com.hostel9.android.hostel9app.Fragments.FacilitiesFragment;
 import com.hostel9.android.hostel9app.Fragments.HelplineFragment;

@@ -6,9 +6,6 @@ import android.support.v4.app.FragmentPagerAdapter;
 
 import com.hostel9.android.hostel9app.ComputerFragment;
 import com.hostel9.android.hostel9app.CulturalFragment;
-import com.hostel9.android.hostel9app.Fragments.CalenderFragment;
-import com.hostel9.android.hostel9app.Fragments.EventsFragment;
-import com.hostel9.android.hostel9app.Fragments.MessFragment;
 import com.hostel9.android.hostel9app.HeadFragment;
 import com.hostel9.android.hostel9app.MaintenanceFragment;
 import com.hostel9.android.hostel9app.MessCFragment;

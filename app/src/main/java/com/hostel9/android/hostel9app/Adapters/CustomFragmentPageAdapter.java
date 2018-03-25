@@ -4,8 +4,8 @@ import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
 
-import com.hostel9.android.hostel9app.Fragments.CalenderFragment;
 import com.hostel9.android.hostel9app.Fragments.EventsFragment;
+import com.hostel9.android.hostel9app.Fragments.FacilitiesFragment;
 import com.hostel9.android.hostel9app.Fragments.MessFragment;
 
 /**
@@ -26,7 +26,7 @@ public class CustomFragmentPageAdapter extends FragmentPagerAdapter{
             case 1:
                 return new EventsFragment();
             case 2:
-                return new CalenderFragment();
+                return new FacilitiesFragment();
         }
         return null;
     }
@@ -42,7 +42,7 @@ public class CustomFragmentPageAdapter extends FragmentPagerAdapter{
             case 1:
                 return "Events";
             case 2:
-                return "Calender";
+                return "Facilities";
         }
         return null;
     }
