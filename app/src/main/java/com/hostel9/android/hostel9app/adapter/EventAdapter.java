@@ -32,6 +32,7 @@ public class EventAdapter extends RecyclerView.Adapter<EventAdapter.EventViewHol
     public static class EventViewHolder extends RecyclerView.ViewHolder {
         LinearLayout EventLayout;
         TextView name;
+        TextView genre;
         TextView description;
         TextView venue;
         TextView date;
@@ -44,6 +45,7 @@ public class EventAdapter extends RecyclerView.Adapter<EventAdapter.EventViewHol
             super(v);
             EventLayout = (LinearLayout) v.findViewById(R.id.EventList);
             name = (TextView) v.findViewById(R.id.name);
+            genre = (TextView) v.findViewById(R.id.genre);
             description = (TextView) v.findViewById(R.id.description);
             venue = (TextView) v.findViewById(R.id.venue);
             date = (TextView) v.findViewById(R.id.date);
@@ -70,6 +72,7 @@ public class EventAdapter extends RecyclerView.Adapter<EventAdapter.EventViewHol
     @Override
     public void onBindViewHolder(EventViewHolder holder, final int position) {
         holder.name.setText(Event.get(position).getName());
+        holder.genre.setText(Event.get(position).getGenre());
         holder.description.setText(Event.get(position).getDescription());
         holder.venue.setText(Event.get(position).getVenue());
         holder.date.setText(Event.get(position).getDate());
