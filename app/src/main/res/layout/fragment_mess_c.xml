@@ -7,16 +7,19 @@
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:background="#E3F2FD">
 
 
         <ImageView
+
             android:id="@+id/imageView17"
             android:layout_width="100dp"
             android:layout_height="100dp"
             android:layout_alignParentTop="true"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="38dp"
+            android:elevation="8dp"
             android:src="@drawable/aditya" />
 
         <TextView
@@ -25,16 +28,22 @@
             android:layout_height="wrap_content"
             android:layout_below="@+id/imageView17"
             android:layout_centerHorizontal="true"
-            android:text="Mess Councillor\nAditya Devalla\nRoom No. 241\n+91 7799323800\ndevallaaditya456@gmail.com" />
+            android:background="@android:color/white"
+            android:elevation="8dp"
+            android:text="Mess Councillor\nAditya Devalla\nRoom No. 241\n+91 7799323800\ndevallaaditya456@gmail.com"
+            android:textAlignment="center" />
 
         <ImageView
             android:id="@+id/imageView18"
             android:layout_width="100dp"
             android:layout_height="100dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
             android:layout_below="@+id/textView18"
-            android:layout_marginTop="36dp"
-            android:layout_toLeftOf="@+id/imageView17"
-            android:layout_toStartOf="@+id/imageView17"
+            android:layout_marginLeft="37dp"
+            android:layout_marginStart="37dp"
+            android:layout_marginTop="52dp"
+            android:elevation="8dp"
             android:src="@drawable/rishi" />
 
         <ImageView
@@ -46,6 +55,7 @@
             android:layout_marginStart="17dp"
             android:layout_toEndOf="@+id/imageView17"
             android:layout_toRightOf="@+id/imageView17"
+            android:elevation="8dp"
             android:src="@drawable/vivek" />
 
         <TextView
@@ -53,7 +63,10 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@+id/imageView18"
-            android:text="Mess Secretary\nvivek kumar kandeyang\nRoom No. 247\n+91 8291473729\nvivekkandeyang97@gmail.com" />
+            android:background="@android:color/white"
+            android:elevation="8dp"
+            android:text="Vivek kumar kandeyang\nRoom No. 247\n+91 8291473729\nvivekkandeyang97@gmail.com"
+            android:textAlignment="center" />
 
         <TextView
             android:id="@+id/textView20"
@@ -62,7 +75,20 @@
             android:layout_alignParentEnd="true"
             android:layout_alignParentRight="true"
             android:layout_below="@+id/imageView19"
-            android:text="Mess Secretary\nRishi Dhavale\nRoom No. 393\n+91 9869661932\nrishidhavale@gmail.com" />
+            android:background="@android:color/white"
+            android:elevation="8dp"
+            android:text="Rishi Dhavale\nRoom No. 393\n+91 9869661932\nrishidhavale@gmail.com"
+            android:textAlignment="center" />
+
+        <TextView
+            android:id="@+id/textView58"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="Mess Secretary"
+            android:textSize="18sp"
+            android:textStyle="bold" />
     </RelativeLayout>
 
 </FrameLayout>

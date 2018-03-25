@@ -17,7 +17,10 @@ import com.hostel9.android.hostel9app.CulturalFragment;
 import com.hostel9.android.hostel9app.HeadFragment;
 import com.hostel9.android.hostel9app.MaintenanceFragment;
 import com.hostel9.android.hostel9app.MessCFragment;
+import com.hostel9.android.hostel9app.OfficeFragment;
 import com.hostel9.android.hostel9app.R;
+import com.hostel9.android.hostel9app.TechnicalFragment;
+import com.hostel9.android.hostel9app.sportsFragment;
 
 
 public class CouncilFragment extends Fragment {
@@ -53,7 +56,14 @@ public class CouncilFragment extends Fragment {
         b7  = (Button)v.findViewById(R.id.technical);
         b8  = (Button)v.findViewById(R.id.office);
 
-      
+        FacilitiesFragment.b1.setVisibility(View.GONE);
+        FacilitiesFragment.b2.setVisibility(View.GONE);
+
+        fg = new HeadFragment();
+        FragmentManager fm = getFragmentManager();
+        FragmentTransaction ft = fm.beginTransaction();
+        ft.replace(R.id.def_fg,fg);
+        ft.commit();
 
         b1.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -79,7 +89,8 @@ public class CouncilFragment extends Fragment {
         b3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                fg = new MessCFragment();
+                fg = new MaintenanceFragment();
+
                 FragmentManager fm = getFragmentManager();
                 FragmentTransaction ft = fm.beginTransaction();
                 ft.replace(R.id.def_fg,fg);
@@ -90,7 +101,7 @@ public class CouncilFragment extends Fragment {
         b4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                fg = new MaintenanceFragment();
+                fg = new MessCFragment();
                 FragmentManager fm = getFragmentManager();
                 FragmentTransaction ft = fm.beginTransaction();
                 ft.replace(R.id.def_fg,fg);
@@ -101,11 +112,11 @@ public class CouncilFragment extends Fragment {
         b5.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-//                fg = new ();
-//                FragmentManager fm = getFragmentManager();
-//                FragmentTransaction ft = fm.beginTransaction();
-//                ft.replace(R.id.def_fg,fg);
-//                ft.commit();
+                fg = new sportsFragment();
+                FragmentManager fm = getFragmentManager();
+                FragmentTransaction ft = fm.beginTransaction();
+                ft.replace(R.id.def_fg,fg);
+                ft.commit();
 
             }
         });
@@ -122,21 +133,21 @@ public class CouncilFragment extends Fragment {
         b7.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-//                fg = new ();
-//                FragmentManager fm = getFragmentManager();
-//                FragmentTransaction ft = fm.beginTransaction();
-//                ft.replace(R.id.def_fg,fg);
-//                ft.commit();
+                fg = new TechnicalFragment();
+                FragmentManager fm = getFragmentManager();
+                FragmentTransaction ft = fm.beginTransaction();
+                ft.replace(R.id.def_fg,fg);
+                ft.commit();
             }
         });
         b8.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-//                fg = new ();
-//                FragmentManager fm = getFragmentManager();
-//                FragmentTransaction ft = fm.beginTransaction();
-//                ft.replace(R.id.def_fg,fg);
-//                ft.commit();
+                fg = new OfficeFragment();
+                FragmentManager fm = getFragmentManager();
+                FragmentTransaction ft = fm.beginTransaction();
+                ft.replace(R.id.def_fg,fg);
+                ft.commit();
 
             }
         });

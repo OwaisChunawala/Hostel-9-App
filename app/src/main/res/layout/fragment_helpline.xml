@@ -4,10 +4,227 @@
     android:layout_height="match_parent"
     tools:context="com.hostel9.android.hostel9app.Fragments.HelplineFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <RelativeLayout
+        android:background="#F3E5F5"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="Hello Helpline Fragment" />
+        android:layout_height="match_parent">
+
+
+        <TextView
+            android:background="#FFFFFF"
+            android:elevation="8dp"
+            android:id="@+id/textView30"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="17dp"
+            android:text="HOSPITAL"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textColor="@color/cardview_dark_background"
+            android:textColorHint="@color/colorPrimary"
+            android:textColorLink="@color/colorPrimary" />
+
+        <TextView
+            android:elevation="8dp"
+            android:id="@+id/textView31"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/textView30"
+            android:layout_marginLeft="25dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="13dp"
+            android:text="AMBULANCE"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:background="#F3E5F5"
+            android:textIsSelectable="true"
+            android:elevation="8dp"
+            android:id="@+id/textView32"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/textView31"
+            android:layout_toEndOf="@+id/textView30"
+            android:layout_toRightOf="@+id/textView30"
+            android:text="1101"
+            android:textSize="18sp" />
+
+        <TextView
+            android:elevation="8dp"
+            android:id="@+id/textView33"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textView31"
+            android:layout_alignStart="@+id/textView31"
+            android:layout_below="@+id/textView31"
+            android:layout_marginTop="13dp"
+            android:text="VISITING DOCTORS"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:background="#F3E5F5"
+            android:textIsSelectable="true"
+            android:elevation="8dp"
+            android:id="@+id/textView34"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textView32"
+            android:layout_alignStart="@+id/textView32"
+            android:layout_alignTop="@+id/textView33"
+            android:text="7053"
+            android:textSize="18sp" />
+
+        <TextView
+            android:background="#FFFFFF"
+            android:elevation="8dp"
+            android:id="@+id/textView35"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/textView34"
+            android:layout_alignRight="@+id/textView34"
+            android:layout_below="@+id/textView33"
+            android:layout_marginTop="49dp"
+            android:text="SECURITY SECTION"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+        <TextView
+            android:id="@+id/textView36"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textView45"
+            android:layout_alignStart="@+id/textView45"
+            android:layout_below="@+id/textView35"
+            android:layout_marginTop="13dp"
+            android:elevation="8dp"
+            android:text="MAIN GATE"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:background="#F3E5F5"
+            android:textIsSelectable="true"
+            android:elevation="8dp"
+            android:id="@+id/textView37"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textView34"
+            android:layout_alignStart="@+id/textView34"
+            android:layout_alignTop="@+id/textView36"
+            android:text="	8978/1123"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/textView38"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textView36"
+            android:layout_alignStart="@+id/textView36"
+            android:layout_below="@+id/textView36"
+            android:layout_marginTop="17dp"
+            android:elevation="8dp"
+            android:text="OFFICE"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:background="#F3E5F5"
+            android:textIsSelectable="true"
+            android:elevation="8dp"
+            android:id="@+id/textView39"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/textView38"
+            android:layout_alignBottom="@+id/textView38"
+            android:layout_alignLeft="@+id/textView37"
+            android:layout_alignStart="@+id/textView37"
+            android:text="8989"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/textView45"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textView33"
+            android:layout_alignStart="@+id/textView33"
+            android:layout_below="@+id/textView33"
+            android:layout_marginTop="22dp"
+            android:elevation="8dp"
+            android:text="IITB Hospital"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:background="#F3E5F5"
+            android:textIsSelectable="true"
+            android:elevation="8dp"
+            android:id="@+id/textView46"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/textView45"
+            android:layout_toEndOf="@+id/textView30"
+            android:layout_toRightOf="@+id/textView30"
+            android:text="022-2576(7051/1110)"
+            android:textSize="18sp" />
+
+        <TextView
+            android:elevation="8dp"
+            android:id="@+id/textView47"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textView33"
+            android:layout_alignStart="@+id/textView33"
+            android:layout_below="@+id/textView38"
+            android:layout_marginTop="21dp"
+            android:text="Police Station -Powai"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:background="#F3E5F5"
+            android:textIsSelectable="true"
+            android:elevation="8dp"
+            android:id="@+id/textView48"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/textView47"
+            android:layout_toEndOf="@+id/textView30"
+            android:layout_toRightOf="@+id/textView30"
+            android:text="022-25702690"
+            android:textSize="18sp" />
+
+        <TextView
+            android:elevation="8dp"
+            android:id="@+id/textView50"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textView45"
+            android:layout_alignStart="@+id/textView45"
+            android:layout_below="@+id/textView47"
+            android:layout_marginTop="38dp"
+            android:text="Fire Control Room"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:background="#F3E5F5
+"
+            android:textIsSelectable="true"
+            android:elevation="8dp"
+            android:id="@+id/textView51"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/textView50"
+            android:layout_toEndOf="@+id/textView30"
+            android:layout_toRightOf="@+id/textView30"
+            android:text="022-23076111"
+            android:textSize="18sp" />
+
+
+    </RelativeLayout>
 
 </FrameLayout>

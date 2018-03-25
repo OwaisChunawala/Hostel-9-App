@@ -4,87 +4,120 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.hostel9.android.hostel9app.MaintenanceFragment">
-
-    <RelativeLayout
+    <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-        <ImageView
-            android:id="@+id/imageView13"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
-            android:layout_alignParentTop="true"
-            android:layout_centerHorizontal="true"
-            android:layout_marginTop="20dp"
-            android:src="@drawable/lokesh" />
-
-        <TextView
-            android:id="@+id/textView13"
-            android:layout_width="wrap_content"
+        <RelativeLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/imageView13"
-            android:layout_centerHorizontal="true"
-            android:text=" Maintenance Councillor\nLokesh Kesiraju\nRoom No. 132\n+91 8828291963\nmadhurisankar.kesiraju@gmail.com " />
+            android:background="#E3F2FD">
 
-        <ImageView
-            android:id="@+id/imageView14"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true"
-            android:layout_below="@+id/textView13"
-            android:src="@drawable/sankhya" />
+            <ImageView
+                android:id="@+id/imageView13"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/lokesh" />
 
-        <ImageView
-            android:id="@+id/imageView15"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
-            android:layout_alignParentEnd="true"
-            android:layout_alignParentRight="true"
-            android:layout_below="@+id/textView13"
-            android:layout_marginEnd="14dp"
-            android:layout_marginRight="14dp"
-            android:src="@drawable/sanjeet" />
+            <TextView
+                android:id="@+id/textView13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imageView13"
+                android:layout_centerHorizontal="true"
+                android:background="@android:color/white"
+                android:elevation="8dp"
+                android:text="Lokesh Kesiraju\nRoom No. 132\n+91 8828291963\nmadhurisankar.kesiraju@gmail.com "
+                android:textAlignment="center"
+                android:textIsSelectable="true" />
 
-        <TextView
-            android:id="@+id/textView14"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true"
-            android:layout_below="@+id/imageView14"
-            android:text=" Maintenance Secretary\n Sankhya Subhra Halder\n Room No. 141\n +91 8291475065\n sankhya1998@gmail.com" />
+            <ImageView
+                android:id="@+id/imageView14"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_below="@+id/textView13"
+                android:layout_marginTop="47dp"
+                android:layout_toLeftOf="@+id/imageView13"
+                android:layout_toStartOf="@+id/imageView13"
+                android:src="@drawable/sankhya" />
 
-        <TextView
-            android:id="@+id/textView15"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentEnd="true"
-            android:layout_alignParentRight="true"
-            android:layout_below="@+id/imageView15"
-            android:text=" Maintenance Secretary\nSanjeet Sahoo\nRoom No. 377\n+91 8291474724\nsanjeetsahoo007@gmail.com" />
+            <ImageView
+                android:id="@+id/imageView15"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_alignTop="@+id/imageView14"
+                android:layout_toEndOf="@+id/imageView13"
+                android:layout_toRightOf="@+id/imageView13"
+                android:src="@drawable/sanjeet" />
 
-        <ImageView
-            android:id="@+id/imageView16"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
-            android:layout_alignEnd="@+id/textView16"
-            android:layout_alignRight="@+id/textView16"
-            android:layout_below="@+id/textView14"
-            android:layout_marginEnd="14dp"
-            android:layout_marginRight="14dp"
-            android:src="@drawable/umang" />
+            <TextView
+                android:id="@+id/textView14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/imageView14"
+                android:background="@android:color/white"
+                android:elevation="8dp"
+                android:text="Sankhya Subhra Halder\n Room No. 141\n +91 8291475065\n sankhya1998@gmail.com"
+                android:textAlignment="center"
+                android:textIsSelectable="true" />
 
-        <TextView
-            android:id="@+id/textView17"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignBottom="@+id/imageView16"
-            android:layout_marginLeft="15dp"
-            android:layout_marginStart="15dp"
-            android:layout_toEndOf="@+id/imageView16"
-            android:layout_toRightOf="@+id/imageView16"
-            android:text="Maintenance Secretary\nUmang Kumavat\n Room No. 104\n+91 9974117791\numangkumavat17@gmail.com" />
-    </RelativeLayout>
+            <TextView
+                android:id="@+id/textView15"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imageView15"
+                android:layout_marginLeft="19dp"
+                android:layout_marginStart="19dp"
+                android:layout_toEndOf="@+id/textView14"
+                android:layout_toRightOf="@+id/textView14"
+                android:background="@android:color/white"
+                android:elevation="8dp"
+                android:text="Sanjeet Sahoo\nRoom No. 377\n+91 8291474724\nsanjeetsahoo007@gmail.com"
+                android:textAlignment="center"
+                android:textIsSelectable="true" />
+
+            <TextView
+                android:id="@+id/textView16"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/imageView15"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="11dp"
+                android:text="Maintenance Secretary"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/imageView16"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_alignLeft="@+id/imageView14"
+                android:layout_alignStart="@+id/imageView14"
+                android:layout_below="@+id/textView15"
+                android:layout_marginLeft="12dp"
+                android:layout_marginStart="12dp"
+                android:src="@drawable/umang" />
+
+            <TextView
+                android:id="@+id/textView17"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/imageView16"
+                android:background="@android:color/white"
+                android:elevation="8dp"
+                android:text="Umang Kumavat\nRoom No. 104\n+91 9974117791\numangkumavat17@gmail.com "
+                android:textAlignment="center"
+                android:textIsSelectable="true" />
+
+
+        </RelativeLayout>
+    </ScrollView>
 
 </FrameLayout>

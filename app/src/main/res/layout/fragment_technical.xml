@@ -4,11 +4,116 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.hostel9.android.hostel9app.TechnicalFragment">
-
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
    <RelativeLayout
        android:layout_width="match_parent"
-       android:layout_height="match_parent">
+       android:layout_height="match_parent"
+       android:background="#E3F2FD">
 
+      <ImageView
+          android:id="@+id/imageView22"
+          android:layout_width="100dp"
+          android:layout_height="100dp"
+          android:layout_alignParentTop="true"
+          android:layout_centerHorizontal="true"
+          android:layout_marginTop="18dp"
+          android:src="@drawable/rishav" />
+
+      <TextView
+          android:textAlignment="center"
+          android:background="@android:color/white"
+          android:elevation="8dp"
+          android:textIsSelectable="true"
+          android:id="@+id/textView23"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_below="@+id/imageView22"
+          android:layout_centerHorizontal="true"
+          android:text="Technical Councillor\nRishav Dutta\nRoom No. 157\n+91 7045800356\nraj1609.rd@gmail.com " />
+
+      <ImageView
+          android:id="@+id/imageView23"
+          android:layout_width="100dp"
+          android:layout_height="100dp"
+          android:layout_below="@+id/textView57"
+          android:layout_marginTop="13dp"
+          android:layout_toLeftOf="@+id/textView23"
+          android:layout_toStartOf="@+id/textView23"
+          android:src="@drawable/mohil" />
+
+      <ImageView
+          android:id="@+id/imageView24"
+          android:layout_width="100dp"
+          android:layout_height="100dp"
+          android:layout_alignTop="@+id/imageView23"
+          android:layout_toEndOf="@+id/textView23"
+          android:layout_toRightOf="@+id/textView23"
+          android:src="@drawable/gaurav" />
+
+      <TextView
+          android:textAlignment="center"
+          android:background="@android:color/white"
+          android:elevation="8dp"
+          android:textIsSelectable="true"
+          android:id="@+id/textView24"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_alignLeft="@+id/imageView23"
+          android:layout_alignStart="@+id/imageView23"
+          android:layout_below="@+id/imageView23"
+          android:text="Mohil Patel\nRoom No. 174\n+91 8511112535\nmohilp1998@gmail.com" />
+
+      <TextView
+          android:id="@+id/textView25"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_below="@+id/imageView24"
+          android:layout_marginLeft="47dp"
+          android:layout_marginStart="47dp"
+          android:layout_toEndOf="@+id/textView24"
+          android:layout_toRightOf="@+id/textView24"
+          android:background="@android:color/white"
+          android:elevation="8dp"
+          android:text="Gaurav verma\nRoom No. 174\n+91 8291400012\nvermagaurav267@gmail.com"
+          android:textAlignment="center"
+          android:textIsSelectable="true" />
+
+      <ImageView
+          android:id="@+id/imageView25"
+          android:layout_width="100dp"
+          android:layout_height="100dp"
+          android:layout_below="@+id/textView24"
+          android:layout_marginTop="11dp"
+          android:layout_toLeftOf="@+id/imageView22"
+          android:layout_toStartOf="@+id/imageView22"
+          android:src="@drawable/trishant" />
+
+      <TextView
+          android:background="@android:color/white"
+          android:elevation="8dp"
+          android:textIsSelectable="true"
+          android:textAlignment="center"
+          android:id="@+id/textView26"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_alignEnd="@+id/textView24"
+          android:layout_alignRight="@+id/textView24"
+          android:layout_below="@+id/imageView25"
+          android:text="Trishant Roy\nRoom No. 108\n+91 7757806258\ntrishantroy@gmail.com" />
+
+      <TextView
+          android:id="@+id/textView57"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_below="@+id/textView23"
+          android:layout_centerHorizontal="true"
+          android:layout_marginTop="15dp"
+          android:text="Technical Secretary"
+          android:textSize="18sp"
+          android:textStyle="bold" />
    </RelativeLayout>
-    
+</ScrollView>
+
 </FrameLayout>
