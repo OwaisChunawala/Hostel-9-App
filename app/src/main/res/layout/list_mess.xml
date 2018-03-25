@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/messList"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
@@ -15,7 +16,8 @@
         android:layout_margin="8dp"
         android:translationZ="2dp"
         android:layout_gravity="center_horizontal"
-        android:backgroundTint="#06AED5">
+        android:backgroundTint="#06AED5"
+        app:cardCornerRadius="2dp">
 
         <TextView
             android:id="@+id/day"
@@ -50,7 +52,8 @@
                 android:layout_marginRight="4dp"
                 android:layout_marginBottom="4dp"
                 android:layout_weight="1"
-                android:translationZ="2dp">
+                android:translationZ="2dp"
+                app:cardCornerRadius="2dp">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -96,7 +99,8 @@
                 android:layout_marginLeft="4dp"
                 android:layout_marginBottom="4dp"
                 android:layout_weight="1"
-                android:translationZ="2dp">
+                android:translationZ="2dp"
+                app:cardCornerRadius="2dp">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -150,7 +154,8 @@
                 android:layout_marginTop="4dp"
                 android:layout_marginBottom="8dp"
                 android:layout_weight="1"
-                android:translationZ="2dp">
+                android:translationZ="2dp"
+                app:cardCornerRadius="2dp">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -196,7 +201,8 @@
                 android:layout_marginTop="4dp"
                 android:layout_marginBottom="8dp"
                 android:layout_weight="1"
-                android:translationZ="2dp">
+                android:translationZ="2dp"
+                app:cardCornerRadius="2dp">
 
                 <LinearLayout
                     android:layout_width="match_parent"
