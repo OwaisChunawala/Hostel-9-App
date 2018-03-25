@@ -41,7 +41,7 @@ public class MessAdapter extends RecyclerView.Adapter<MessAdapter.MessViewHolder
 
 
     public static class MessViewHolder extends RecyclerView.ViewHolder {
-        CardView MessLayout;
+        LinearLayout MessLayout;
         TextView day;
         TextView break1;
         TextView lunch1;
@@ -52,7 +52,7 @@ public class MessAdapter extends RecyclerView.Adapter<MessAdapter.MessViewHolder
 
         public MessViewHolder(View v) {
             super(v);
-            MessLayout = (CardView) v.findViewById(R.id.messList);
+            MessLayout = (LinearLayout) v.findViewById(R.id.messList);
             day = (TextView) v.findViewById(R.id.day);
             break1 = (TextView) v.findViewById(R.id.break1);
             lunch1 = (TextView) v.findViewById(R.id.lunch1);
