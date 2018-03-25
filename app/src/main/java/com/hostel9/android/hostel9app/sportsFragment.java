@@ -9,17 +9,21 @@ import android.view.View;
 import android.view.ViewGroup;
 
 
+public class SportsFragment extends Fragment {
 
 
-public class sportsFragment extends Fragment {
+    public SportsFragment() {
+        // Required empty public constructor
+    }
 
 
+    @Override
     public void onCreate(Bundle savedInstanceState) {
-
         super.onCreate(savedInstanceState);
 
     }
 
+    @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
@@ -27,5 +31,5 @@ public class sportsFragment extends Fragment {
     }
 
 
-    }
 
+}

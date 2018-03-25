@@ -1,4 +1,4 @@
-package com.hostel9.android.hostel9app.Fragments;
+package com.hostel9.android.hostel9app;
 
 import android.content.Context;
 import android.net.Uri;
@@ -8,28 +8,27 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.hostel9.android.hostel9app.R;
 
-public class CalenderFragment extends Fragment {
+public class SportsFragment extends Fragment {
 
-    public CalenderFragment() {
+
+    public SportsFragment() {
         // Required empty public constructor
     }
-
 
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
     }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_calender, container, false);
+        return inflater.inflate(R.layout.fragment_sports, container, false);
     }
-
 
 
 

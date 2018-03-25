@@ -1,80 +1,22 @@
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.hostel9.android.hostel9app.Fragments.CouncilFragment">
-
- 
-<RelativeLayout
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    
-    >
-
-<HorizontalScrollView
-    android:id="@+id/horiz"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:scrollbars="none" >
-    <LinearLayout
-        android:orientation="horizontal"
+    android:orientation="vertical"
+    tools:context="com.hostel9.android.hostel9app.Fragments.HomeFragment">
+    <android.support.design.widget.TabLayout
+        android:id="@+id/council_tabs"
         android:layout_width="match_parent"
-        android:layout_height="50dp"
-        >
-
-        <Button
-            android:id="@+id/head"
-            android:text="head"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
-        <Button
-            android:id="@+id/computer"
-            android:text="computer"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
-        <Button
-            android:id="@+id/mess"
-            android:text="mess"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
-        <Button
-            android:id="@+id/maintenance"
-            android:text="maintenance"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
-        <Button
-            android:id="@+id/sports"
-            android:text="sports"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
-        <Button
-            android:id="@+id/cultural"
-            android:text="cultural"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
-        <Button
-            android:id="@+id/technical"
-            android:text="technical"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
-        <Button
-            android:id="@+id/office"
-            android:text="office"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
-    </LinearLayout>
-
-</HorizontalScrollView>
-
-    <fragment
-        android:name="com.hostel9.android.hostel9app.Fragments.FacilitiesFragment"
-        android:id="@+id/def_fg"
+        android:layout_height="wrap_content"
+        app:tabTextColor="#fff"
+        app:tabMode="scrollable"
+        app:tabSelectedTextColor="@color/colorAccent"
+        android:background="@color/colorPrimary"/>
+    <android.support.v4.view.ViewPager
+        android:id="@+id/view_pager_council"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginTop="50dp"
-        />
-</RelativeLayout>
-    <!-- TODO: Update blank fragment layout -->
-  
-
-</FrameLayout>
+        app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+</LinearLayout>
