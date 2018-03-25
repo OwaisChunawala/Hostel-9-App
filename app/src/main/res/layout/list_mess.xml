@@ -4,7 +4,6 @@
     android:id="@+id/messList"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:layout_marginBottom="8dp"
     android:layout_marginLeft="16dp"
     android:layout_marginRight="16dp"
     android:layout_marginTop="8dp"
@@ -60,7 +59,18 @@
                         android:id="@+id/Breakfast"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Breakfast :" />
+                        android:text="Breakfast"
+                        android:textColor="#444"
+                        android:textStyle="bold"
+                        android:textSize="16sp"
+                        android:layout_gravity="center_horizontal"/>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="2dp"
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginRight="4dp"
+                        android:background="@color/colorAccent"/>
 
                     <TextView
                         android:id="@+id/break1"
@@ -88,7 +98,18 @@
                         android:id="@+id/Lunch"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Lunch :" />
+                        android:text="Lunch"
+                        android:textColor="#444"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        android:layout_gravity="center_horizontal"/>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="2dp"
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginRight="4dp"
+                        android:background="@color/colorAccent"/>
 
                     <TextView
                         android:id="@+id/lunch1"
@@ -124,7 +145,18 @@
                         android:id="@+id/Tiffin"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Tiffin :" />
+                        android:text="Tiffin"
+                        android:textStyle="bold"
+                        android:textColor="#444"
+                        android:textSize="16sp"
+                        android:layout_gravity="center_horizontal"/>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="2dp"
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginRight="4dp"
+                        android:background="@color/colorAccent"/>
 
                     <TextView
                         android:id="@+id/tiffin1"
@@ -152,7 +184,18 @@
                         android:id="@+id/Dinner"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Dinner :" />
+                        android:text="Dinner"
+                        android:textStyle="bold"
+                        android:textColor="#444"
+                        android:textSize="16sp"
+                        android:layout_gravity="center_horizontal"/>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="2dp"
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginRight="4dp"
+                        android:background="@color/colorAccent"/>
 
                     <TextView
                         android:id="@+id/dinner1"
