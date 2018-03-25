@@ -21,7 +21,9 @@ import com.hostel9.android.hostel9app.CulturalFragment;
 import com.hostel9.android.hostel9app.HeadFragment;
 import com.hostel9.android.hostel9app.MaintenanceFragment;
 import com.hostel9.android.hostel9app.MessCFragment;
+import com.hostel9.android.hostel9app.OfficeFragment;
 import com.hostel9.android.hostel9app.R;
+import com.hostel9.android.hostel9app.TechnicalFragment;
 
 
 public class CouncilFragment extends Fragment {
@@ -46,6 +48,7 @@ public class CouncilFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
+
 //        // Inflate the layout for this fragment
 
         // Inflate the layout for this fragment
