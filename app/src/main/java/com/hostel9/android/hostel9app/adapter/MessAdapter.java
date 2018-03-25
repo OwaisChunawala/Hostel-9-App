@@ -6,6 +6,7 @@ package com.hostel9.android.hostel9app.adapter;
 
 
 import android.content.Context;
+import android.support.v7.widget.CardView;
 import android.support.v7.widget.RecyclerView;
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -40,7 +41,7 @@ public class MessAdapter extends RecyclerView.Adapter<MessAdapter.MessViewHolder
 
 
     public static class MessViewHolder extends RecyclerView.ViewHolder {
-        LinearLayout MessLayout;
+        CardView MessLayout;
         TextView day;
         TextView break1;
         TextView lunch1;
@@ -51,7 +52,7 @@ public class MessAdapter extends RecyclerView.Adapter<MessAdapter.MessViewHolder
 
         public MessViewHolder(View v) {
             super(v);
-            MessLayout = (LinearLayout) v.findViewById(R.id.messList);
+            MessLayout = (CardView) v.findViewById(R.id.messList);
             day = (TextView) v.findViewById(R.id.day);
             break1 = (TextView) v.findViewById(R.id.break1);
             lunch1 = (TextView) v.findViewById(R.id.lunch1);
