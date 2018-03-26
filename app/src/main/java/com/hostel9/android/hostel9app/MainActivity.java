@@ -52,13 +52,12 @@ public class MainActivity extends AppCompatActivity {
         Log.d("MAIN ACTIVITY", "MAIN ACTIVITY ON CREATE" );
 
         db = new DatabaseHelper(this);
-        events = db.getAllEvents();
-        messs = db.getAllMesses();
 
-        Log.d("MAIN ACTIVITY", "MAIN ACTIVITY EVENTS SIZE: " + events.size() );
+
+//        Log.d("MAIN ACTIVITY", "MAIN ACTIVITY EVENTS SIZE: " + events.size() );
 
         // taking the data from the api
-
+        // checking if connected to the internet
         boolean connected = false;
         ConnectivityManager connectivityManager = (ConnectivityManager)getSystemService(Context.CONNECTIVITY_SERVICE);
         if(connectivityManager.getNetworkInfo(ConnectivityManager.TYPE_MOBILE).getState() == NetworkInfo.State.CONNECTED ||
@@ -71,6 +70,7 @@ public class MainActivity extends AppCompatActivity {
 
         if (connected){
 
+            // if connected, then update the tables from the api
             updateMess();
             updateEvents();
 
