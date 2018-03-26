@@ -47,6 +47,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
 
     // NOTES Table - column names for event
     private static final String KEY_NAME = "name";
+    private static final String KEY_GENRE = "genre";
     private static final String KEY_DESCRIPTION = "description";
     private static final String KEY_TIME_START = "starttime";
     private static final String KEY_DATE = "date";
@@ -66,7 +67,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
 
 
     private static final String CREATE_TABLE_EVENT = "CREATE TABLE "
-            + TABLE_EVENT + "(" + ID + " INTEGER PRIMARY KEY," + KEY_EVENT_ID + " INTEGER," + KEY_NAME + " TEXT," + KEY_DESCRIPTION
+            + TABLE_EVENT + "(" + ID + " INTEGER PRIMARY KEY," + KEY_EVENT_ID + " INTEGER," + KEY_NAME + " TEXT," + KEY_GENRE + " TEXT," + KEY_DESCRIPTION
             + " TEXT," + KEY_VENUE +" TEXT," + KEY_DATE + " TEXT," + KEY_TIME_START + " TEXT," + KEY_IMAGE_URL + " TEXT"+")";
 
 
@@ -146,6 +147,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         ContentValues values = new ContentValues();
         values.put(KEY_EVENT_ID, event.getId());
         values.put(KEY_NAME, event.getName());
+        values.put(KEY_GENRE, event.getGenre());
         values.put(KEY_DESCRIPTION, event.getDescription());
         values.put(KEY_VENUE, event.getVenue());
         values.put(KEY_DATE, event.getDate());
@@ -199,6 +201,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         if (c.moveToFirst()) {
             event.setId(c.getInt(c.getColumnIndex(KEY_EVENT_ID)));
             event.setName(c.getString(c.getColumnIndex(KEY_NAME)));
+            event.setGenre(c.getString(c.getColumnIndex(KEY_GENRE)));
             event.setDescription(c.getString(c.getColumnIndex(KEY_DESCRIPTION)));
             event.setVenue((c.getString(c.getColumnIndex(KEY_VENUE))));
             event.setDate(c.getString(c.getColumnIndex(KEY_DATE)));
@@ -283,6 +286,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
                 ContentValues values = new ContentValues();
                 values.put(KEY_EVENT_ID, event.getId());
                 values.put(KEY_NAME, event.getName());
+                values.put(KEY_GENRE, event.getGenre());
                 values.put(KEY_DESCRIPTION, event.getDescription());
                 values.put(KEY_VENUE, event.getVenue());
                 values.put(KEY_DATE, event.getDate());
@@ -295,6 +299,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
                 ContentValues values = new ContentValues();
                 values.put(KEY_EVENT_ID, event.getId());
                 values.put(KEY_NAME, event.getName());
+                values.put(KEY_GENRE, event.getGenre());
                 values.put(KEY_DESCRIPTION, event.getDescription());
                 values.put(KEY_VENUE, event.getVenue());
                 values.put(KEY_DATE, event.getDate());
@@ -363,6 +368,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
                 Event event = new Event();
                 event.setId(c.getInt(c.getColumnIndex(KEY_EVENT_ID)));
                 event.setName(c.getString(c.getColumnIndex(KEY_NAME)));
+                event.setGenre(c.getString(c.getColumnIndex(KEY_GENRE)));
                 event.setDescription(c.getString(c.getColumnIndex(KEY_DESCRIPTION)));
                 event.setVenue((c.getString(c.getColumnIndex(KEY_VENUE))));
                 event.setDate(c.getString(c.getColumnIndex(KEY_DATE)));

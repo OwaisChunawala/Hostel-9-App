@@ -10,6 +10,9 @@ public class Event {
     @SerializedName("name")
     private String name;
 
+    @SerializedName("genre")
+    private String genre;
+
     @SerializedName("description")
     private String description;
 
@@ -35,10 +38,11 @@ public class Event {
 
     public Event()
     {}
-    public Event(Integer id, String name, String description, String venue, String date, String time, String image_url)
+    public Event(Integer id, String name, String genre,  String description, String venue, String date, String time, String image_url)
     {
         this.id = id;
         this.name= name;
+        this.genre = genre;
         this.description = description;
         this.venue = venue;
         this.date = date;
@@ -54,12 +58,18 @@ public class Event {
         this.id = id;
     }
 
-
     public String getName(){
         return name;
     }
     public  void setName(String name){
         this.name = name;
+    }
+
+    public String getGenre(){
+        return genre;
+    }
+    public  void setGenre(String genre){
+        this.genre = genre;
     }
 
     public String getDescription(){

@@ -75,7 +75,7 @@ public class Mess {
     }
 
     public String getBreak2(){
-        return break1;
+        return break2;
     }
     public  void setBreak2(String break2){
         this.break2 = break2;
