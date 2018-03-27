@@ -18,9 +18,18 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Hostel 9 App"
-        android:textColor="#000"
+        android:textColor="@color/colorAccent"
         android:layout_margin="16dp"
+        android:id="@+id/name_hostel_nav"
         android:textSize="24sp"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorAccent"
+        android:layout_below="@id/name_hostel_nav"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"/>
 
     <!--<LinearLayout-->
         <!--android:layout_width="wrap_content"-->
