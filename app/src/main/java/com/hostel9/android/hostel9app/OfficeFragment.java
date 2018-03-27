@@ -7,12 +7,13 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-
-
+import android.widget.ImageView;
 
 
 public class OfficeFragment extends Fragment implements View.OnClickListener{
 
+    ImageView Halli;
+    ImageView hallBoy;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
