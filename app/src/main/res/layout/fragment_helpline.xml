@@ -1,230 +1,304 @@
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context="com.hostel9.android.hostel9app.Fragments.HelplineFragment">
 
-    <RelativeLayout
-        android:background="#F3E5F5"
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:orientation="vertical">
 
-
-        <TextView
-            android:background="#FFFFFF"
-            android:elevation="8dp"
-            android:id="@+id/textView30"
-            android:layout_width="wrap_content"
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_alignParentTop="true"
-            android:layout_centerHorizontal="true"
-            android:layout_marginTop="17dp"
-            android:text="HOSPITAL"
-            android:textAppearance="@style/TextAppearance.AppCompat.Large"
-            android:textColor="@color/cardview_dark_background"
-            android:textColorHint="@color/colorPrimary"
-            android:textColorLink="@color/colorPrimary" />
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:backgroundTint="@color/colorAccent"
+            app:cardCornerRadius="3dp"
+            android:translationZ="2dp">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="Hospital"
+                android:padding="4dp"
+                android:textColor="#000"
+                android:textSize="24sp"
+                android:textStyle="bold"/>
+        </android.support.v7.widget.CardView>
 
-        <TextView
-            android:elevation="8dp"
-            android:id="@+id/textView31"
-            android:layout_width="wrap_content"
+
+        <LinearLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true"
-            android:layout_below="@+id/textView30"
-            android:layout_marginLeft="25dp"
-            android:layout_marginStart="25dp"
-            android:layout_marginTop="13dp"
-            android:text="AMBULANCE"
-            android:textSize="18sp"
-            android:textStyle="bold" />
+            android:layout_marginTop="16dp">
 
-        <TextView
-            android:background="#F3E5F5"
-            android:textIsSelectable="true"
-            android:elevation="8dp"
-            android:id="@+id/textView32"
-            android:layout_width="wrap_content"
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:textColor="#000"
+                android:layout_weight="1"
+                android:text="Ambulance"
+                android:textSize="20sp" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="1101"
+                android:textColor="#000"
+                android:textSize="20sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_alignBottom="@+id/textView31"
-            android:layout_toEndOf="@+id/textView30"
-            android:layout_toRightOf="@+id/textView30"
-            android:text="1101"
-            android:textSize="18sp" />
+            android:layout_marginTop="12dp">
 
-        <TextView
-            android:elevation="8dp"
-            android:id="@+id/textView33"
-            android:layout_width="wrap_content"
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_weight="1"
+                android:textColor="#000"
+                android:text="Visiting Doctors"
+                android:textSize="20sp" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="7053"
+                android:textColor="#000"
+                android:textSize="20sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_alignLeft="@+id/textView31"
-            android:layout_alignStart="@+id/textView31"
-            android:layout_below="@+id/textView31"
-            android:layout_marginTop="13dp"
-            android:text="VISITING DOCTORS"
-            android:textSize="18sp"
-            android:textStyle="bold" />
+            android:layout_marginTop="12dp">
 
-        <TextView
-            android:background="#F3E5F5"
-            android:textIsSelectable="true"
-            android:elevation="8dp"
-            android:id="@+id/textView34"
-            android:layout_width="wrap_content"
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_weight="1"
+                android:textColor="#000"
+                android:text="IITB Hospital"
+                android:textSize="20sp" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="@color/colorAccent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="7051"
+                    android:textColor="#000"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="1110"
+                    android:textColor="#000"                    android:textSize="20sp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_alignLeft="@+id/textView32"
-            android:layout_alignStart="@+id/textView32"
-            android:layout_alignTop="@+id/textView33"
-            android:text="7053"
-            android:textSize="18sp" />
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:backgroundTint="@color/colorAccent"
+            app:cardCornerRadius="3dp"
+            android:translationZ="2dp">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="Security Section"
+                android:padding="4dp"
+                android:textColor="#000"
+                android:textSize="24sp"
+                android:textStyle="bold"/>
+        </android.support.v7.widget.CardView>
 
-        <TextView
-            android:background="#FFFFFF"
-            android:elevation="8dp"
-            android:id="@+id/textView35"
-            android:layout_width="wrap_content"
+        <LinearLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_alignEnd="@+id/textView34"
-            android:layout_alignRight="@+id/textView34"
-            android:layout_below="@+id/textView33"
-            android:layout_marginTop="49dp"
-            android:text="SECURITY SECTION"
-            android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+            android:layout_marginTop="12dp">
 
-        <TextView
-            android:id="@+id/textView36"
-            android:layout_width="wrap_content"
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_weight="1"
+                android:textColor="#000"
+                android:text="Main Gate"
+                android:textSize="20sp" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="7051"
+                    android:textColor="#000"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="1110"
+                    android:textColor="#000"
+                    android:textSize="20sp" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_alignLeft="@+id/textView45"
-            android:layout_alignStart="@+id/textView45"
-            android:layout_below="@+id/textView35"
-            android:layout_marginTop="13dp"
-            android:elevation="8dp"
-            android:text="MAIN GATE"
-            android:textSize="18sp"
-            android:textStyle="bold" />
+            android:layout_marginTop="12dp">
 
-        <TextView
-            android:background="#F3E5F5"
-            android:textIsSelectable="true"
-            android:elevation="8dp"
-            android:id="@+id/textView37"
-            android:layout_width="wrap_content"
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_weight="1"
+                android:text="Office"
+                android:textColor="#000"
+                android:textSize="20sp" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="8989"
+                android:textColor="#000"
+                android:textSize="20sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_alignLeft="@+id/textView34"
-            android:layout_alignStart="@+id/textView34"
-            android:layout_alignTop="@+id/textView36"
-            android:text="	8978/1123"
-            android:textSize="18sp" />
+            android:layout_marginTop="12dp">
 
-        <TextView
-            android:id="@+id/textView38"
-            android:layout_width="wrap_content"
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:textColor="#000"
+                android:layout_weight="1"
+                android:text="Police Station Powai"
+                android:textSize="20sp" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="022 25702690"
+                android:textColor="#000"
+                android:textSize="20sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_alignLeft="@+id/textView36"
-            android:layout_alignStart="@+id/textView36"
-            android:layout_below="@+id/textView36"
-            android:layout_marginTop="17dp"
-            android:elevation="8dp"
-            android:text="OFFICE"
-            android:textSize="18sp"
-            android:textStyle="bold" />
+            android:layout_marginTop="12dp">
 
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_weight="1"
+                android:textColor="#000"
+                android:text="Fire Control Room"
+                android:textSize="20sp" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="#000"
+                android:text="022 23076111"
+                android:textSize="20sp" />
+
+        </LinearLayout>
         <TextView
-            android:background="#F3E5F5"
-            android:textIsSelectable="true"
-            android:elevation="8dp"
-            android:id="@+id/textView39"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_alignBaseline="@+id/textView38"
-            android:layout_alignBottom="@+id/textView38"
-            android:layout_alignLeft="@+id/textView37"
-            android:layout_alignStart="@+id/textView37"
-            android:text="8989"
-            android:textSize="18sp" />
+            android:layout_marginTop="12dp"
+            android:text="Tap on the numbers to call"
+            android:textColor="@color/colorAccent"
+            android:gravity="center_horizontal"
+            android:layout_marginBottom="12dp"/>
 
-        <TextView
-            android:id="@+id/textView45"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignLeft="@+id/textView33"
-            android:layout_alignStart="@+id/textView33"
-            android:layout_below="@+id/textView33"
-            android:layout_marginTop="22dp"
-            android:elevation="8dp"
-            android:text="IITB Hospital"
-            android:textSize="18sp"
-            android:textStyle="bold" />
+    </LinearLayout>
+</ScrollView><!--<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"--><!--xmlns:tools="http://schemas.android.com/tools"--><!--android:layout_width="match_parent"--><!--android:layout_height="match_parent"--><!--tools:context="com.hostel9.android.hostel9app.Fragments.HelplineFragment">-->
 
-        <TextView
-            android:background="#F3E5F5"
-            android:textIsSelectable="true"
-            android:elevation="8dp"
-            android:id="@+id/textView46"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignBottom="@+id/textView45"
-            android:layout_toEndOf="@+id/textView30"
-            android:layout_toRightOf="@+id/textView30"
-            android:text="022-2576(7051/1110)"
-            android:textSize="18sp" />
-
-        <TextView
-            android:elevation="8dp"
-            android:id="@+id/textView47"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignLeft="@+id/textView33"
-            android:layout_alignStart="@+id/textView33"
-            android:layout_below="@+id/textView38"
-            android:layout_marginTop="21dp"
-            android:text="Police Station -Powai"
-            android:textSize="18sp"
-            android:textStyle="bold" />
-
-        <TextView
-            android:background="#F3E5F5"
-            android:textIsSelectable="true"
-            android:elevation="8dp"
-            android:id="@+id/textView48"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignTop="@+id/textView47"
-            android:layout_toEndOf="@+id/textView30"
-            android:layout_toRightOf="@+id/textView30"
-            android:text="022-25702690"
-            android:textSize="18sp" />
-
-        <TextView
-            android:elevation="8dp"
-            android:id="@+id/textView50"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignLeft="@+id/textView45"
-            android:layout_alignStart="@+id/textView45"
-            android:layout_below="@+id/textView47"
-            android:layout_marginTop="38dp"
-            android:text="Fire Control Room"
-            android:textSize="18sp"
-            android:textStyle="bold" />
-
-        <TextView
-            android:background="#F3E5F5
-"
-            android:textIsSelectable="true"
-            android:elevation="8dp"
-            android:id="@+id/textView51"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignBottom="@+id/textView50"
-            android:layout_toEndOf="@+id/textView30"
-            android:layout_toRightOf="@+id/textView30"
-            android:text="022-23076111"
-            android:textSize="18sp" />
+    <!--<RelativeLayout--><!--android:layout_width="match_parent"--><!--android:layout_height="match_parent">-->
 
 
-    </RelativeLayout>
+    <!--<TextView--><!--android:background="#FFFFFF"--><!--android:elevation="8dp"--><!--android:id="@+id/textView30"--><!--android:layout_width="wrap_content"--><!--android:layout_height="wrap_content"--><!--android:layout_alignParentTop="true"--><!--android:layout_centerHorizontal="true"--><!--android:layout_marginTop="17dp"--><!--android:text="HOSPITAL"--><!--android:textAppearance="@style/TextAppearance.AppCompat.Large"--><!--android:textColor="@color/cardview_dark_background"--><!--android:textColorHint="@color/colorPrimary"--><!--android:textColorLink="@color/colorPrimary" />-->
 
-</FrameLayout>
+    <!--<TextView--><!--android:elevation="8dp"--><!--android:id="@+id/textView31"--><!--android:layout_width="wrap_content"--><!--android:layout_height="wrap_content"--><!--android:layout_alignParentLeft="true"--><!--android:layout_alignParentStart="true"--><!--android:layout_below="@+id/textView30"--><!--android:layout_marginLeft="25dp"--><!--android:layout_marginStart="25dp"--><!--android:layout_marginTop="13dp"--><!--android:text="AMBULANCE"--><!--android:textSize="18sp"--><!--android:textStyle="bold" />-->
+
+    <!--<TextView--><!--android:background="#F3E5F5"--><!--android:textIsSelectable="true"--><!--android:elevation="8dp"--><!--android:id="@+id/textView32"--><!--android:layout_width="wrap_content"--><!--android:layout_height="wrap_content"--><!--android:layout_alignBottom="@+id/textView31"--><!--android:layout_toEndOf="@+id/textView30"--><!--android:layout_toRightOf="@+id/textView30"--><!--android:text="1101"--><!--android:textSize="18sp" />-->
+
+    <!--<TextView--><!--android:elevation="8dp"--><!--android:id="@+id/textView33"--><!--android:layout_width="wrap_content"--><!--android:layout_height="wrap_content"--><!--android:layout_alignLeft="@+id/textView31"--><!--android:layout_alignStart="@+id/textView31"--><!--android:layout_below="@+id/textView31"--><!--android:layout_marginTop="13dp"--><!--android:text="VISITING DOCTORS"--><!--android:textSize="18sp"--><!--android:textStyle="bold" />-->
+
+    <!--<TextView--><!--android:background="#F3E5F5"--><!--android:textIsSelectable="true"--><!--android:elevation="8dp"--><!--android:id="@+id/textView34"--><!--android:layout_width="wrap_content"--><!--android:layout_height="wrap_content"--><!--android:layout_alignLeft="@+id/textView32"--><!--android:layout_alignStart="@+id/textView32"--><!--android:layout_alignTop="@+id/textView33"--><!--android:text="7053"--><!--android:textSize="18sp" />-->
+
+    <!--<TextView--><!--android:background="#FFFFFF"--><!--android:elevation="8dp"--><!--android:id="@+id/textView35"--><!--android:layout_width="wrap_content"--><!--android:layout_height="wrap_content"--><!--android:layout_alignEnd="@+id/textView34"--><!--android:layout_alignRight="@+id/textView34"--><!--android:layout_below="@+id/textView33"--><!--android:layout_marginTop="49dp"--><!--android:text="SECURITY SECTION"--><!--android:textAppearance="@style/TextAppearance.AppCompat.Large" />-->
+
+    <!--<TextView--><!--android:id="@+id/textView36"--><!--android:layout_width="wrap_content"--><!--android:layout_height="wrap_content"--><!--android:layout_alignLeft="@+id/textView45"--><!--android:layout_alignStart="@+id/textView45"--><!--android:layout_below="@+id/textView35"--><!--android:layout_marginTop="13dp"--><!--android:elevation="8dp"--><!--android:text="MAIN GATE"--><!--android:textSize="18sp"--><!--android:textStyle="bold" />-->
+
+    <!--<TextView--><!--android:background="#F3E5F5"--><!--android:textIsSelectable="true"--><!--android:elevation="8dp"--><!--android:id="@+id/textView37"--><!--android:layout_width="wrap_content"--><!--android:layout_height="wrap_content"--><!--android:layout_alignLeft="@+id/textView34"--><!--android:layout_alignStart="@+id/textView34"--><!--android:layout_alignTop="@+id/textView36"--><!--android:text="	8978/1123"--><!--android:textSize="18sp" />-->
+
+    <!--<TextView--><!--android:id="@+id/textView38"--><!--android:layout_width="wrap_content"--><!--android:layout_height="wrap_content"--><!--android:layout_alignLeft="@+id/textView36"--><!--android:layout_alignStart="@+id/textView36"--><!--android:layout_below="@+id/textView36"--><!--android:layout_marginTop="17dp"--><!--android:elevation="8dp"--><!--android:text="OFFICE"--><!--android:textSize="18sp"--><!--android:textStyle="bold" />-->
+
+    <!--<TextView--><!--android:background="#F3E5F5"--><!--android:textIsSelectable="true"--><!--android:elevation="8dp"--><!--android:id="@+id/textView39"--><!--android:layout_width="wrap_content"--><!--android:layout_height="wrap_content"--><!--android:layout_alignBaseline="@+id/textView38"--><!--android:layout_alignBottom="@+id/textView38"--><!--android:layout_alignLeft="@+id/textView37"--><!--android:layout_alignStart="@+id/textView37"--><!--android:text="8989"--><!--android:textSize="18sp" />-->
+
+    <!--<TextView--><!--android:id="@+id/textView45"--><!--android:layout_width="wrap_content"--><!--android:layout_height="wrap_content"--><!--android:layout_alignLeft="@+id/textView33"--><!--android:layout_alignStart="@+id/textView33"--><!--android:layout_below="@+id/textView33"--><!--android:layout_marginTop="22dp"--><!--android:elevation="8dp"--><!--android:text="IITB Hospital"--><!--android:textSize="18sp"--><!--android:textStyle="bold" />-->
+
+    <!--<TextView--><!--android:background="#F3E5F5"--><!--android:textIsSelectable="true"--><!--android:elevation="8dp"--><!--android:id="@+id/textView46"--><!--android:layout_width="wrap_content"--><!--android:layout_height="wrap_content"--><!--android:layout_alignBottom="@+id/textView45"--><!--android:layout_toEndOf="@+id/textView30"--><!--android:layout_toRightOf="@+id/textView30"--><!--android:text="022-2576(7051/1110)"--><!--android:textSize="18sp" />-->
+
+    <!--<TextView--><!--android:elevation="8dp"--><!--android:id="@+id/textView47"--><!--android:layout_width="wrap_content"--><!--android:layout_height="wrap_content"--><!--android:layout_alignLeft="@+id/textView33"--><!--android:layout_alignStart="@+id/textView33"--><!--android:layout_below="@+id/textView38"--><!--android:layout_marginTop="21dp"--><!--android:text="Police Station -Powai"--><!--android:textSize="18sp"--><!--android:textStyle="bold" />-->
+
+    <!--<TextView--><!--android:background="#F3E5F5"--><!--android:textIsSelectable="true"--><!--android:elevation="8dp"--><!--android:id="@+id/textView48"--><!--android:layout_width="wrap_content"--><!--android:layout_height="wrap_content"--><!--android:layout_alignTop="@+id/textView47"--><!--android:layout_toEndOf="@+id/textView30"--><!--android:layout_toRightOf="@+id/textView30"--><!--android:text="022-25702690"--><!--android:textSize="18sp" />-->
+
+    <!--<TextView--><!--android:elevation="8dp"--><!--android:id="@+id/textView50"--><!--android:layout_width="wrap_content"--><!--android:layout_height="wrap_content"--><!--android:layout_alignLeft="@+id/textView45"--><!--android:layout_alignStart="@+id/textView45"--><!--android:layout_below="@+id/textView47"--><!--android:layout_marginTop="38dp"--><!--android:text="Fire Control Room"--><!--android:textSize="18sp"--><!--android:textStyle="bold" />-->
+
+    <!--<TextView--><!--android:background="#F3E5F5--><!--"--><!--android:textIsSelectable="true"--><!--android:elevation="8dp"--><!--android:id="@+id/textView51"--><!--android:layout_width="wrap_content"--><!--android:layout_height="wrap_content"--><!--android:layout_alignBottom="@+id/textView50"--><!--android:layout_toEndOf="@+id/textView30"--><!--android:layout_toRightOf="@+id/textView30"--><!--android:text="022-23076111"--><!--android:textSize="18sp" />-->
+
+
+    <!--</RelativeLayout>-->
+
+    <!--</FrameLayout>-->
