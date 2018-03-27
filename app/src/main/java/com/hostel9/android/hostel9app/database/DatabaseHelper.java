@@ -368,7 +368,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
                 Event event = new Event();
                 event.setId(c.getInt(c.getColumnIndex(KEY_EVENT_ID)));
                 event.setName(c.getString(c.getColumnIndex(KEY_NAME)));
-//                event.setGenre(c.getString(c.getColumnIndex(KEY_GENRE)));
+                event.setGenre(c.getString(c.getColumnIndex(KEY_GENRE)));
                 event.setDescription(c.getString(c.getColumnIndex(KEY_DESCRIPTION)));
                 event.setVenue((c.getString(c.getColumnIndex(KEY_VENUE))));
                 event.setDate(c.getString(c.getColumnIndex(KEY_DATE)));
