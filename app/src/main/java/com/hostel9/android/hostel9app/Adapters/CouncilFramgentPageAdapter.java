@@ -59,7 +59,7 @@ public class CouncilFramgentPageAdapter extends FragmentPagerAdapter {
             case 2:
                 return "Mess";
             case 3:
-                return "Maintainance";
+                return "Maintenance";
             case 4:
                 return "Cultural";
             case 5:
