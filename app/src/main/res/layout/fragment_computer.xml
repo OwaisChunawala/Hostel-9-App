@@ -85,6 +85,7 @@
                             <ImageView
                                 android:layout_width="match_parent"
                                 android:layout_height="match_parent"
+                                android:id="@+id/sahil_call"
                                 android:layout_weight="1"
                                 android:gravity="center"
                                 android:paddingBottom="4dp"
@@ -101,6 +102,7 @@
                             <ImageView
                                 android:layout_width="match_parent"
                                 android:layout_height="match_parent"
+                                android:id="@+id/sahil_mail"
                                 android:layout_weight="1"
                                 android:gravity="center"
                                 android:paddingBottom="4dp"
@@ -192,6 +194,7 @@
                             <ImageView
                                 android:layout_width="match_parent"
                                 android:layout_height="match_parent"
+                                android:id="@+id/akash_call"
                                 android:layout_weight="1"
                                 android:gravity="center"
                                 android:paddingBottom="4dp"
@@ -208,6 +211,7 @@
                             <ImageView
                                 android:layout_width="match_parent"
                                 android:layout_height="match_parent"
+                                android:id="@+id/akash_mail"
                                 android:layout_weight="1"
                                 android:gravity="center"
                                 android:paddingBottom="4dp"
@@ -287,6 +291,7 @@
                             <ImageView
                                 android:layout_width="match_parent"
                                 android:layout_height="match_parent"
+                                android:id="@+id/ojas_call"
                                 android:layout_weight="1"
                                 android:gravity="center"
                                 android:paddingBottom="4dp"
@@ -303,6 +308,7 @@
                             <ImageView
                                 android:layout_width="match_parent"
                                 android:layout_height="match_parent"
+                                android:id="@+id/ojas_mail"
                                 android:layout_weight="1"
                                 android:gravity="center"
                                 android:paddingBottom="4dp"

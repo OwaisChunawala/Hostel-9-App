@@ -10,7 +10,7 @@ import android.view.ViewGroup;
 
 
 
-public class CulturalFragment extends Fragment {
+public class CulturalFragment extends Fragment implements View.OnClickListener{
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -27,8 +27,14 @@ public class CulturalFragment extends Fragment {
     }
 
 
-
-
+    @Override
+    public void onClick(View v)
+    {
 
     }
+
+
+
+
+}
 

@@ -10,7 +10,7 @@ import android.view.ViewGroup;
 
 
 
-public class MaintenanceFragment extends Fragment {
+public class MaintenanceFragment extends Fragment implements View.OnClickListener{
 
 
     @Override
@@ -22,7 +22,15 @@ public class MaintenanceFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_maintenance, container, false);
+        View view =  inflater.inflate(R.layout.fragment_maintenance, container, false);
+
+        return view;
+    }
+
+    @Override
+    public void onClick(View v)
+    {
+
     }
 
 }

@@ -9,7 +9,7 @@ import android.view.View;
 import android.view.ViewGroup;
 
 
-public class SportsFragment extends Fragment {
+public class SportsFragment extends Fragment implements View.OnClickListener{
 
 
     public SportsFragment() {
@@ -27,9 +27,17 @@ public class SportsFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_sports, container, false);
+        View view =  inflater.inflate(R.layout.fragment_sports, container, false);
+
+        return view;
     }
 
+
+    @Override
+    public void onClick(View v)
+    {
+
+    }
 
 
 }
