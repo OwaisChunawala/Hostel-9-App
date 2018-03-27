@@ -1,119 +1,675 @@
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context="com.hostel9.android.hostel9app.TechnicalFragment">
-<ScrollView
-    android:layout_width="match_parent"
-    android:layout_height="match_parent">
-   <RelativeLayout
-       android:layout_width="match_parent"
-       android:layout_height="match_parent"
-       android:background="#E3F2FD">
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	tools:context="com.hostel9.android.hostel9app.TechnicalFragment">
 
-      <ImageView
-          android:id="@+id/imageView22"
-          android:layout_width="100dp"
-          android:layout_height="100dp"
-          android:layout_alignParentTop="true"
-          android:layout_centerHorizontal="true"
-          android:layout_marginTop="18dp"
-          android:src="@drawable/rishav" />
+   <LinearLayout
+	   android:layout_width="match_parent"
+	   android:layout_height="match_parent"
+	   android:orientation="vertical">
 
-      <TextView
-          android:textAlignment="center"
-          android:background="@android:color/white"
-          android:elevation="8dp"
-          android:textIsSelectable="true"
-          android:id="@+id/textView23"
-          android:layout_width="wrap_content"
-          android:layout_height="wrap_content"
-          android:layout_below="@+id/imageView22"
-          android:layout_centerHorizontal="true"
-          android:text="Technical Councillor\nRishav Dutta\nRoom No. 157\n+91 7045800356\nraj1609.rd@gmail.com " />
+	  <LinearLayout
+		  android:layout_width="match_parent"
+		  android:layout_height="wrap_content"
+		  android:orientation="horizontal">
+		 <View
+			 android:layout_width="0dp"
+			 android:layout_height="match_parent"
+			 android:layout_weight="1"/>
 
-      <ImageView
-          android:id="@+id/imageView23"
-          android:layout_width="100dp"
-          android:layout_height="100dp"
-          android:layout_below="@+id/textView57"
-          android:layout_marginTop="13dp"
-          android:layout_toLeftOf="@+id/textView23"
-          android:layout_toStartOf="@+id/textView23"
-          android:src="@drawable/mohil" />
+		 <android.support.v7.widget.CardView
+			 android:layout_width="0dp"
+			 android:layout_height="299dp"
+			 android:layout_marginBottom="8dp"
+			 android:layout_marginLeft="8dp"
+			 android:layout_marginRight="6dp"
+			 android:layout_marginTop="8dp"
+			 android:layout_weight="2"
+			 app:cardCornerRadius="3dp">
 
-      <ImageView
-          android:id="@+id/imageView24"
-          android:layout_width="100dp"
-          android:layout_height="100dp"
-          android:layout_alignTop="@+id/imageView23"
-          android:layout_toEndOf="@+id/textView23"
-          android:layout_toRightOf="@+id/textView23"
-          android:src="@drawable/gaurav" />
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:orientation="vertical">
 
-      <TextView
-          android:textAlignment="center"
-          android:background="@android:color/white"
-          android:elevation="8dp"
-          android:textIsSelectable="true"
-          android:id="@+id/textView24"
-          android:layout_width="wrap_content"
-          android:layout_height="wrap_content"
-          android:layout_alignLeft="@+id/imageView23"
-          android:layout_alignStart="@+id/imageView23"
-          android:layout_below="@+id/imageView23"
-          android:text="Mohil Patel\nRoom No. 174\n+91 8511112535\nmohilp1998@gmail.com" />
+			   <ImageView
+				   android:layout_width="match_parent"
+				   android:layout_height="200dp"
+				   android:layout_weight="8"
+				   android:adjustViewBounds="true"
+				   android:scaleType="centerCrop"
+				   android:src="@drawable/rishav" />
 
-      <TextView
-          android:id="@+id/textView25"
-          android:layout_width="wrap_content"
-          android:layout_height="wrap_content"
-          android:layout_below="@+id/imageView24"
-          android:layout_marginLeft="47dp"
-          android:layout_marginStart="47dp"
-          android:layout_toEndOf="@+id/textView24"
-          android:layout_toRightOf="@+id/textView24"
-          android:background="@android:color/white"
-          android:elevation="8dp"
-          android:text="Gaurav verma\nRoom No. 174\n+91 8291400012\nvermagaurav267@gmail.com"
-          android:textAlignment="center"
-          android:textIsSelectable="true" />
+			   <LinearLayout
+				   android:layout_width="match_parent"
+				   android:layout_height="99dp"
+				   android:layout_weight="4"
+				   android:orientation="vertical"
+				   android:paddingBottom="2dp"
+				   android:paddingTop="4dp">
 
-      <ImageView
-          android:id="@+id/imageView25"
-          android:layout_width="100dp"
-          android:layout_height="100dp"
-          android:layout_below="@+id/textView24"
-          android:layout_marginTop="11dp"
-          android:layout_toLeftOf="@+id/imageView22"
-          android:layout_toStartOf="@+id/imageView22"
-          android:src="@drawable/trishant" />
+				  <TextView
+					  android:layout_width="wrap_content"
+					  android:layout_height="wrap_content"
+					  android:layout_gravity="center_horizontal"
+					  android:text="Technical Councillor"
+					  android:textColor="#000"
+					  android:textSize="16dp"
+					  android:textStyle="bold" />
 
-      <TextView
-          android:background="@android:color/white"
-          android:elevation="8dp"
-          android:textIsSelectable="true"
-          android:textAlignment="center"
-          android:id="@+id/textView26"
-          android:layout_width="wrap_content"
-          android:layout_height="wrap_content"
-          android:layout_alignEnd="@+id/textView24"
-          android:layout_alignRight="@+id/textView24"
-          android:layout_below="@+id/imageView25"
-          android:text="Trishant Roy\nRoom No. 108\n+91 7757806258\ntrishantroy@gmail.com" />
+				  <TextView
+					  android:layout_width="wrap_content"
+					  android:layout_height="wrap_content"
+					  android:layout_gravity="center_horizontal"
+					  android:text="Rishav Dutta"
+					  android:textColor="#000"
+					  android:textSize="16dp" />
 
-      <TextView
-          android:id="@+id/textView57"
-          android:layout_width="wrap_content"
-          android:layout_height="wrap_content"
-          android:layout_below="@+id/textView23"
-          android:layout_centerHorizontal="true"
-          android:layout_marginTop="15dp"
-          android:text="Technical Secretary"
-          android:textSize="18sp"
-          android:textStyle="bold" />
-   </RelativeLayout>
+				  <TextView
+					  android:layout_width="wrap_content"
+					  android:layout_height="wrap_content"
+					  android:layout_gravity="center_horizontal"
+					  android:text="Room No.: 157"
+					  android:textColor="#000"
+					  android:textSize="16dp" />
+
+
+				  <LinearLayout
+					  android:layout_width="match_parent"
+					  android:layout_height="wrap_content"
+					  android:layout_marginTop="3dp"
+					  android:orientation="horizontal">
+
+					 <ImageView
+						 android:layout_width="match_parent"
+						 android:layout_height="match_parent"
+						 android:layout_weight="1"
+						 android:gravity="center"
+						 android:paddingBottom="4dp"
+						 android:paddingTop="4dp"
+						 android:src="@drawable/phone_icon" />
+
+					 <View
+						 android:layout_width="1dp"
+						 android:layout_height="match_parent"
+						 android:layout_marginBottom="4dp"
+						 android:layout_marginTop="4dp"
+						 android:background="@color/colorAccent" />
+
+					 <ImageView
+						 android:layout_width="match_parent"
+						 android:layout_height="match_parent"
+						 android:layout_weight="1"
+						 android:gravity="center"
+						 android:paddingBottom="4dp"
+						 android:paddingTop="4dp"
+						 android:src="@drawable/email_icon" />
+
+				  </LinearLayout>
+
+			   </LinearLayout>
+
+
+			</LinearLayout>
+		 </android.support.v7.widget.CardView>
+		 <View
+			 android:layout_width="0dp"
+			 android:layout_height="match_parent"
+			 android:layout_weight="1"/>
+
+	  </LinearLayout>
+
+	  <LinearLayout
+		  android:layout_width="match_parent"
+		  android:layout_height="wrap_content"
+		  android:orientation="horizontal">
+
+		 <android.support.v7.widget.CardView
+			 android:layout_width="150dp"
+			 android:layout_height="299dp"
+			 android:layout_marginBottom="8dp"
+			 android:layout_marginLeft="8dp"
+			 android:layout_marginRight="6dp"
+			 android:layout_marginTop="8dp"
+			 android:layout_weight="1"
+			 app:cardCornerRadius="3dp">
+
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:orientation="vertical">
+
+			   <ImageView
+				   android:layout_width="match_parent"
+				   android:layout_height="200dp"
+				   android:layout_weight="8"
+				   android:adjustViewBounds="true"
+				   android:scaleType="centerCrop"
+				   android:src="@drawable/mohil" />
+
+			   <LinearLayout
+				   android:layout_width="match_parent"
+				   android:layout_height="99dp"
+				   android:layout_weight="4"
+				   android:orientation="vertical"
+				   android:paddingBottom="2dp"
+				   android:paddingTop="4dp">
+
+				  <TextView
+					  android:layout_width="wrap_content"
+					  android:layout_height="wrap_content"
+					  android:layout_gravity="center_horizontal"
+					  android:text="Technical Secretary"
+					  android:textColor="#000"
+					  android:textSize="16dp"
+					  android:textStyle="bold" />
+
+				  <TextView
+					  android:layout_width="wrap_content"
+					  android:layout_height="wrap_content"
+					  android:layout_gravity="center_horizontal"
+					  android:text="Mohil Patel"
+					  android:textColor="#000"
+					  android:textSize="16dp" />
+
+				  <TextView
+					  android:layout_width="wrap_content"
+					  android:layout_height="wrap_content"
+					  android:layout_gravity="center_horizontal"
+					  android:text="Room No.: 174"
+					  android:textColor="#000"
+					  android:textSize="16dp" />
+
+
+				  <LinearLayout
+					  android:layout_width="match_parent"
+					  android:layout_height="wrap_content"
+					  android:layout_marginTop="3dp"
+					  android:orientation="horizontal">
+
+					 <ImageView
+						 android:layout_width="match_parent"
+						 android:layout_height="match_parent"
+						 android:layout_weight="1"
+						 android:gravity="center"
+						 android:paddingBottom="4dp"
+						 android:paddingTop="4dp"
+						 android:src="@drawable/phone_icon" />
+
+					 <View
+						 android:layout_width="1dp"
+						 android:layout_height="match_parent"
+						 android:layout_marginBottom="4dp"
+						 android:layout_marginTop="4dp"
+						 android:background="@color/colorAccent" />
+
+					 <ImageView
+						 android:layout_width="match_parent"
+						 android:layout_height="match_parent"
+						 android:layout_weight="1"
+						 android:gravity="center"
+						 android:paddingBottom="4dp"
+						 android:paddingTop="4dp"
+						 android:src="@drawable/email_icon" />
+
+				  </LinearLayout>
+
+			   </LinearLayout>
+
+			</LinearLayout>
+		 </android.support.v7.widget.CardView>
+
+		 <android.support.v7.widget.CardView
+			 android:layout_width="150dp"
+			 android:layout_height="299dp"
+			 android:layout_marginBottom="8dp"
+			 android:layout_marginLeft="6dp"
+			 android:layout_marginRight="8dp"
+			 android:layout_marginTop="8dp"
+			 android:layout_weight="1"
+			 app:cardCornerRadius="3dp">
+
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:orientation="vertical">
+
+			   <ImageView
+				   android:layout_width="match_parent"
+				   android:layout_height="200dp"
+				   android:layout_weight="8"
+				   android:adjustViewBounds="true"
+				   android:scaleType="centerCrop"
+				   android:src="@drawable/trishant" />
+
+			   <LinearLayout
+				   android:layout_width="match_parent"
+				   android:layout_height="99dp"
+				   android:layout_weight="4"
+				   android:orientation="vertical"
+				   android:paddingBottom="2dp"
+				   android:paddingTop="4dp">
+
+				  <TextView
+					  android:layout_width="wrap_content"
+					  android:layout_height="wrap_content"
+					  android:layout_gravity="center_horizontal"
+					  android:text="Technical Secretary"
+					  android:textColor="#000"
+					  android:textSize="16dp"
+					  android:textStyle="bold" />
+
+				  <TextView
+					  android:layout_width="wrap_content"
+					  android:layout_height="wrap_content"
+					  android:layout_gravity="center_horizontal"
+					  android:text="Trishant Roy"
+					  android:textColor="#000"
+					  android:textSize="16dp" />
+
+				  <TextView
+					  android:layout_width="wrap_content"
+					  android:layout_height="wrap_content"
+					  android:layout_gravity="center_horizontal"
+					  android:text="Room No.: 108"
+					  android:textColor="#000"
+					  android:textSize="16dp" />
+
+
+				  <LinearLayout
+					  android:layout_width="match_parent"
+					  android:layout_height="wrap_content"
+					  android:layout_marginTop="3dp"
+					  android:orientation="horizontal">
+
+					 <ImageView
+						 android:layout_width="match_parent"
+						 android:layout_height="match_parent"
+						 android:layout_weight="1"
+						 android:gravity="center"
+						 android:paddingBottom="4dp"
+						 android:paddingTop="4dp"
+						 android:src="@drawable/phone_icon" />
+
+					 <View
+						 android:layout_width="1dp"
+						 android:layout_height="match_parent"
+						 android:layout_marginBottom="4dp"
+						 android:layout_marginTop="4dp"
+						 android:background="@color/colorAccent" />
+
+					 <ImageView
+						 android:layout_width="match_parent"
+						 android:layout_height="match_parent"
+						 android:layout_weight="1"
+						 android:gravity="center"
+						 android:paddingBottom="4dp"
+						 android:paddingTop="4dp"
+						 android:src="@drawable/email_icon" />
+
+				  </LinearLayout>
+
+			   </LinearLayout>
+
+			</LinearLayout>
+		 </android.support.v7.widget.CardView>
+	  </LinearLayout>
+
+
+	  <LinearLayout
+		  android:layout_width="match_parent"
+		  android:layout_height="wrap_content"
+		  android:orientation="horizontal">
+		 <View
+			 android:layout_width="0dp"
+			 android:layout_height="match_parent"
+			 android:layout_weight="1"/>
+
+		 <android.support.v7.widget.CardView
+			 android:layout_width="0dp"
+			 android:layout_height="299dp"
+			 android:layout_marginBottom="8dp"
+			 android:layout_marginLeft="8dp"
+			 android:layout_marginRight="6dp"
+			 android:layout_marginTop="8dp"
+			 android:layout_weight="2"
+			 app:cardCornerRadius="3dp">
+
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:orientation="vertical">
+
+			   <ImageView
+				   android:layout_width="match_parent"
+				   android:layout_height="200dp"
+				   android:layout_weight="8"
+				   android:adjustViewBounds="true"
+				   android:scaleType="centerCrop"
+				   android:src="@drawable/gaurav" />
+
+			   <LinearLayout
+				   android:layout_width="match_parent"
+				   android:layout_height="99dp"
+				   android:layout_weight="4"
+				   android:orientation="vertical"
+				   android:paddingBottom="2dp"
+				   android:paddingTop="4dp">
+
+				  <TextView
+					  android:layout_width="wrap_content"
+					  android:layout_height="wrap_content"
+					  android:layout_gravity="center_horizontal"
+					  android:text="Technical Secretary"
+					  android:textColor="#000"
+					  android:textSize="16dp"
+					  android:textStyle="bold" />
+
+				  <TextView
+					  android:layout_width="wrap_content"
+					  android:layout_height="wrap_content"
+					  android:layout_gravity="center_horizontal"
+					  android:text="Gaurav Verma"
+					  android:textColor="#000"
+					  android:textSize="16dp" />
+
+				  <TextView
+					  android:layout_width="wrap_content"
+					  android:layout_height="wrap_content"
+					  android:layout_gravity="center_horizontal"
+					  android:text="Room No.: 174"
+					  android:textColor="#000"
+					  android:textSize="16dp" />
+
+
+				  <LinearLayout
+					  android:layout_width="match_parent"
+					  android:layout_height="wrap_content"
+					  android:layout_marginTop="3dp"
+					  android:orientation="horizontal">
+
+					 <ImageView
+						 android:layout_width="match_parent"
+						 android:layout_height="match_parent"
+						 android:layout_weight="1"
+						 android:gravity="center"
+						 android:paddingBottom="4dp"
+						 android:paddingTop="4dp"
+						 android:src="@drawable/phone_icon" />
+
+					 <View
+						 android:layout_width="1dp"
+						 android:layout_height="match_parent"
+						 android:layout_marginBottom="4dp"
+						 android:layout_marginTop="4dp"
+						 android:background="@color/colorAccent" />
+
+					 <ImageView
+						 android:layout_width="match_parent"
+						 android:layout_height="match_parent"
+						 android:layout_weight="1"
+						 android:gravity="center"
+						 android:paddingBottom="4dp"
+						 android:paddingTop="4dp"
+						 android:src="@drawable/email_icon" />
+
+				  </LinearLayout>
+
+			   </LinearLayout>
+
+
+			</LinearLayout>
+		 </android.support.v7.widget.CardView>
+		 <View
+			 android:layout_width="0dp"
+			 android:layout_height="match_parent"
+			 android:layout_weight="1"/>
+
+	  </LinearLayout>
+   </LinearLayout>
 </ScrollView>
+	<!--<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+	<!--xmlns:app="http://schemas.android.com/apk/res-auto"-->
+	<!--xmlns:tools="http://schemas.android.com/tools"-->
+	<!--android:layout_width="match_parent"-->
+	<!--android:layout_height="match_parent"-->
+	<!--tools:context="com.hostel9.android.hostel9app.MaintenanceFragment">-->
+	<!--<ScrollView-->
+	<!--android:layout_width="match_parent"-->
+	<!--android:layout_height="match_parent">-->
 
-</FrameLayout>
+	<!--<RelativeLayout-->
+	<!--android:layout_width="match_parent"-->
+	<!--android:layout_height="wrap_content"-->
+	<!--android:background="#E3F2FD">-->
+
+	<!--<ImageView-->
+	<!--android:id="@+id/imageView13"-->
+	<!--android:layout_width="100dp"-->
+	<!--android:layout_height="100dp"-->
+	<!--android:layout_alignParentTop="true"-->
+	<!--android:layout_centerHorizontal="true"-->
+	<!--android:layout_marginTop="20dp"-->
+	<!--android:src="@drawable/lokesh" />-->
+
+	<!--<TextView-->
+	<!--android:id="@+id/textView13"-->
+	<!--android:layout_width="wrap_content"-->
+	<!--android:layout_height="wrap_content"-->
+	<!--android:layout_below="@+id/imageView13"-->
+	<!--android:layout_centerHorizontal="true"-->
+	<!--android:background="@android:color/white"-->
+	<!--android:elevation="8dp"-->
+	<!--android:text="Lokesh Kesiraju\nRoom No. 132\n+91 8828291963\nmadhurisankar.kesiraju@gmail.com "-->
+	<!--android:textAlignment="center"-->
+	<!--android:textIsSelectable="true" />-->
+
+	<!--<ImageView-->
+	<!--android:id="@+id/imageView14"-->
+	<!--android:layout_width="100dp"-->
+	<!--android:layout_height="100dp"-->
+	<!--android:layout_below="@+id/textView13"-->
+	<!--android:layout_marginTop="47dp"-->
+	<!--android:layout_toLeftOf="@+id/imageView13"-->
+	<!--android:layout_toStartOf="@+id/imageView13"-->
+	<!--android:src="@drawable/sankhya" />-->
+
+	<!--<ImageView-->
+	<!--android:id="@+id/imageView15"-->
+	<!--android:layout_width="100dp"-->
+	<!--android:layout_height="100dp"-->
+	<!--android:layout_alignTop="@+id/imageView14"-->
+	<!--android:layout_toEndOf="@+id/imageView13"-->
+	<!--android:layout_toRightOf="@+id/imageView13"-->
+	<!--android:src="@drawable/sanjeet" />-->
+
+	<!--<TextView-->
+	<!--android:id="@+id/textView14"-->
+	<!--android:layout_width="wrap_content"-->
+	<!--android:layout_height="wrap_content"-->
+	<!--android:layout_alignParentLeft="true"-->
+	<!--android:layout_alignParentStart="true"-->
+	<!--android:layout_below="@+id/imageView14"-->
+	<!--android:background="@android:color/white"-->
+	<!--android:elevation="8dp"-->
+	<!--android:text="Sankhya Subhra Halder\n Room No. 141\n +91 8291475065\n sankhya1998@gmail.com"-->
+	<!--android:textAlignment="center"-->
+	<!--android:textIsSelectable="true" />-->
+
+	<!--<TextView-->
+	<!--android:id="@+id/textView15"-->
+	<!--android:layout_width="wrap_content"-->
+	<!--android:layout_height="wrap_content"-->
+	<!--android:layout_below="@+id/imageView15"-->
+	<!--android:layout_marginLeft="19dp"-->
+	<!--android:layout_marginStart="19dp"-->
+	<!--android:layout_toEndOf="@+id/textView14"-->
+	<!--android:layout_toRightOf="@+id/textView14"-->
+	<!--android:background="@android:color/white"-->
+	<!--android:elevation="8dp"-->
+	<!--android:text="Sanjeet Sahoo\nRoom No. 377\n+91 8291474724\nsanjeetsahoo007@gmail.com"-->
+	<!--android:textAlignment="center"-->
+	<!--android:textIsSelectable="true" />-->
+
+	<!--<TextView-->
+	<!--android:id="@+id/textView16"-->
+	<!--android:layout_width="wrap_content"-->
+	<!--android:layout_height="wrap_content"-->
+	<!--android:layout_above="@+id/imageView15"-->
+	<!--android:layout_centerHorizontal="true"-->
+	<!--android:layout_marginBottom="11dp"-->
+	<!--android:text="Maintenance Secretary"-->
+	<!--android:textSize="18sp"-->
+	<!--android:textStyle="bold" />-->
+
+	<!--<ImageView-->
+	<!--android:id="@+id/imageView16"-->
+	<!--android:layout_width="100dp"-->
+	<!--android:layout_height="100dp"-->
+	<!--android:layout_alignLeft="@+id/imageView14"-->
+	<!--android:layout_alignStart="@+id/imageView14"-->
+	<!--android:layout_below="@+id/textView15"-->
+	<!--android:layout_marginLeft="12dp"-->
+	<!--android:layout_marginStart="12dp"-->
+	<!--android:src="@drawable/umang" />-->
+
+	<!--<TextView-->
+	<!--android:id="@+id/textView17"-->
+	<!--android:layout_width="wrap_content"-->
+	<!--android:layout_height="wrap_content"-->
+	<!--android:layout_alignParentLeft="true"-->
+	<!--android:layout_alignParentStart="true"-->
+	<!--android:layout_below="@+id/imageView16"-->
+	<!--android:background="@android:color/white"-->
+	<!--android:elevation="8dp"-->
+	<!--android:text="Umang Kumavat\nRoom No. 104\n+91 9974117791\numangkumavat17@gmail.com "-->
+	<!--android:textAlignment="center"-->
+	<!--android:textIsSelectable="true" />-->
+
+
+	<!--</RelativeLayout>-->
+	<!--</ScrollView>-->
+
+	<!--</FrameLayout>-->
+
+	<!--<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+	<!--xmlns:app="http://schemas.android.com/apk/res-auto"-->
+	<!--xmlns:tools="http://schemas.android.com/tools"-->
+	<!--android:layout_width="match_parent"-->
+	<!--android:layout_height="match_parent"-->
+	<!--tools:context="com.hostel9.android.hostel9app.TechnicalFragment">-->
+<!--<ScrollView-->
+	<!--android:layout_width="match_parent"-->
+	<!--android:layout_height="match_parent">-->
+   <!--<RelativeLayout-->
+	   <!--android:layout_width="match_parent"-->
+	   <!--android:layout_height="match_parent"-->
+	   <!--android:background="#E3F2FD">-->
+
+	  <!--<ImageView-->
+		  <!--android:id="@+id/imageView22"-->
+		  <!--android:layout_width="100dp"-->
+		  <!--android:layout_height="100dp"-->
+		  <!--android:layout_alignParentTop="true"-->
+		  <!--android:layout_centerHorizontal="true"-->
+		  <!--android:layout_marginTop="18dp"-->
+		  <!--android:src="@drawable/rishav" />-->
+
+	  <!--<TextView-->
+		  <!--android:textAlignment="center"-->
+		  <!--android:background="@android:color/white"-->
+		  <!--android:elevation="8dp"-->
+		  <!--android:textIsSelectable="true"-->
+		  <!--android:id="@+id/textView23"-->
+		  <!--android:layout_width="wrap_content"-->
+		  <!--android:layout_height="wrap_content"-->
+		  <!--android:layout_below="@+id/imageView22"-->
+		  <!--android:layout_centerHorizontal="true"-->
+		  <!--android:text="Technical Councillor\nRishav Dutta\nRoom No. 157\n+91 7045800356\nraj1609.rd@gmail.com " />-->
+
+	  <!--<ImageView-->
+		  <!--android:id="@+id/imageView23"-->
+		  <!--android:layout_width="100dp"-->
+		  <!--android:layout_height="100dp"-->
+		  <!--android:layout_below="@+id/textView57"-->
+		  <!--android:layout_marginTop="13dp"-->
+		  <!--android:layout_toLeftOf="@+id/textView23"-->
+		  <!--android:layout_toStartOf="@+id/textView23"-->
+		  <!--android:src="@drawable/mohil" />-->
+
+	  <!--<ImageView-->
+		  <!--android:id="@+id/imageView24"-->
+		  <!--android:layout_width="100dp"-->
+		  <!--android:layout_height="100dp"-->
+		  <!--android:layout_alignTop="@+id/imageView23"-->
+		  <!--android:layout_toEndOf="@+id/textView23"-->
+		  <!--android:layout_toRightOf="@+id/textView23"-->
+		  <!--android:src="@drawable/gaurav" />-->
+
+	  <!--<TextView-->
+		  <!--android:textAlignment="center"-->
+		  <!--android:background="@android:color/white"-->
+		  <!--android:elevation="8dp"-->
+		  <!--android:textIsSelectable="true"-->
+		  <!--android:id="@+id/textView24"-->
+		  <!--android:layout_width="wrap_content"-->
+		  <!--android:layout_height="wrap_content"-->
+		  <!--android:layout_alignLeft="@+id/imageView23"-->
+		  <!--android:layout_alignStart="@+id/imageView23"-->
+		  <!--android:layout_below="@+id/imageView23"-->
+		  <!--android:text="Mohil Patel\nRoom No. 174\n+91 8511112535\nmohilp1998@gmail.com" />-->
+
+	  <!--<TextView-->
+		  <!--android:id="@+id/textView25"-->
+		  <!--android:layout_width="wrap_content"-->
+		  <!--android:layout_height="wrap_content"-->
+		  <!--android:layout_below="@+id/imageView24"-->
+		  <!--android:layout_marginLeft="47dp"-->
+		  <!--android:layout_marginStart="47dp"-->
+		  <!--android:layout_toEndOf="@+id/textView24"-->
+		  <!--android:layout_toRightOf="@+id/textView24"-->
+		  <!--android:background="@android:color/white"-->
+		  <!--android:elevation="8dp"-->
+		  <!--android:text="Gaurav verma\nRoom No. 174\n+91 8291400012\nvermagaurav267@gmail.com"-->
+		  <!--android:textAlignment="center"-->
+		  <!--android:textIsSelectable="true" />-->
+
+	  <!--<ImageView-->
+		  <!--android:id="@+id/imageView25"-->
+		  <!--android:layout_width="100dp"-->
+		  <!--android:layout_height="100dp"-->
+		  <!--android:layout_below="@+id/textView24"-->
+		  <!--android:layout_marginTop="11dp"-->
+		  <!--android:layout_toLeftOf="@+id/imageView22"-->
+		  <!--android:layout_toStartOf="@+id/imageView22"-->
+		  <!--android:src="@drawable/trishant" />-->
+
+	  <!--<TextView-->
+		  <!--android:background="@android:color/white"-->
+		  <!--android:elevation="8dp"-->
+		  <!--android:textIsSelectable="true"-->
+		  <!--android:textAlignment="center"-->
+		  <!--android:id="@+id/textView26"-->
+		  <!--android:layout_width="wrap_content"-->
+		  <!--android:layout_height="wrap_content"-->
+		  <!--android:layout_alignEnd="@+id/textView24"-->
+		  <!--android:layout_alignRight="@+id/textView24"-->
+		  <!--android:layout_below="@+id/imageView25"-->
+		  <!--android:text="Trishant Roy\nRoom No. 108\n+91 7757806258\ntrishantroy@gmail.com" />-->
+
+	  <!--<TextView-->
+		  <!--android:id="@+id/textView57"-->
+		  <!--android:layout_width="wrap_content"-->
+		  <!--android:layout_height="wrap_content"-->
+		  <!--android:layout_below="@+id/textView23"-->
+		  <!--android:layout_centerHorizontal="true"-->
+		  <!--android:layout_marginTop="15dp"-->
+		  <!--android:text="Technical Secretary"-->
+		  <!--android:textSize="18sp"-->
+		  <!--android:textStyle="bold" />-->
+   <!--</RelativeLayout>-->
+<!--</ScrollView>-->
+
+<!--</FrameLayout>-->
