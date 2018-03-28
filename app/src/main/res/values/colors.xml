@@ -7,4 +7,6 @@
     <color name="colorYellow">#F1D302</color>
     <color name="colorGreen">#CBE896</color>
     <color name="colorOrange">#F3A712</color>
+    <color name="colorWhite">#fff</color>
+    <color name="colorOffWhite">#eee</color>
 </resources>

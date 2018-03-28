@@ -7,6 +7,7 @@ package com.hostel9.android.hostel9app.adapter;
 
 import android.content.Context;
 import android.content.res.ColorStateList;
+import android.support.transition.TransitionManager;
 import android.support.v7.widget.CardView;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
@@ -28,8 +29,10 @@ public class EventAdapter extends RecyclerView.Adapter<EventAdapter.EventViewHol
     private List<Event> Event;
     private int rowLayout;
     private Context context;
+    private RecyclerView recyclerView;
     private final String TAG = "Updating the event";
     DatabaseHelper db;
+    int mExpandedPosition = -1;
 
 
     public static class EventViewHolder extends RecyclerView.ViewHolder {
@@ -42,6 +45,7 @@ public class EventAdapter extends RecyclerView.Adapter<EventAdapter.EventViewHol
         TextView time;
         CardView cardView;
         ImageView imageView;
+
         
 
 
@@ -58,13 +62,15 @@ public class EventAdapter extends RecyclerView.Adapter<EventAdapter.EventViewHol
             cardView = (CardView) v.findViewById(R.id.replacer_icon);
             imageView = (ImageView) v.findViewById(R.id.replacer_image);
 
+
         }
     }
 
-    public EventAdapter(List<Event> Event, int rowLayout, Context context) {
+    public EventAdapter(List<Event> Event, int rowLayout, RecyclerView recyclerView, Context context) {
         this.Event = Event;
         this.rowLayout = rowLayout;
         this.context = context;
+        this.recyclerView = recyclerView;
         db = new DatabaseHelper(context);
     }
 
@@ -77,7 +83,7 @@ public class EventAdapter extends RecyclerView.Adapter<EventAdapter.EventViewHol
 
 
     @Override
-    public void onBindViewHolder(EventViewHolder holder, final int position) {
+    public void onBindViewHolder(final EventViewHolder holder, final int position) {
 
         String genre1 = Event.get(position).getGenre();
         if("sports".equals(genre1)){
@@ -103,6 +109,18 @@ public class EventAdapter extends RecyclerView.Adapter<EventAdapter.EventViewHol
         holder.date.setText(Event.get(position).getDate());
         holder.time.setText(Event.get(position).getTime());
 
+
+        final boolean isExpanded = position==mExpandedPosition;
+        holder.description.setVisibility(isExpanded?View.VISIBLE:View.GONE);
+        holder.itemView.setActivated(isExpanded);
+        holder.itemView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                mExpandedPosition = isExpanded ? -1:position;
+                TransitionManager.beginDelayedTransition(recyclerView);
+                notifyDataSetChanged();
+            }
+        });
 
     }
 

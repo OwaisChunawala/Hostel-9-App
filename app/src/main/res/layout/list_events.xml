@@ -5,154 +5,152 @@
     android:id="@+id/EventList"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:layout_marginTop="20dp"
+    android:layout_marginBottom="4dp"
+    android:layout_marginTop="4dp"
     android:orientation="vertical">
 
-
-
     <android.support.v7.widget.CardView
-        android:id="@+id/replacer_icon"
-        android:layout_width="60dp"
-        android:layout_height="60dp"
-        app:cardCornerRadius="30dp"
-        app:cardBackgroundColor="@color/colorGreen"
-        >
-        <ImageView
-            android:id="@+id/replacer_image"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        app:cardCornerRadius="3dp">
+
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:src="@drawable/event_tech_icon"
-            android:padding="10dp"/>
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/replacer_icon"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginTop="8dp"
+                    app:cardBackgroundColor="@color/colorGreen"
+                    app:cardCornerRadius="30dp">
+
+                    <ImageView
+                        android:id="@+id/replacer_image"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:padding="10dp"
+                        android:src="@drawable/event_tech_icon" />
+
+                </android.support.v7.widget.CardView>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="top"
+                        android:layout_marginLeft="18dp"
+                        android:layout_marginTop="8dp"
+                        android:maxLines="1"
+                        android:text="Name"
+                        android:textColor="#000"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/genre"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="top"
+                        android:layout_marginLeft="50dp"
+                        android:text="genre"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        android:visibility="gone" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/date"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="top"
+                            android:layout_marginLeft="18dp"
+                            android:layout_marginTop="4dp"
+                            android:layout_weight="1"
+                            android:text="Date"
+                            android:textColor="#000"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/time"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Time"
+                            android:textColor="#000"
+                            android:textSize="16sp" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/venue"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="4dp"
+                        android:layout_marginLeft="18dp"
+                        android:layout_marginTop="4dp"
+                        android:text="Venue"
+                        android:textColor="#000"
+                        android:textSize="16sp"
+
+                        />
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="4dp"
+                android:paddingLeft="16dp"
+                android:paddingTop="4dp"
+                android:text="Description"
+                android:textColor="#000"
+                android:textSize="16sp"
+                android:background="@drawable/comment_background"
+                android:stateListAnimator="@animator/comment_selection"/>
+        </LinearLayout>
+
 
     </android.support.v7.widget.CardView>
 
-        <TextView
-            android:id="@+id/name"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="top"
-            android:textStyle="bold"
-            android:text="name"
-            android:layout_marginLeft="50dp"
-            android:textSize="16sp" />
-
-    <TextView
-        android:id="@+id/genre"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="top"
-        android:textStyle="bold"
-        android:text="genre"
-        android:layout_marginLeft="50dp"
-        android:textSize="16sp" />
-
-        <TextView
-            android:id="@+id/date"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="top"
-            android:textStyle="bold"
-            android:text="date"
-            android:layout_marginLeft="50dp"
-            android:textSize="16sp" />
-
-
-        <TextView
-            android:id="@+id/description"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="50dp"
-            android:text="description"
-            android:textSize="16sp"
-            />
-
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
-
-        <TextView
-            android:id="@+id/venue"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="venue"
-            android:layout_marginLeft="50dp"
-
-            />
-
-        <TextView
-            android:id="@+id/time"
-            android:layout_width="wrap_content"
-            android:text="time"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="50dp"
-
-            />
-
-
-    </LinearLayout>
 
 </LinearLayout>
 
-<!--The most epic cards ever-->
-<!--<android.support.v7.widget.CardView-->
-<!--android:layout_width="match_parent"-->
-<!--android:layout_height="wrap_content">-->
-<!--<LinearLayout-->
-    <!--android:layout_width="match_parent"-->
-    <!--android:layout_height="wrap_content"-->
-    <!--android:orientation="horizontal">-->
+    <!--The most epic cards ever--><!--<android.support.v7.widget.CardView--><!--android:layout_width="match_parent"--><!--android:layout_height="wrap_content">--><!--<LinearLayout--><!--android:layout_width="match_parent"--><!--android:layout_height="wrap_content"--><!--android:orientation="horizontal">-->
 
 
-    <!--<android.support.v7.widget.CardView-->
-        <!--android:layout_width="60dp"-->
-        <!--android:layout_height="60dp"-->
-        <!--android:backgroundTint="@color/colorYellow"-->
-        <!--app:cardCornerRadius="30dp">-->
-        <!--<ImageView-->
-            <!--android:layout_width="match_parent"-->
-            <!--android:layout_height="match_parent"-->
-            <!--android:src="@drawable/event_cult_icon"-->
-            <!--android:padding="10dp"/>-->
+    <!--<android.support.v7.widget.CardView--><!--android:layout_width="60dp"--><!--android:layout_height="60dp"--><!--android:backgroundTint="@color/colorYellow"--><!--app:cardCornerRadius="30dp">--><!--<ImageView--><!--android:layout_width="match_parent"--><!--android:layout_height="match_parent"--><!--android:src="@drawable/event_cult_icon"--><!--android:padding="10dp"/>-->
 
-    <!--</android.support.v7.widget.CardView>-->
-    <!--<android.support.v7.widget.CardView-->
-        <!--android:layout_width="60dp"-->
-        <!--android:layout_height="60dp"-->
-        <!--android:backgroundTint="@color/colorOrange"-->
-        <!--app:cardCornerRadius="30dp">-->
-        <!--<ImageView-->
-            <!--android:layout_width="match_parent"-->
-            <!--android:layout_height="match_parent"-->
-            <!--android:src="@drawable/event_general_icon"-->
-            <!--android:padding="10dp"/>-->
+    <!--</android.support.v7.widget.CardView>--><!--<android.support.v7.widget.CardView--><!--android:layout_width="60dp"--><!--android:layout_height="60dp"--><!--android:backgroundTint="@color/colorOrange"--><!--app:cardCornerRadius="30dp">--><!--<ImageView--><!--android:layout_width="match_parent"--><!--android:layout_height="match_parent"--><!--android:src="@drawable/event_general_icon"--><!--android:padding="10dp"/>-->
 
-    <!--</android.support.v7.widget.CardView>-->
-    <!--<android.support.v7.widget.CardView-->
-        <!--android:layout_width="60dp"-->
-        <!--android:layout_height="60dp"-->
-        <!--android:backgroundTint="@color/colorAccent"-->
-        <!--app:cardCornerRadius="30dp">-->
-        <!--<ImageView-->
-            <!--android:layout_width="match_parent"-->
-            <!--android:layout_height="match_parent"-->
-            <!--android:src="@drawable/event_tech_icon"-->
-            <!--android:padding="10dp"/>-->
+    <!--</android.support.v7.widget.CardView>--><!--<android.support.v7.widget.CardView--><!--android:layout_width="60dp"--><!--android:layout_height="60dp"--><!--android:backgroundTint="@color/colorAccent"--><!--app:cardCornerRadius="30dp">--><!--<ImageView--><!--android:layout_width="match_parent"--><!--android:layout_height="match_parent"--><!--android:src="@drawable/event_tech_icon"--><!--android:padding="10dp"/>-->
 
     <!--</android.support.v7.widget.CardView>-->
 
-    <!--<android.support.v7.widget.CardView-->
-        <!--android:layout_width="60dp"-->
-        <!--android:layout_height="60dp"-->
-        <!--android:backgroundTint="@color/colorGreen"-->
-        <!--app:cardCornerRadius="30dp">-->
-        <!--<ImageView-->
-            <!--android:layout_width="match_parent"-->
-            <!--android:layout_height="match_parent"-->
-            <!--android:src="@drawable/event_sports_icon"-->
-            <!--android:padding="10dp"/>-->
+    <!--<android.support.v7.widget.CardView--><!--android:layout_width="60dp"--><!--android:layout_height="60dp"--><!--android:backgroundTint="@color/colorGreen"--><!--app:cardCornerRadius="30dp">--><!--<ImageView--><!--android:layout_width="match_parent"--><!--android:layout_height="match_parent"--><!--android:src="@drawable/event_sports_icon"--><!--android:padding="10dp"/>-->
 
     <!--</android.support.v7.widget.CardView>-->
 
-<!--</LinearLayout>-->
-<!--</android.support.v7.widget.CardView>-->
+    <!--</LinearLayout>--><!--</android.support.v7.widget.CardView>-->
