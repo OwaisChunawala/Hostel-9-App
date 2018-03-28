@@ -5,6 +5,7 @@ import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
+import android.support.v7.widget.CardView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -15,7 +16,7 @@ import com.hostel9.android.hostel9app.R;
 
 public class FacilitiesFragment extends Fragment {
 
-   public static Button b1,b2,b3;
+   public static CardView b1,b2,b3;
 
     public FacilitiesFragment() {
         // Required empty public constructor

@@ -11,6 +11,7 @@
         android:orientation="vertical">
         <android.support.v7.widget.CardView
             android:layout_width="match_parent"
+            android:id="@+id/lib_button"
             android:layout_height="wrap_content"
             android:layout_marginLeft="8dp"
             android:layout_marginRight="8dp"
@@ -22,16 +23,14 @@
                 android:layout_height="wrap_content"
                 android:orientation="horizontal">
                 <ImageView
-                    android:layout_width="0dp"
+                    android:layout_width="80dp"
                     android:layout_height="80dp"
-                    android:layout_weight="1"
                     android:src="@drawable/lib_books"
                     android:adjustViewBounds="true"
                     android:scaleType="centerCrop"/>
                 <TextView
-                    android:layout_width="0dp"
+                    android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:layout_weight="4"
                     android:text="Library List"
                     android:paddingLeft="18dp"
                     android:gravity="center_vertical"
@@ -43,6 +42,7 @@
         <android.support.v7.widget.CardView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:id="@+id/sports_button"
             android:layout_marginLeft="8dp"
             android:layout_marginRight="8dp"
             android:layout_marginTop="8dp"
@@ -53,16 +53,14 @@
                 android:layout_height="wrap_content"
                 android:orientation="horizontal">
                 <ImageView
-                    android:layout_width="0dp"
+                    android:layout_width="80dp"
                     android:layout_height="80dp"
-                    android:layout_weight="1"
                     android:src="@drawable/sports"
                     android:adjustViewBounds="true"
                     android:scaleType="centerCrop"/>
                 <TextView
-                    android:layout_width="0dp"
+                    android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:layout_weight="4"
                     android:text="Sports Equipments"
                     android:paddingLeft="18dp"
                     android:gravity="center_vertical"
@@ -77,6 +75,7 @@
             android:layout_marginLeft="8dp"
             android:layout_marginRight="8dp"
             android:layout_marginTop="8dp"
+            android:id="@+id/tech_button"
             android:layout_marginBottom="4dp"
             app:cardCornerRadius="3dp">
             <LinearLayout
@@ -84,16 +83,14 @@
                 android:layout_height="wrap_content"
                 android:orientation="horizontal">
                 <ImageView
-                    android:layout_width="0dp"
+                    android:layout_width="80dp"
                     android:layout_height="80dp"
-                    android:layout_weight="1"
                     android:src="@drawable/techroom"
                     android:adjustViewBounds="true"
                     android:scaleType="centerCrop"/>
                 <TextView
-                    android:layout_width="0dp"
+                    android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:layout_weight="4"
                     android:text="Tech Room Inventory"
                     android:paddingLeft="18dp"
                     android:gravity="center_vertical"
@@ -102,70 +99,70 @@
                     android:textStyle="bold"/>
             </LinearLayout>
         </android.support.v7.widget.CardView>
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+        <!--<RelativeLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content">-->
 
 
-            <Button
-                android:id="@+id/lib_button"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@+id/imageView37"
-                android:layout_centerHorizontal="true"
-                android:elevation="8dp"
-                android:text="library list" />
+            <!--<Button-->
+                <!---->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_below="@+id/imageView37"-->
+                <!--android:layout_centerHorizontal="true"-->
+                <!--android:elevation="8dp"-->
+                <!--android:text="library list" />-->
 
-            <Button
-                android:id="@+id/sports_button"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@+id/imageView38"
-                android:layout_centerHorizontal="true"
-                android:layout_marginTop="12dp"
-                android:elevation="8dp"
-                android:text="Sports Equipments available" />
+            <!--<Button-->
+                <!---->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_below="@+id/imageView38"-->
+                <!--android:layout_centerHorizontal="true"-->
+                <!--android:layout_marginTop="12dp"-->
+                <!--android:elevation="8dp"-->
+                <!--android:text="Sports Equipments available" />-->
 
-            <ImageView
-                android:id="@+id/imageView37"
-                android:layout_width="match_parent"
-                android:layout_height="100dp"
-                android:layout_alignParentLeft="true"
-                android:layout_alignParentStart="true"
-                android:layout_alignParentTop="true"
-                android:layout_marginTop="35dp"
-                android:src="@drawable/lib_books" />
+            <!--<ImageView-->
+                <!--android:id="@+id/imageView37"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="100dp"-->
+                <!--android:layout_alignParentLeft="true"-->
+                <!--android:layout_alignParentStart="true"-->
+                <!--android:layout_alignParentTop="true"-->
+                <!--android:layout_marginTop="35dp"-->
+                <!--android:src="@drawable/lib_books" />-->
 
-            <ImageView
-                android:id="@+id/imageView38"
-                android:layout_width="match_parent"
-                android:layout_height="100dp"
-                android:layout_alignParentLeft="true"
-                android:layout_alignParentStart="true"
-                android:layout_below="@+id/imageView37"
-                android:layout_marginTop="61dp"
-                android:src="@drawable/sports" />
+            <!--<ImageView-->
+                <!--android:id="@+id/imageView38"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="100dp"-->
+                <!--android:layout_alignParentLeft="true"-->
+                <!--android:layout_alignParentStart="true"-->
+                <!--android:layout_below="@+id/imageView37"-->
+                <!--android:layout_marginTop="61dp"-->
+                <!--android:src="@drawable/sports" />-->
 
-            <ImageView
-                android:id="@+id/imageView39"
-                android:layout_width="match_parent"
-                android:layout_height="100dp"
-                android:layout_alignParentLeft="true"
-                android:layout_alignParentStart="true"
-                android:layout_below="@+id/sports_button"
-                android:layout_marginTop="15dp"
-                android:src="@drawable/techroom" />
+            <!--<ImageView-->
+                <!--android:id="@+id/imageView39"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="100dp"-->
+                <!--android:layout_alignParentLeft="true"-->
+                <!--android:layout_alignParentStart="true"-->
+                <!--android:layout_below="@+id/sports_button"-->
+                <!--android:layout_marginTop="15dp"-->
+                <!--android:src="@drawable/techroom" />-->
 
-            <Button
-                android:id="@+id/tech_button"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@+id/imageView39"
-                android:layout_centerHorizontal="true"
-                android:text="Techroom Inventory" />
+            <!--<Button-->
+                <!---->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_below="@+id/imageView39"-->
+                <!--android:layout_centerHorizontal="true"-->
+                <!--android:text="Techroom Inventory" />-->
 
 
-        </RelativeLayout>
+        <!--</RelativeLayout>-->
     </LinearLayout>
 
 
