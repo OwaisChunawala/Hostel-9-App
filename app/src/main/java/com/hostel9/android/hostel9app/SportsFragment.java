@@ -53,7 +53,7 @@ public class SportsFragment extends Fragment implements View.OnClickListener{
         manthaMail = (ImageView) view.findViewById(R.id.manthan_mail);
 
         pankajCall = (ImageView) view.findViewById(R.id.pankaj_call);
-        pankajMail = (ImageView) view.findViewById(R.id.param_mail);
+        pankajMail = (ImageView) view.findViewById(R.id.pankaj_mail);
 
         shrikantCall = (ImageView) view.findViewById(R.id.shrikant_call);
         shrikantMail = (ImageView) view.findViewById(R.id.shrikant_mail);
@@ -61,8 +61,8 @@ public class SportsFragment extends Fragment implements View.OnClickListener{
         naveenCall = (ImageView) view.findViewById(R.id.naveen_call);
         naveenMail = (ImageView) view.findViewById(R.id.naveen_mail);
 
-        abhishekCall = (ImageView) view.findViewById(R.id.abhishek_bhagat_call);
-        abhishekMail = (ImageView) view.findViewById(R.id.abhishek_bhagat_mail);
+        abhishekCall = (ImageView) view.findViewById(R.id.abhishek_s_call);
+        abhishekMail = (ImageView) view.findViewById(R.id.abhishek_s_mail);
 
         nitinCall = (ImageView) view.findViewById(R.id.nitin_call);
         nitinMail = (ImageView) view.findViewById(R.id.nitin_mail);
@@ -145,12 +145,12 @@ public class SportsFragment extends Fragment implements View.OnClickListener{
             startActivity(Intent.createChooser(emailIntent, "Send email..."));
         }
 
-        if(v.getId()==R.id.abhishek_call){
+        if(v.getId()==R.id.abhishek_s_call){
             Intent intent = new Intent(Intent.ACTION_DIAL, Uri.fromParts("tel", "+91 8291339280", null));
             startActivity(intent);
         }
 
-        if(v.getId() == R.id.abhishek_mail){
+        if(v.getId() == R.id.abhishek_s_mail){
             Intent emailIntent = new Intent(Intent.ACTION_SENDTO, Uri.parse("mailto:" + "gravanoid@gmail.com")
                     .buildUpon()
                     .build());

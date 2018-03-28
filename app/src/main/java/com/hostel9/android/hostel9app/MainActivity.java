@@ -238,7 +238,7 @@ public class MainActivity extends AppCompatActivity {
             drawer.closeDrawer(GravityCompat.START);
         }
         else if(currentFragment instanceof HomeFragment){
-            Log.e("BackButtonIssues", "Current Fragment is Home fragment");
+            Log.e("BackButtonIssues", "Current Fragment is main fragment");
 //            super.onBackPressed();
             this.finishAffinity();
         }

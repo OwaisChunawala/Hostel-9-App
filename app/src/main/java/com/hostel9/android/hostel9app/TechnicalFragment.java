@@ -47,8 +47,8 @@ public class TechnicalFragment extends Fragment implements View.OnClickListener{
         trishanCall = (ImageView) view.findViewById(R.id.trishant_call);
         trishantMail = (ImageView) view.findViewById(R.id.trishant_mail);
 
-        mohilCall = (ImageView) view.findViewById(R.id.mohanish_call);
-        mohilMail = (ImageView) view.findViewById(R.id.mohanish_mail);
+        mohilCall = (ImageView) view.findViewById(R.id.mohil_call);
+        mohilMail = (ImageView) view.findViewById(R.id.mohil_mail);
 
         gauravCall = (ImageView) view.findViewById(R.id.gaurav_call);
         gauravMail = (ImageView) view.findViewById(R.id.gaurav_mail);
