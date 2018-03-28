@@ -57,6 +57,7 @@ public class CouncilFragment extends Fragment {
         viewPager = (ViewPager)view.findViewById(R.id.view_pager_council);
         viewPager.setAdapter(new CouncilFramgentPageAdapter(getChildFragmentManager()));
         tabLayout.setupWithViewPager(viewPager);
+
         return view;
     }
 

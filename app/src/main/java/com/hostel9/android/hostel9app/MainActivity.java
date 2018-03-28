@@ -17,6 +17,7 @@ import android.util.Log;
 import android.view.MenuItem;
 import android.widget.Toast;
 
+import com.hostel9.android.hostel9app.Adapters.CouncilFramgentPageAdapter;
 import com.hostel9.android.hostel9app.Fragments.CMSFragment;
 import com.hostel9.android.hostel9app.Fragments.CouncilFragment;
 import com.hostel9.android.hostel9app.Fragments.FacilitiesFragment;
@@ -85,29 +86,45 @@ public class MainActivity extends AppCompatActivity {
         toggle.syncState();
         fragmentManager = getSupportFragmentManager();
         final FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
-        fragment = new HomeFragment();
-        fragmentTransaction.replace(R.id.main_container_wrapper, fragment);
-        fragmentTransaction.commit();
+//        fragment = new HomeFragment();
+//        fragmentTransaction.replace(R.id.main_container_wrapper, fragment);
+//        fragmentTransaction.commit();
+        HomeFragment homeFragment = new HomeFragment();
+        openFragment(homeFragment, "HomeFragment");
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
 //        View header = navigationView.inflateHeaderView(R.layout.nav_header_main);
         navigationView.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
             @Override
             public boolean onNavigationItemSelected(MenuItem item) {
                 int id = item.getItemId();
-                if (id == R.id.nav_facilities) {
-                    fragment = new FacilitiesFragment();
-                } else if (id == R.id.nav_cms) {
-                    fragment = new CMSFragment();
-                } else if (id == R.id.nav_council) {
-                    fragment = new CouncilFragment();
-                } else if (id == R.id.nav_helpline) {
-                    fragment = new HelplineFragment();
+
+                if (id == R.id.nav_cms) {
+                    CMSFragment cmsFragment = new CMSFragment();
+                    if(getSupportFragmentManager().getBackStackEntryCount() >1){
+                        getSupportFragmentManager().popBackStack();
+                    }
+                    openFragment(cmsFragment,"CMS fragment");
+
+                }
+                else if (id == R.id.nav_council) {
+                    CouncilFragment councilFramgent = new  CouncilFragment();
+                    if(getSupportFragmentManager().getBackStackEntryCount() >1){
+                        getSupportFragmentManager().popBackStack();
+                    }
+                    openFragment(councilFramgent,"Council fragment");
+                }
+                else if (id == R.id.nav_helpline) {
+                    HelplineFragment helplineFragment = new HelplineFragment();
+                    if(getSupportFragmentManager().getBackStackEntryCount() >1){
+                        getSupportFragmentManager().popBackStack();
+                    }
+                    openFragment(helplineFragment,"Helpline fragment");
                 }
 
-                FragmentTransaction transaction = fragmentManager.beginTransaction();
-                transaction.replace(R.id.main_container_wrapper, fragment);
-                transaction.addToBackStack("Added the frag to bstack");
-                transaction.commit();
+//                FragmentTransaction transaction = fragmentManager.beginTransaction();
+//                transaction.replace(R.id.main_container_wrapper, fragment);
+//                transaction.addToBackStack("Added the frag to bstack");
+//                transaction.commit();
                 DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
                 assert drawer != null;
                 drawer.closeDrawer(GravityCompat.START);
@@ -216,13 +233,31 @@ public class MainActivity extends AppCompatActivity {
     @Override
     public void onBackPressed() {
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
+        Fragment currentFragment = getSupportFragmentManager().findFragmentById(R.id.main_container_wrapper);
         if (drawer.isDrawerOpen(GravityCompat.START)) {
             drawer.closeDrawer(GravityCompat.START);
-        } else {
+        }
+        else if(currentFragment instanceof HomeFragment){
+            Log.e("BackButtonIssues", "Current Fragment is Home fragment");
+//            super.onBackPressed();
+            this.finishAffinity();
+        }
+        else {
             super.onBackPressed();
         }
     }
 
 
+    public void openFragment(Fragment fragment, String tag){
+        FragmentTransaction ft = getSupportFragmentManager().beginTransaction();
+        //ft.setCustomAnimations(R.anim.slide_out_from_left,R.anim.slide_in_from_right);
+        ft.replace(R.id.main_container_wrapper, fragment, fragment.getTag());
+        ft.addToBackStack(tag);
+        int count = getSupportFragmentManager().getBackStackEntryCount();
+        Log.e("Back stack", "Back Stack count: " + count);
+        ft.commit();
+        getSupportFragmentManager().popBackStackImmediate("MainFragment", 0);
+
+    }
 
 }
