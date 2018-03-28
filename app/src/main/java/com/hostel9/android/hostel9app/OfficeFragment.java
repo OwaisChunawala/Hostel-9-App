@@ -7,12 +7,13 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 
 
+public class OfficeFragment extends Fragment implements View.OnClickListener{
 
-
-public class OfficeFragment extends Fragment {
-
+    ImageView Halli;
+    ImageView hallBoy;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -23,7 +24,15 @@ public class OfficeFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_office, container, false);
+        View view = inflater.inflate(R.layout.fragment_office, container, false);
+
+        return view;
+    }
+
+    @Override
+    public void onClick(View v)
+    {
+
     }
 
 }
