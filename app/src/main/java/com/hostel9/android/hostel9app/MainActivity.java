@@ -1,6 +1,7 @@
 package com.hostel9.android.hostel9app;
 
 import android.content.Context;
+import android.content.Intent;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 import android.support.design.widget.NavigationView;
@@ -56,25 +57,6 @@ public class MainActivity extends AppCompatActivity {
 
 //        Log.d("MAIN ACTIVITY", "MAIN ACTIVITY EVENTS SIZE: " + events.size() );
 
-        // taking the data from the api
-        // checking if connected to the internet
-        boolean connected = false;
-        ConnectivityManager connectivityManager = (ConnectivityManager)getSystemService(Context.CONNECTIVITY_SERVICE);
-        if(connectivityManager.getNetworkInfo(ConnectivityManager.TYPE_MOBILE).getState() == NetworkInfo.State.CONNECTED ||
-                connectivityManager.getNetworkInfo(ConnectivityManager.TYPE_WIFI).getState() == NetworkInfo.State.CONNECTED) {
-            //we are connected to a network
-            connected = true;
-        }
-        else
-            connected = false;
-
-        if (connected){
-
-            // if connected, then update the tables from the api
-            updateMess();
-            updateEvents();
-
-        }
 
 
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
@@ -114,6 +96,32 @@ public class MainActivity extends AppCompatActivity {
                 return true;
             }
         });
+
+        // taking the data from the api
+        // checking if connected to the internet
+        boolean connected = false;
+        ConnectivityManager connectivityManager = (ConnectivityManager)getSystemService(Context.CONNECTIVITY_SERVICE);
+        if(connectivityManager.getNetworkInfo(ConnectivityManager.TYPE_MOBILE).getState() == NetworkInfo.State.CONNECTED ||
+                connectivityManager.getNetworkInfo(ConnectivityManager.TYPE_WIFI).getState() == NetworkInfo.State.CONNECTED) {
+            //we are connected to a network
+            connected = true;
+        }
+        else
+            connected = false;
+
+        if (connected){
+
+            // if connected, then update the tables from the api
+            updateMess();
+            updateEvents();
+
+//            Intent intent = new Intent(MainActivity.this, MainActivity.class);
+//            startActivity(intent);
+
+            fragmentTransaction.replace(R.id.main_container_wrapper, fragment);
+
+
+        }
 
 
 
