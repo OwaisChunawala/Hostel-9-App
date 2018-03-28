@@ -98,7 +98,7 @@ public class EventAdapter extends RecyclerView.Adapter<EventAdapter.EventViewHol
             holder.imageView.setImageResource(R.drawable.event_cult_icon);
             holder.cardView.setCardBackgroundColor(context.getResources().getColor(R.color.colorYellow));
         }
-        if("general".equals(genre1)){
+        if("social".equals(genre1)){
             holder.imageView.setImageResource(R.drawable.event_general_icon);
             holder.cardView.setCardBackgroundColor(context.getResources().getColor(R.color.colorOrange));
         }
