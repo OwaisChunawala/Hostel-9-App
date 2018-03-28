@@ -1,0 +1,424 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.hostel9.android.hostel9app.ComputerFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"/>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="299dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="6dp"
+                android:layout_marginTop="8dp"
+                android:layout_weight="2"
+                app:cardCornerRadius="3dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:layout_weight="8"
+                        android:adjustViewBounds="true"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/sahil" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="99dp"
+                        android:layout_weight="4"
+                        android:orientation="vertical"
+                        android:paddingBottom="2dp"
+                        android:paddingTop="4dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:text="System Administrator"
+                            android:textColor="#000"
+                            android:textSize="16dp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:text="Sahil Soni"
+                            android:textColor="#000"
+                            android:textSize="16dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:text="Room No.: 349"
+                            android:textColor="#000"
+                            android:textSize="16dp" />
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="3dp"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:id="@+id/sahil_call"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:paddingBottom="4dp"
+                                android:paddingTop="4dp"
+                                android:src="@drawable/phone_icon" />
+
+                            <View
+                                android:layout_width="1dp"
+                                android:layout_height="match_parent"
+                                android:layout_marginBottom="4dp"
+                                android:layout_marginTop="4dp"
+                                android:background="@color/colorAccent" />
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:id="@+id/sahil_mail"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:paddingBottom="4dp"
+                                android:paddingTop="4dp"
+                                android:src="@drawable/email_icon" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <android.support.v7.widget.CardView
+                android:layout_width="150dp"
+                android:layout_height="299dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="6dp"
+                android:layout_marginTop="8dp"
+                android:layout_weight="1"
+                app:cardCornerRadius="3dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:layout_weight="8"
+                        android:adjustViewBounds="true"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/akash" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="99dp"
+                        android:layout_weight="4"
+                        android:orientation="vertical"
+                        android:paddingBottom="2dp"
+                        android:paddingTop="4dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:text="Web &amp; Comp. Secy"
+                            android:textColor="#000"
+                            android:textSize="16dp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:text="Akash Kumar"
+                            android:textColor="#000"
+                            android:textSize="16dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:text="Room No.: 364"
+                            android:textColor="#000"
+                            android:textSize="16dp" />
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="3dp"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:id="@+id/akash_call"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:paddingBottom="4dp"
+                                android:paddingTop="4dp"
+                                android:src="@drawable/phone_icon" />
+
+                            <View
+                                android:layout_width="1dp"
+                                android:layout_height="match_parent"
+                                android:layout_marginBottom="4dp"
+                                android:layout_marginTop="4dp"
+                                android:background="@color/colorAccent" />
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:id="@+id/akash_mail"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:paddingBottom="4dp"
+                                android:paddingTop="4dp"
+                                android:src="@drawable/email_icon" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="150dp"
+                android:layout_height="299dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="6dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_weight="1"
+                app:cardCornerRadius="3dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:layout_weight="8"
+                        android:adjustViewBounds="true"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/ojas" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="99dp"
+                        android:layout_weight="4"
+                        android:orientation="vertical"
+                        android:paddingBottom="2dp"
+                        android:paddingTop="4dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:text="Web &amp; Comp. Secy"
+                            android:textColor="#000"
+                            android:textSize="16dp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:text="Ojas Suhas Khewale"
+                            android:textColor="#000"
+                            android:textSize="16dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:text="Room No.: 135"
+                            android:textColor="#000"
+                            android:textSize="16dp" />
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="3dp"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:id="@+id/ojas_call"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:paddingBottom="4dp"
+                                android:paddingTop="4dp"
+                                android:src="@drawable/phone_icon" />
+
+                            <View
+                                android:layout_width="1dp"
+                                android:layout_height="match_parent"
+                                android:layout_marginBottom="4dp"
+                                android:layout_marginTop="4dp"
+                                android:background="@color/colorAccent" />
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:id="@+id/ojas_mail"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:paddingBottom="4dp"
+                                android:paddingTop="4dp"
+                                android:src="@drawable/email_icon" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+        </LinearLayout>
+
+
+    </LinearLayout>
+</ScrollView>
+<!--<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+    <!--xmlns:app="http://schemas.android.com/apk/res-auto"-->
+    <!--xmlns:tools="http://schemas.android.com/tools"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--tools:context="com.hostel9.android.hostel9app.ComputerFragment">-->
+
+   <!---->
+    <!--<RelativeLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:background="#E3F2FD">-->
+
+        <!--<ImageView-->
+            <!--android:elevation="8dp"-->
+            <!--android:id="@+id/imageView5"-->
+            <!--android:layout_width="100sp"-->
+            <!--android:layout_height="100sp"-->
+            <!--android:layout_alignParentTop="true"-->
+            <!--android:layout_centerHorizontal="true"-->
+            <!--android:layout_marginTop="19dp"-->
+            <!--android:src="@drawable/sahil" />-->
+
+        <!--<TextView-->
+            <!--android:background="@android:color/white"-->
+            <!--android:elevation="8dp"-->
+            <!--android:id="@+id/textView5"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_below="@+id/imageView5"-->
+            <!--android:layout_centerHorizontal="true"-->
+            <!--android:text="System Administrator\nSahil Soni\nRoom No. 349\n+91 8879780013\nsahilsoni.iit@gmail.com" />-->
+
+        <!--<ImageView-->
+            <!--android:elevation="8dp"-->
+            <!--android:id="@+id/imageView6"-->
+            <!--android:layout_width="100sp"-->
+            <!--android:layout_height="100sp"-->
+            <!--android:layout_alignLeft="@+id/textView6"-->
+            <!--android:layout_alignStart="@+id/textView6"-->
+            <!--android:layout_below="@+id/textView5"-->
+            <!--android:layout_marginTop="39dp"-->
+            <!--android:src="@drawable/ojas" />-->
+
+        <!--<ImageView-->
+            <!--android:elevation="8dp"-->
+            <!--android:id="@+id/imageView7"-->
+            <!--android:layout_width="100sp"-->
+            <!--android:layout_height="100sp"-->
+            <!--android:layout_above="@+id/textView6"-->
+            <!--android:layout_marginLeft="12dp"-->
+            <!--android:layout_marginStart="12dp"-->
+            <!--android:layout_toEndOf="@+id/imageView5"-->
+            <!--android:layout_toRightOf="@+id/imageView5"-->
+            <!--android:src="@drawable/akash" />-->
+
+        <!--<TextView-->
+            <!--android:background="@android:color/white"-->
+            <!--android:elevation="8dp"-->
+            <!--android:id="@+id/textView6"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_below="@+id/imageView6"-->
+            <!--android:layout_marginTop="12dp"-->
+            <!--android:layout_toLeftOf="@+id/imageView5"-->
+            <!--android:layout_toStartOf="@+id/imageView5"-->
+            <!--android:text="Ojas Suhas Khewale\nRoom No. 135\n+91 7410551100\noojasgo@gmail.com" />-->
+
+        <!--<TextView-->
+            <!--android:background="@android:color/white"-->
+            <!--android:elevation="8dp"-->
+            <!--android:id="@+id/textView7"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_alignBaseline="@+id/textView6"-->
+            <!--android:layout_alignBottom="@+id/textView6"-->
+            <!--android:layout_alignParentEnd="true"-->
+            <!--android:layout_alignParentRight="true"-->
+            <!--android:text="Akash Kumar\nRoom No. 364\n+91 8291474820\nakash.minato@gmail.com" />-->
+
+        <!--<TextView-->
+            <!--android:elevation="8dp"-->
+            <!--android:id="@+id/textView40"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_below="@+id/textView5"-->
+            <!--android:layout_centerHorizontal="true"-->
+            <!--android:layout_marginTop="14dp"-->
+            <!--android:text="Web and computer Secretary"-->
+            <!--android:textSize="18sp"-->
+            <!--android:textStyle="bold" />-->
+    <!--</RelativeLayout>-->
+
+
+
+<!--</FrameLayout>-->

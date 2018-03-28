@@ -1,0 +1,1410 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.hostel9.android.hostel9app.CulturalFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"/>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="299dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="6dp"
+                android:layout_marginTop="8dp"
+                android:layout_weight="2"
+                app:cardCornerRadius="3dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:layout_weight="8"
+                        android:adjustViewBounds="true"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/shyam" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="99dp"
+                        android:layout_weight="4"
+                        android:orientation="vertical"
+                        android:paddingBottom="2dp"
+                        android:paddingTop="4dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:text="Cultural Councillor"
+                            android:textColor="#000"
+                            android:textSize="16dp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:text="Shyam Patel"
+                            android:textColor="#000"
+                            android:textSize="16dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:text="Room No.: 276"
+                            android:textColor="#000"
+                            android:textSize="16dp" />
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="3dp"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:id="@+id/shyam_call"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:paddingBottom="4dp"
+                                android:paddingTop="4dp"
+                                android:src="@drawable/phone_icon" />
+
+                            <View
+                                android:layout_width="1dp"
+                                android:layout_height="match_parent"
+                                android:layout_marginBottom="4dp"
+                                android:layout_marginTop="4dp"
+                                android:background="@color/colorAccent" />
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:id="@+id/shyam_mail"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:paddingBottom="4dp"
+                                android:paddingTop="4dp"
+                                android:src="@drawable/email_icon" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <android.support.v7.widget.CardView
+                android:layout_width="150dp"
+                android:layout_height="299dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="6dp"
+                android:layout_marginTop="8dp"
+                android:layout_weight="1"
+                app:cardCornerRadius="3dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:layout_weight="8"
+                        android:adjustViewBounds="true"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/ram" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="99dp"
+                        android:layout_weight="4"
+                        android:orientation="vertical"
+                        android:paddingBottom="2dp"
+                        android:paddingTop="4dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:text="Social Secretary"
+                            android:textColor="#000"
+                            android:textSize="16dp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:text="Ram Phal Suthar"
+                            android:textColor="#000"
+                            android:textSize="16dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:text="Room No.: 104"
+                            android:textColor="#000"
+                            android:textSize="16dp" />
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="3dp"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:id="@+id/ram_call"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:paddingBottom="4dp"
+                                android:paddingTop="4dp"
+                                android:src="@drawable/phone_icon" />
+
+                            <View
+                                android:layout_width="1dp"
+                                android:layout_height="match_parent"
+                                android:layout_marginBottom="4dp"
+                                android:layout_marginTop="4dp"
+                                android:background="@color/colorAccent" />
+
+                            <ImageView
+                                android:id="@+id/ram_mail"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:paddingBottom="4dp"
+                                android:paddingTop="4dp"
+                                android:src="@drawable/email_icon" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="150dp"
+                android:layout_height="299dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="6dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_weight="1"
+                app:cardCornerRadius="3dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:layout_weight="8"
+                        android:adjustViewBounds="true"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/abhishek" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="99dp"
+                        android:layout_weight="4"
+                        android:orientation="vertical"
+                        android:paddingBottom="2dp"
+                        android:paddingTop="4dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:text="Social Secretary"
+                            android:textColor="#000"
+                            android:textSize="16dp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:text="Abhishek Bhagat"
+                            android:textColor="#000"
+                            android:textSize="16dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:text="Room No.: 379"
+                            android:textColor="#000"
+                            android:textSize="16dp" />
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="3dp"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:id="@+id/abhishek_bhagat_call"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:paddingBottom="4dp"
+                                android:paddingTop="4dp"
+                                android:src="@drawable/phone_icon" />
+
+                            <View
+                                android:layout_width="1dp"
+                                android:layout_height="match_parent"
+                                android:layout_marginBottom="4dp"
+                                android:layout_marginTop="4dp"
+                                android:background="@color/colorAccent" />
+
+                            <ImageView
+                                android:id="@+id/abhishek_bhagat_mail"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:paddingBottom="4dp"
+                                android:paddingTop="4dp"
+                                android:src="@drawable/email_icon" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <android.support.v7.widget.CardView
+                android:layout_width="150dp"
+                android:layout_height="299dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="6dp"
+                android:layout_marginTop="8dp"
+                android:layout_weight="1"
+                app:cardCornerRadius="3dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:layout_weight="8"
+                        android:adjustViewBounds="true"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/prajjwal" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="99dp"
+                        android:layout_weight="4"
+                        android:orientation="vertical"
+                        android:paddingBottom="2dp"
+                        android:paddingTop="4dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:text="Dance Secretary"
+                            android:textColor="#000"
+                            android:textSize="16dp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:text="Prajjwal Choudhary"
+                            android:textColor="#000"
+                            android:textSize="16dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:text="Room No.: 388"
+                            android:textColor="#000"
+                            android:textSize="16dp" />
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="3dp"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:paddingBottom="4dp"
+                                android:paddingTop="4dp"
+                                android:src="@drawable/phone_icon" />
+
+                            <View
+                                android:id="@+id/prajjwal_call"
+                                android:layout_width="1dp"
+                                android:layout_height="match_parent"
+                                android:layout_marginBottom="4dp"
+                                android:layout_marginTop="4dp"
+                                android:background="@color/colorAccent" />
+
+                            <ImageView
+                                android:id="@+id/prajjwal_mail"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:paddingBottom="4dp"
+                                android:paddingTop="4dp"
+                                android:src="@drawable/email_icon" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="150dp"
+                android:layout_height="299dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="6dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_weight="1"
+                app:cardCornerRadius="3dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:layout_weight="8"
+                        android:adjustViewBounds="true"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/harshit" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="99dp"
+                        android:layout_weight="4"
+                        android:orientation="vertical"
+                        android:paddingBottom="2dp"
+                        android:paddingTop="4dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:text="Music Secretary"
+                            android:textColor="#000"
+                            android:textSize="16dp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:text="Harshit Baranwal"
+                            android:textColor="#000"
+                            android:textSize="16dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:text="Room No.: 390"
+                            android:textColor="#000"
+                            android:textSize="16dp" />
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="3dp"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:id="@+id/harshit_call"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:paddingBottom="4dp"
+                                android:paddingTop="4dp"
+                                android:src="@drawable/phone_icon" />
+
+                            <View
+
+                                android:layout_width="1dp"
+                                android:layout_height="match_parent"
+                                android:layout_marginBottom="4dp"
+                                android:layout_marginTop="4dp"
+                                android:background="@color/colorAccent" />
+
+                            <ImageView
+                                android:id="@+id/harshit_mail"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:paddingBottom="4dp"
+                                android:paddingTop="4dp"
+                                android:src="@drawable/email_icon" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <android.support.v7.widget.CardView
+                android:layout_width="150dp"
+                android:layout_height="299dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="6dp"
+                android:layout_marginTop="8dp"
+                android:layout_weight="1"
+                app:cardCornerRadius="3dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:layout_weight="8"
+                        android:adjustViewBounds="true"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/prem" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="99dp"
+                        android:layout_weight="4"
+                        android:orientation="vertical"
+                        android:paddingBottom="2dp"
+                        android:paddingTop="4dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:text="Photography &amp; Fine Arts Secy."
+                            android:scrollbarThumbHorizontal="@null"
+                            android:textColor="#000"
+                            android:textSize="16dp"
+                            android:textStyle="bold"
+                            android:maxLines="1"
+                            android:scrollbars="horizontal"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:text="Prem Agrawal"
+                            android:textColor="#000"
+                            android:textSize="16dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:text="Room No.: 144"
+                            android:textColor="#000"
+                            android:textSize="16dp" />
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="3dp"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:id="@+id/prem_call"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:paddingBottom="4dp"
+                                android:paddingTop="4dp"
+                                android:src="@drawable/phone_icon" />
+
+                            <View
+                                android:layout_width="1dp"
+                                android:layout_height="match_parent"
+                                android:layout_marginBottom="4dp"
+                                android:layout_marginTop="4dp"
+                                android:background="@color/colorAccent" />
+
+                            <ImageView
+                                android:id="@+id/prem_mail"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:paddingBottom="4dp"
+                                android:paddingTop="4dp"
+                                android:src="@drawable/email_icon" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="150dp"
+                android:layout_height="299dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="6dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_weight="1"
+                app:cardCornerRadius="3dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:layout_weight="8"
+                        android:adjustViewBounds="true"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/nihal" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="99dp"
+                        android:layout_weight="4"
+                        android:orientation="vertical"
+                        android:paddingBottom="2dp"
+                        android:paddingTop="4dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:text="Film &amp; Media Secretary"
+                            android:scrollbars="horizontal"
+                            android:scrollbarThumbHorizontal="@null"
+                            android:textColor="#000"
+                            android:textSize="16dp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:text="Nihal Ramteke"
+                            android:textColor="#000"
+                            android:textSize="16dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:text="Room No.: 394"
+                            android:textColor="#000"
+                            android:textSize="16dp" />
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="3dp"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:id="@+id/nihal_call"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:paddingBottom="4dp"
+                                android:paddingTop="4dp"
+                                android:src="@drawable/phone_icon" />
+
+                            <View
+                                android:layout_width="1dp"
+                                android:layout_height="match_parent"
+                                android:layout_marginBottom="4dp"
+                                android:layout_marginTop="4dp"
+                                android:background="@color/colorAccent" />
+
+                            <ImageView
+                                android:id="@+id/nihal_mail"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:paddingBottom="4dp"
+                                android:paddingTop="4dp"
+                                android:src="@drawable/email_icon" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <android.support.v7.widget.CardView
+                android:layout_width="150dp"
+                android:layout_height="299dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="6dp"
+                android:layout_marginTop="8dp"
+                android:layout_weight="1"
+                app:cardCornerRadius="3dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:layout_weight="8"
+                        android:adjustViewBounds="true"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/aryan" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="99dp"
+                        android:layout_weight="4"
+                        android:orientation="vertical"
+                        android:paddingBottom="2dp"
+                        android:paddingTop="4dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:text="Lit Secretary"
+                            android:textColor="#000"
+                            android:textSize="16dp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:text="Aryan Panhekar"
+                            android:textColor="#000"
+                            android:textSize="16dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:text="Room No.: 391"
+                            android:textColor="#000"
+                            android:textSize="16dp" />
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="3dp"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:id="@+id/aryan_call"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:paddingBottom="4dp"
+                                android:paddingTop="4dp"
+                                android:src="@drawable/phone_icon" />
+
+                            <View
+                                android:layout_width="1dp"
+                                android:layout_height="match_parent"
+                                android:layout_marginBottom="4dp"
+                                android:layout_marginTop="4dp"
+                                android:background="@color/colorAccent" />
+
+                            <ImageView
+                                android:id="@+id/aryan_mail"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:paddingBottom="4dp"
+                                android:paddingTop="4dp"
+                                android:src="@drawable/email_icon" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="150dp"
+                android:layout_height="299dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="6dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_weight="1"
+                app:cardCornerRadius="3dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:layout_weight="8"
+                        android:adjustViewBounds="true"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/soham" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="99dp"
+                        android:layout_weight="4"
+                        android:orientation="vertical"
+                        android:paddingBottom="2dp"
+                        android:paddingTop="4dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:text="Lit Secretary"
+                            android:textColor="#000"
+                            android:textSize="16dp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:text="Soham Dibyachintan"
+                            android:textColor="#000"
+                            android:textSize="16dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:text="Room No.: 369"
+                            android:textColor="#000"
+                            android:textSize="16dp" />
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="3dp"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:id="@+id/soham_call"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:paddingBottom="4dp"
+                                android:paddingTop="4dp"
+                                android:src="@drawable/phone_icon" />
+
+                            <View
+                                android:layout_width="1dp"
+                                android:layout_height="match_parent"
+                                android:layout_marginBottom="4dp"
+                                android:layout_marginTop="4dp"
+                                android:background="@color/colorAccent" />
+
+                            <ImageView
+                                android:id="@+id/soham_mail"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:paddingBottom="4dp"
+                                android:paddingTop="4dp"
+                                android:src="@drawable/email_icon" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <android.support.v7.widget.CardView
+                android:layout_width="150dp"
+                android:layout_height="299dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="6dp"
+                android:layout_marginTop="8dp"
+                android:layout_weight="1"
+                app:cardCornerRadius="3dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:layout_weight="8"
+                        android:adjustViewBounds="true"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/param" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="99dp"
+                        android:layout_weight="4"
+                        android:orientation="vertical"
+                        android:paddingBottom="2dp"
+                        android:paddingTop="4dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:text="Dramatics Secretary"
+                            android:textColor="#000"
+                            android:textSize="16dp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:text="Param Shah"
+                            android:textColor="#000"
+                            android:textSize="16dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:text="Room No.: 392"
+                            android:textColor="#000"
+                            android:textSize="16dp" />
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="3dp"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:id="@+id/param_call"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:paddingBottom="4dp"
+                                android:paddingTop="4dp"
+                                android:src="@drawable/phone_icon" />
+
+                            <View
+                                android:layout_width="1dp"
+                                android:layout_height="match_parent"
+                                android:layout_marginBottom="4dp"
+                                android:layout_marginTop="4dp"
+                                android:background="@color/colorAccent" />
+
+                            <ImageView
+                                android:id="@+id/param_mail"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:paddingBottom="4dp"
+                                android:paddingTop="4dp"
+                                android:src="@drawable/email_icon" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="150dp"
+                android:layout_height="299dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="6dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_weight="1"
+                app:cardCornerRadius="3dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:layout_weight="8"
+                        android:adjustViewBounds="true"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/mohanish" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="99dp"
+                        android:layout_weight="4"
+                        android:orientation="vertical"
+                        android:paddingBottom="2dp"
+                        android:paddingTop="4dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:text="Design Secretary"
+                            android:textColor="#000"
+                            android:textSize="16dp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:text="Mohanish Verma"
+                            android:textColor="#000"
+                            android:textSize="16dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:text="Room No.: 342"
+                            android:textColor="#000"
+                            android:textSize="16dp" />
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="3dp"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:id="@+id/mohanish_call"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:paddingBottom="4dp"
+                                android:paddingTop="4dp"
+                                android:src="@drawable/phone_icon" />
+
+                            <View
+                                android:layout_width="1dp"
+                                android:layout_height="match_parent"
+                                android:layout_marginBottom="4dp"
+                                android:layout_marginTop="4dp"
+                                android:background="@color/colorAccent" />
+
+                            <ImageView
+                                android:id="@+id/mohanish_mail"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:paddingBottom="4dp"
+                                android:paddingTop="4dp"
+                                android:src="@drawable/email_icon" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>
+
+        <!--<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+    <!--xmlns:app="http://schemas.android.com/apk/res-auto"-->
+    <!--xmlns:tools="http://schemas.android.com/tools"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--tools:context="com.hostel9.android.hostel9app.CulturalFragment">-->
+
+
+
+         <!--<ScrollView-->
+             <!--android:layout_width="match_parent"-->
+             <!--android:layout_height="match_parent">-->
+
+
+    <!--<RelativeLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:background="#E3F2FD"-->
+        <!--android:layout_height="wrap_content">-->
+
+        <!--<ImageView-->
+            <!--android:id="@+id/imageViewprem"-->
+            <!--android:layout_width="100dp"-->
+            <!--android:layout_height="100dp"-->
+            <!--android:layout_alignLeft="@+id/imageView11"-->
+            <!--android:layout_alignStart="@+id/imageView11"-->
+            <!--android:layout_below="@+id/textView11"-->
+            <!--android:layout_marginTop="11dp"-->
+            <!--android:src="@drawable/prem" />-->
+
+        <!--<ImageView-->
+            <!--android:id="@+id/imageView8"-->
+            <!--android:layout_width="100dp"-->
+            <!--android:layout_height="100dp"-->
+            <!--android:layout_alignParentTop="true"-->
+            <!--android:layout_centerHorizontal="true"-->
+            <!--android:layout_marginTop="15dp"-->
+            <!--android:src="@drawable/shyam" />-->
+
+        <!--<TextView-->
+            <!--android:background="@android:color/white"-->
+            <!--android:elevation="8dp"-->
+            <!--android:textIsSelectable="true"-->
+            <!--android:id="@+id/textView8"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_below="@+id/imageView8"-->
+            <!--android:layout_centerHorizontal="true"-->
+            <!--android:text="Cultural Councillor\nShyam Patel\nRoom No. 276\n+919769217121\nshyambharatpatel@gmail.com"-->
+            <!--android:textAlignment="center" />-->
+
+        <!--<ImageView-->
+            <!--android:id="@+id/imageView9"-->
+            <!--android:layout_width="100dp"-->
+            <!--android:layout_height="100dp"-->
+            <!--android:layout_below="@+id/textView8"-->
+            <!--android:layout_toEndOf="@+id/imageView8"-->
+            <!--android:layout_toRightOf="@+id/imageView8"-->
+            <!--android:src="@drawable/abhishek" />-->
+
+        <!--<ImageView-->
+            <!--android:id="@+id/imageView10"-->
+            <!--android:layout_width="100dp"-->
+            <!--android:layout_height="100dp"-->
+            <!--android:layout_below="@+id/textView8"-->
+            <!--android:layout_toLeftOf="@+id/imageView8"-->
+            <!--android:layout_toStartOf="@+id/imageView8"-->
+            <!--android:src="@drawable/ram" />-->
+
+        <!--<TextView-->
+            <!--android:background="@android:color/white"-->
+            <!--android:elevation="8dp"-->
+            <!--android:textIsSelectable="true"-->
+            <!--android:id="@+id/textView9"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_alignParentLeft="true"-->
+            <!--android:layout_alignParentStart="true"-->
+            <!--android:layout_below="@+id/imageView10"-->
+            <!--android:text="Social Secretary\nRam Phal Suthar\nRoom No. 104\n+91 9987991947\nramphalsuthar@gmail.com"-->
+            <!--android:textAlignment="center" />-->
+
+        <!--<TextView-->
+            <!--android:background="@android:color/white"-->
+            <!--android:elevation="8dp"-->
+            <!--android:textIsSelectable="true"-->
+            <!--android:id="@+id/textView10"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_alignLeft="@+id/textView12"-->
+            <!--android:layout_alignStart="@+id/textView12"-->
+            <!--android:layout_below="@+id/imageView9"-->
+            <!--android:text="Social Secretary\nAbhishek bhagat\nRoom No. 379\n+91 7067648262\nabhishekbhagat4159@gmail.com"-->
+            <!--android:textAlignment="center" />-->
+
+        <!--<ImageView-->
+            <!--android:id="@+id/imageView11"-->
+            <!--android:layout_width="100dp"-->
+            <!--android:layout_height="100dp"-->
+            <!--android:layout_alignLeft="@+id/imageView10"-->
+            <!--android:layout_alignStart="@+id/imageView10"-->
+            <!--android:layout_below="@+id/textView9"-->
+            <!--android:layout_marginTop="8dp"-->
+            <!--android:src="@drawable/prajjwal" />-->
+
+        <!--<ImageView-->
+            <!--android:id="@+id/imageView12"-->
+            <!--android:layout_width="100dp"-->
+            <!--android:layout_height="100dp"-->
+            <!--android:layout_alignLeft="@+id/imageView9"-->
+            <!--android:layout_alignStart="@+id/imageView9"-->
+            <!--android:layout_alignTop="@+id/imageView11"-->
+            <!--android:src="@drawable/harshit" />-->
+
+        <!--<TextView-->
+            <!--android:background="@android:color/white"-->
+            <!--android:elevation="8dp"-->
+            <!--android:textIsSelectable="true"-->
+            <!--android:id="@+id/textView12"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_alignParentEnd="true"-->
+            <!--android:layout_alignParentRight="true"-->
+            <!--android:layout_below="@+id/imageView12"-->
+            <!--android:layout_marginTop="8dp"-->
+            <!--android:text=" Music Secretary\nHarshit Baranwal\nRoom No. 390\n+91 7506376720\nh.baranwal98@gmail.com "-->
+            <!--android:textAlignment="center" />-->
+
+        <!--<TextView-->
+            <!--android:background="@android:color/white"-->
+            <!--android:elevation="8dp"-->
+            <!--android:textIsSelectable="true"-->
+            <!--android:id="@+id/textView11"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_alignEnd="@+id/textView9"-->
+            <!--android:layout_alignRight="@+id/textView9"-->
+            <!--android:layout_below="@+id/imageView11"-->
+            <!--android:text=" Dance Secretary\nPrajjwal Choudhary\nRoom No. 388\n+91 9967806776\nprajjwal.14nov@gmail.com"-->
+            <!--android:textAlignment="center" />-->
+
+        <!--<TextView-->
+            <!--android:background="@android:color/white"-->
+            <!--android:elevation="8dp"-->
+            <!--android:textIsSelectable="true"-->
+            <!--android:id="@+id/textView27"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_alignEnd="@+id/textView9"-->
+            <!--android:layout_alignRight="@+id/textView9"-->
+            <!--android:layout_below="@+id/imageViewprem"-->
+            <!--android:layout_marginEnd="9dp"-->
+            <!--android:layout_marginRight="9dp"-->
+            <!--android:text="Photography and Fine Arts Secretary\nPrem Agrawal\nRoom No. 144\n+91 8291473881\nprem28ag@gmail.com "-->
+            <!--android:textAlignment="center" />-->
+
+        <!--<ImageView-->
+            <!--android:id="@+id/imageView26"-->
+            <!--android:layout_width="100dp"-->
+            <!--android:layout_height="100dp"-->
+            <!--android:layout_alignLeft="@+id/imageViewprem"-->
+            <!--android:layout_alignStart="@+id/imageViewprem"-->
+            <!--android:layout_below="@+id/textView27"-->
+            <!--android:layout_marginLeft="8dp"-->
+            <!--android:layout_marginStart="8dp"-->
+            <!--android:layout_marginTop="21dp"-->
+            <!--android:src="@drawable/aryan" />-->
+
+        <!--<TextView-->
+            <!--android:background="@android:color/white"-->
+            <!--android:elevation="8dp"-->
+            <!--android:textIsSelectable="true"-->
+            <!--android:id="@+id/textView28"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_alignEnd="@+id/textView27"-->
+            <!--android:layout_alignRight="@+id/textView27"-->
+            <!--android:layout_below="@+id/imageView26"-->
+            <!--android:textAlignment="center"-->
+            <!--android:text="Lit Secretary\nAryan Panhekar\nRoom No. 391\n+91 9987991854\naryan.panhekar@gmail.com " />-->
+
+        <!--<ImageView-->
+            <!--android:id="@+id/imageView27"-->
+            <!--android:layout_width="100dp"-->
+            <!--android:layout_height="100dp"-->
+            <!--android:layout_alignLeft="@+id/imageViewprem"-->
+            <!--android:layout_alignStart="@+id/imageViewprem"-->
+            <!--android:layout_below="@+id/textView28"-->
+            <!--android:layout_marginTop="10dp"-->
+            <!--android:src="@drawable/param" />-->
+
+        <!--<TextView-->
+            <!--android:background="@android:color/white"-->
+            <!--android:elevation="8dp"-->
+            <!--android:textIsSelectable="true"-->
+            <!--android:id="@+id/textView29"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_alignParentLeft="true"-->
+            <!--android:layout_alignParentStart="true"-->
+            <!--android:layout_alignTop="@+id/imageView27"-->
+            <!--android:layout_marginTop="89dp"-->
+            <!--android:text="Dramatics Secretary\nParam Shah\nRoom No. 392\n+91 9594764738\nparam.shah18@gmail.com "-->
+            <!--android:textAlignment="center" />-->
+
+        <!--<ImageView-->
+            <!--android:id="@+id/imageView28"-->
+            <!--android:layout_width="100dp"-->
+            <!--android:layout_height="100dp"-->
+            <!--android:layout_alignLeft="@+id/imageView12"-->
+            <!--android:layout_alignStart="@+id/imageView12"-->
+            <!--android:layout_alignTop="@+id/imageViewprem"-->
+            <!--android:layout_marginTop="7dp"-->
+            <!--android:src="@drawable/nihal" />-->
+
+        <!--<TextView-->
+            <!--android:background="@android:color/white"-->
+            <!--android:elevation="8dp"-->
+            <!--android:textIsSelectable="true"-->
+            <!--android:id="@+id/textView41"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_alignLeft="@+id/textView12"-->
+            <!--android:layout_alignStart="@+id/textView12"-->
+            <!--android:layout_below="@+id/imageView28"-->
+            <!--android:text=" Film and Media Secretary\nNihal Ramteke\nRoom No.394\n+91 9405887565\nramteke.nihal@gmail.com "-->
+            <!--android:textAlignment="center" />-->
+
+        <!--<ImageView-->
+            <!--android:id="@+id/imageView29"-->
+            <!--android:layout_width="100dp"-->
+            <!--android:layout_height="100dp"-->
+            <!--android:layout_alignLeft="@+id/imageView28"-->
+            <!--android:layout_alignStart="@+id/imageView28"-->
+            <!--android:layout_alignTop="@+id/imageView26"-->
+            <!--android:layout_marginTop="11dp"-->
+            <!--android:src="@drawable/soham" />-->
+
+        <!--<TextView-->
+            <!--android:background="@android:color/white"-->
+            <!--android:elevation="8dp"-->
+            <!--android:textIsSelectable="true"-->
+            <!--android:id="@+id/textView42"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_alignLeft="@+id/textView41"-->
+            <!--android:layout_alignStart="@+id/textView41"-->
+            <!--android:layout_below="@+id/imageView29"-->
+            <!--android:layout_marginLeft="24dp"-->
+            <!--android:textAlignment="center"-->
+            <!--android:layout_marginStart="24dp"-->
+            <!--android:text="Lit Secretary\nSoham Dibyachintan\nRoom No. 369\n+91 8454952533\nsdibyachintan1@gmail.com" />-->
+
+        <!--<ImageView-->
+            <!--android:id="@+id/imageView30"-->
+            <!--android:layout_width="100dp"-->
+            <!--android:layout_height="100dp"-->
+            <!--android:layout_alignLeft="@+id/imageView29"-->
+            <!--android:layout_alignStart="@+id/imageView29"-->
+            <!--android:layout_below="@+id/textView42"-->
+            <!--android:layout_marginTop="7dp"-->
+            <!--android:src="@drawable/mohanish" />-->
+
+        <!--<TextView-->
+            <!--android:background="@android:color/white"-->
+            <!--android:elevation="8dp"-->
+            <!--android:textIsSelectable="true"-->
+            <!--android:id="@+id/textView43"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_below="@+id/imageView30"-->
+            <!--android:layout_marginTop="14dp"-->
+            <!--android:layout_toEndOf="@+id/textView29"-->
+            <!--android:layout_toRightOf="@+id/textView29"-->
+            <!--android:text="Design Secretary\nMohanish Verma\nRoom No.362\n+918291474994\nMohanishverma19@gmail.com"-->
+            <!--android:textAlignment="center" />-->
+
+
+    <!--</RelativeLayout>-->
+         <!--</ScrollView>-->
+<!--</FrameLayout>-->
