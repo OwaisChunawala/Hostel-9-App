@@ -100,7 +100,7 @@ public class EventsFragment extends Fragment {
 
         RecyclerView recyclerView = (RecyclerView) view.findViewById(R.id.RecyclerViewEvents);
         recyclerView.setLayoutManager(new LinearLayoutManager(getActivity()));
-        recyclerView.setAdapter(new EventAdapter(events, R.layout.list_events, getActivity()));
+        recyclerView.setAdapter(new EventAdapter(events, R.layout.list_events, recyclerView ,getActivity()));
 
         return view;
 

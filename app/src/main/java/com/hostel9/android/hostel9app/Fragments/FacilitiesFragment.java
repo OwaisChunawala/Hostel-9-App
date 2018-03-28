@@ -5,6 +5,7 @@ import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
+import android.support.v7.widget.CardView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -15,7 +16,7 @@ import com.hostel9.android.hostel9app.R;
 
 public class FacilitiesFragment extends Fragment {
 
-   public static Button b1,b2;
+   public static CardView b1,b2,b3;
 
     public FacilitiesFragment() {
         // Required empty public constructor
@@ -35,9 +36,12 @@ public class FacilitiesFragment extends Fragment {
 
         b1 = v.findViewById(R.id.lib_button);
         b2 = v.findViewById(R.id.sports_button);
+        b3 = v.findViewById(R.id.tech_button);
 
         b1.setVisibility(View.VISIBLE);
         b2.setVisibility(View.VISIBLE);
+        b3.setVisibility(View.VISIBLE);
+
 
         b1.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -60,6 +64,17 @@ public class FacilitiesFragment extends Fragment {
 
                 startActivity(browserIntent);
 
+            }
+        });
+
+        b3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent browserIntent = new Intent(
+                        Intent.ACTION_VIEW,
+                        Uri.parse("https://docs.google.com/spreadsheets/d/1keCSEzAUxyV-7gI7g5J2YoYTvcgB5Utox4RjX-z6KEE/edit#gid=0"));
+
+                startActivity(browserIntent);
             }
         });
 
