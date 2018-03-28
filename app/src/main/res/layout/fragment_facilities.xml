@@ -4,54 +4,78 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.hostel9.android.hostel9app.Fragments.FacilitiesFragment">
-
-
-
-<RelativeLayout
-    android:background="#212121"
+<ScrollView
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-   >
+    android:layout_height="match_parent">
 
 
-    <Button
-        android:elevation="8dp"
-        android:id="@+id/lib_button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_above="@+id/imageView38"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="13dp"
-        android:text="library list" />
 
-    <Button
-        android:elevation="8dp"
-        android:id="@+id/sports_button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/imageView38"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="12dp"
-        android:text="Sports Equipments available" />
 
-    <ImageView
-        android:id="@+id/imageView37"
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="100dp"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginTop="35dp"
-        android:src="@drawable/lib_books" />
+        android:layout_height="wrap_content"
+        android:background="#212121">
 
-    <ImageView
-        android:id="@+id/imageView38"
-        android:layout_width="match_parent"
-        android:layout_height="100dp"
-        android:layout_centerHorizontal="true"
-        android:layout_centerVertical="true"
-        android:src="@drawable/sports" />
-</RelativeLayout>
 
+        <Button
+            android:id="@+id/lib_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imageView37"
+            android:layout_centerHorizontal="true"
+            android:elevation="8dp"
+            android:text="library list" />
+
+        <Button
+            android:id="@+id/sports_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imageView38"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="12dp"
+            android:elevation="8dp"
+            android:text="Sports Equipments available" />
+
+        <ImageView
+            android:id="@+id/imageView37"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="35dp"
+            android:src="@drawable/lib_books" />
+
+        <ImageView
+            android:id="@+id/imageView38"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/imageView37"
+            android:layout_marginTop="61dp"
+            android:src="@drawable/sports" />
+
+        <ImageView
+            android:id="@+id/imageView39"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/sports_button"
+            android:layout_marginTop="15dp"
+            android:src="@drawable/techroom" />
+
+        <Button
+            android:id="@+id/tech_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imageView39"
+            android:layout_centerHorizontal="true"
+            android:text="Techroom Inventory" />
+
+
+    </RelativeLayout>
+</ScrollView>
 </FrameLayout>
 
