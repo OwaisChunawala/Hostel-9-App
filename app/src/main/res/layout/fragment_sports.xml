@@ -83,6 +83,7 @@
                             android:orientation="horizontal">
 
                             <ImageView
+                                android:id="@+id/manthan_call"
                                 android:layout_width="match_parent"
                                 android:layout_height="match_parent"
                                 android:layout_weight="1"
@@ -99,6 +100,7 @@
                                 android:background="@color/colorAccent" />
 
                             <ImageView
+                                android:id="@+id/manthan_mail"
                                 android:layout_width="match_parent"
                                 android:layout_height="match_parent"
                                 android:layout_weight="1"
@@ -190,6 +192,7 @@
                             android:orientation="horizontal">
 
                             <ImageView
+                                android:id="@+id/pankaj_call"
                                 android:layout_width="match_parent"
                                 android:layout_height="match_parent"
                                 android:layout_weight="1"
@@ -206,6 +209,7 @@
                                 android:background="@color/colorAccent" />
 
                             <ImageView
+                                android:id="@+id/pankaj_mail"
                                 android:layout_width="match_parent"
                                 android:layout_height="match_parent"
                                 android:layout_weight="1"
@@ -285,6 +289,7 @@
                             android:orientation="horizontal">
 
                             <ImageView
+                                android:id="@+id/shrikant_call"
                                 android:layout_width="match_parent"
                                 android:layout_height="match_parent"
                                 android:layout_weight="1"
@@ -301,6 +306,7 @@
                                 android:background="@color/colorAccent" />
 
                             <ImageView
+                                android:id="@+id/shrikant_mail"
                                 android:layout_width="match_parent"
                                 android:layout_height="match_parent"
                                 android:layout_weight="1"
@@ -386,6 +392,7 @@
                             android:orientation="horizontal">
 
                             <ImageView
+                                android:id="@+id/naveen_call"
                                 android:layout_width="match_parent"
                                 android:layout_height="match_parent"
                                 android:layout_weight="1"
@@ -402,6 +409,7 @@
                                 android:background="@color/colorAccent" />
 
                             <ImageView
+                                android:id="@+id/naveen_mail"
                                 android:layout_width="match_parent"
                                 android:layout_height="match_parent"
                                 android:layout_weight="1"
@@ -481,6 +489,7 @@
                             android:orientation="horizontal">
 
                             <ImageView
+                                android:id="@+id/abhishek_call"
                                 android:layout_width="match_parent"
                                 android:layout_height="match_parent"
                                 android:layout_weight="1"
@@ -497,6 +506,7 @@
                                 android:background="@color/colorAccent" />
 
                             <ImageView
+                                android:id="@+id/abhishek_mail"
                                 android:layout_width="match_parent"
                                 android:layout_height="match_parent"
                                 android:layout_weight="1"
@@ -586,7 +596,9 @@
                             android:layout_marginTop="3dp"
                             android:orientation="horizontal">
 
+
                             <ImageView
+                                android:id="@+id/nitin_call"
                                 android:layout_width="match_parent"
                                 android:layout_height="match_parent"
                                 android:layout_weight="1"
@@ -603,6 +615,7 @@
                                 android:background="@color/colorAccent" />
 
                             <ImageView
+                                android:id="@+id/nitin_mail"
                                 android:layout_width="match_parent"
                                 android:layout_height="match_parent"
                                 android:layout_weight="1"

@@ -46,8 +46,8 @@ public class ComputerFragment extends Fragment implements View.OnClickListener {
         akashCall = (ImageView) view.findViewById(R.id.akash_call);
         akashMail = (ImageView) view.findViewById(R.id.akash_mail);
 
-        ojasCall = (ImageView) view.findViewById(R.id.akash_call);
-        ojasMail = (ImageView) view.findViewById(R.id.akash_mail);
+        ojasCall = (ImageView) view.findViewById(R.id.ojas_call);
+        ojasMail = (ImageView) view.findViewById(R.id.ojas_mail);
 
 
         //Set onClickListeners
