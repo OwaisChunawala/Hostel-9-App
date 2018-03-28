@@ -5,15 +5,15 @@
         <objectAnimator
             android:propertyName="translationZ"
             android:valueTo="4dp"
-            android:duration="@android:integer/config_shortAnimTime"
-            android:interpolator="@android:interpolator/fast_out_slow_in" />
+            android:duration="300"
+            android:interpolator="@android:anim/accelerate_interpolator" />
     </item>
 
     <item>
         <objectAnimator
             android:propertyName="translationZ"
-            android:valueTo="0dp"
-            android:duration="@android:integer/config_shortAnimTime"
-            android:interpolator="@android:interpolator/fast_out_slow_in" />
+            android:valueTo="4dp"
+            android:duration="300"
+            android:interpolator="@android:anim/accelerate_interpolator" />
     </item>
 </selector>
