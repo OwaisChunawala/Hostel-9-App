@@ -48,46 +48,6 @@ public class EventsFragment extends Fragment {
 
         Log.d("Event fragment", "onCreate reached" );
 
-//        if (events.size()==0)
-//        {
-//
-//            ApiInterface apiService =
-//                    ApiClient.getClient().create(ApiInterface.class);
-//
-//            Log.d("Event fragment", "downloading the data1" );
-//
-//            Call<List<Event>> call = apiService.getEvents(/*API_KEY*/);
-//            call.enqueue(new Callback<List<Event>>() {
-//                @Override
-//                public void onResponse(Call<List<Event>>call, Response<List<Event>> response) {
-//                    //  Collection<Event> events =response.body().getResults();
-//                    List<Event> api_events = response.body();
-//
-//                    Log.d("Event fragment", "downloading the data2" );
-//
-//
-//                    int updated=0;
-//                    for (int i=0; i<api_events.size(); i++)
-//                    {
-//                        db.updateEventifFound(api_events.get(i));
-//                        updated++;
-//                    }
-////                    recyclerView.setAdapter(new EventAdapter(events, R.layout.list_events, getApplicationContext()));
-//                    events = api_events;
-//                    Toast.makeText(getActivity(), "loaded from api", Toast.LENGTH_LONG).show();
-//
-//
-//                    Log.d("Event fragment", "Number of events received: " + events.size());
-//                }
-//
-//
-//                @Override
-//                public void onFailure(Call<List<Event>>call, Throwable t) {
-//                    // Log error here since request failed
-//                    Log.e(TAG, t.toString());
-//                }
-//            });
-//        }
 
     }
 
