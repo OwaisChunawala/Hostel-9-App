@@ -7,6 +7,7 @@ package com.hostel9.android.hostel9app.adapter;
 
 import android.content.Context;
 import android.content.res.ColorStateList;
+import android.support.transition.ChangeBounds;
 import android.support.transition.TransitionManager;
 import android.support.v7.widget.CardView;
 import android.support.v7.widget.RecyclerView;
@@ -116,8 +117,10 @@ public class EventAdapter extends RecyclerView.Adapter<EventAdapter.EventViewHol
         holder.itemView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                final ChangeBounds transition = new ChangeBounds();
+                transition.setDuration(200L); // Sets a duration of 600 milliseconds
                 mExpandedPosition = isExpanded ? -1:position;
-                TransitionManager.beginDelayedTransition(recyclerView);
+                TransitionManager.beginDelayedTransition(recyclerView, transition);
                 notifyDataSetChanged();
             }
         });
