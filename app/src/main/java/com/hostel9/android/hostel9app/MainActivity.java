@@ -118,7 +118,7 @@ public class MainActivity extends AppCompatActivity {
 //            Intent intent = new Intent(MainActivity.this, MainActivity.class);
 //            startActivity(intent);
 
-            fragmentTransaction.replace(R.id.main_container_wrapper, fragment);
+
 
 
         }
