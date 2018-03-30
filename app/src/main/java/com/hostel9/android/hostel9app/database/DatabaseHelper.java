@@ -10,6 +10,8 @@ import android.util.Log;
 import com.hostel9.android.hostel9app.model.Event;
 import com.hostel9.android.hostel9app.model.Mess;
 import java.util.ArrayList;
+import java.util.Calendar;
+import java.util.Date;
 import java.util.List;
 
 /**
@@ -101,6 +103,8 @@ public class DatabaseHelper extends SQLiteOpenHelper {
 
         db.execSQL("DROP TABLE IF EXISTS " + TABLE_EVENT);
         db.execSQL(CREATE_TABLE_EVENT);
+        Log.d(" EVENT TABLES", "UPDATED");
+
 
         // create new tables
 
@@ -112,6 +116,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
 
         db.execSQL("DROP TABLE IF EXISTS " + TABLE_MESS);
         db.execSQL(CREATE_TABLE_MESS);
+        Log.d(" MESS TABLES", "UPDATED");
 
         // create new tables
 
@@ -317,7 +322,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
  * getting all messs
  * */
 
-    public List<Mess> getAllMesses() {
+    public List<Mess> getAllMess() {
         List<Mess> messs = new ArrayList<Mess>();
         String selectQuery = "SELECT  * FROM " + TABLE_MESS;
 
@@ -346,6 +351,45 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         }
 
         return messs;
+    }
+
+    public List<Mess> getAllMesses() {
+        List<Mess> messs = new ArrayList<Mess>();
+        List<Mess> new_mess = new ArrayList<Mess>();
+
+        messs = getAllMess();
+
+        Calendar cal = Calendar.getInstance();
+        Date currentTime = Calendar.getInstance().getTime();
+        String time = currentTime.toString();
+        cal.setTime(currentTime);
+        int weekofyear = cal.get(Calendar.WEEK_OF_YEAR);
+        int week = (weekofyear)%2 +1;
+
+
+        String array1[] = time.split(" ");
+
+        Log.d(" EVENT TABLES", "time = " + time + "week no " + weekofyear +" Day = " + array1[0] );
+
+        String day1 = array1[0]+week;
+        int location =0;
+        for (int i=0 ; i< messs.size(); i++)
+        {
+            if ((messs.get(i).getDay()).equals(day1))
+            {
+                location = i;
+            }
+        }
+        // looping through all rows and adding to list
+
+        Log.d(" EVENT TABLES", "time = " + time + "week no " + weekofyear +" Day = " + array1[0] + "location = " + location );
+        for (int i =0; i<7; i++)
+        {
+            new_mess.add(messs.get(location++));
+            location%=14;
+        }
+
+        return new_mess;
     }
 
     /*
