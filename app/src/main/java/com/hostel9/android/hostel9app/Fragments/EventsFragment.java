@@ -69,10 +69,12 @@ public class EventsFragment extends Fragment  {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
+
         View view = inflater.inflate(R.layout.fragment_events, container, false);
         mySwipeRefreshLayout = (SwipeRefreshLayout) view.findViewById(R.id.swiperefreshevent);
         recyclerView = (RecyclerView) view.findViewById(R.id.RecyclerViewEvents);
 
+        mainActivity.updateEvents(db);
         Log.d("Event fragment", "onCreateView reached" );
         return view;
     }
@@ -103,6 +105,10 @@ public class EventsFragment extends Fragment  {
 
         Log.d("Event fragment", "LoadData reached" );
         events = db1.getAllEvents();
+        if (events.size()==0)
+        {
+            Toast.makeText(getActivity(), "Swipe down to update the data...", Toast.LENGTH_LONG).show();
+        }
         recyclerView.setLayoutManager(new LinearLayoutManager(getActivity()));
         EventAdapter eventAdapter = new EventAdapter(events,R.layout.list_events, recyclerView, getActivity());
         recyclerView.setAdapter(eventAdapter);

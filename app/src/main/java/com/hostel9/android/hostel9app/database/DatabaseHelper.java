@@ -385,8 +385,11 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         Log.d(" EVENT TABLES", "time = " + time + "week no " + weekofyear +" Day = " + array1[0] + "location = " + location );
         for (int i =0; i<7; i++)
         {
+            // if there is no data in the database yet, messs is empty list. this happens on the first installation of the app.
+            // to avoid crash, return it only after data is downloaded from api, stored in the database, and is of non zero size.
+            if (messs.size()>0){
             new_mess.add(messs.get(location++));
-            location%=14;
+            location%=14;}
         }
 
         return new_mess;
