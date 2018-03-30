@@ -21,7 +21,7 @@ public interface ApiInterface {
     @GET("messapi_day.php")
     Call<List<Mess>> getMess(/*@Query("api_key") String apiKey*/);
 
-    @GET("messapi_week.php")
+    @GET("messapi_total.php")
     Call<List<Mess>> getMessWeek(/*@Query("api_key") String apiKey*/);
 
     @GET("event_api.php")
