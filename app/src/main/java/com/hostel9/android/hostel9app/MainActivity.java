@@ -54,6 +54,8 @@ public class MainActivity extends AppCompatActivity {
 
         db = new DatabaseHelper(this);
 
+        updateMess();
+        updateEvents();
 
 //        Log.d("MAIN ACTIVITY", "MAIN ACTIVITY EVENTS SIZE: " + events.size() );
 
@@ -69,13 +71,12 @@ public class MainActivity extends AppCompatActivity {
         else
             connected = false;
 
-        if (connected){
+//        if (connected){
 
             // if connected, then update the tables from the api
-            updateMess();
-            updateEvents();
 
-        }
+
+//        }
 
 
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
