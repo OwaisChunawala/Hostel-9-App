@@ -35,6 +35,9 @@ public class CulturalFragment extends Fragment implements View.OnClickListener{
     ImageView paramMail;
     ImageView mohanishCall;
     ImageView mohanishMail;
+    ImageView premCall;
+    ImageView premMail;
+
 
 
 
@@ -56,6 +59,10 @@ public class CulturalFragment extends Fragment implements View.OnClickListener{
         //Define the button objects below & link to the views
         shyamCall = (ImageView) view.findViewById(R.id.shyam_call);
         shyamMail = (ImageView) view.findViewById(R.id.shyam_mail);
+
+        premCall = (ImageView) view.findViewById(R.id.prem_call);
+        premMail = (ImageView) view.findViewById(R.id.prem_mail);
+
 
         ramCall = (ImageView) view.findViewById(R.id.ram_call);
         ramMail = (ImageView) view.findViewById(R.id.ram_mail);
@@ -84,9 +91,12 @@ public class CulturalFragment extends Fragment implements View.OnClickListener{
         mohanishCall = (ImageView) view.findViewById(R.id.mohanish_call);
         mohanishMail = (ImageView) view.findViewById(R.id.mohanish_mail);
 
+        paramCall = (ImageView) view.findViewById(R.id.param_call);
+        paramMail = (ImageView) view.findViewById(R.id.param_mail) ;
 
 
         //Set onClickListeners
+        premCall.setOnClickListener(this);
         shyamCall.setOnClickListener(this);
         ramCall.setOnClickListener(this);
         abhishekBhagatCall.setOnClickListener(this);
@@ -96,7 +106,9 @@ public class CulturalFragment extends Fragment implements View.OnClickListener{
         aryanCall.setOnClickListener(this);
         sohamCall.setOnClickListener(this);
         mohanishCall.setOnClickListener(this);
+        paramCall.setOnClickListener(this);
 
+        premMail.setOnClickListener(this);
         shyamMail.setOnClickListener(this);
         ramMail.setOnClickListener(this);
         abhishekBhagatMail.setOnClickListener(this);
@@ -106,6 +118,7 @@ public class CulturalFragment extends Fragment implements View.OnClickListener{
         aryanMail.setOnClickListener(this);
         sohamMail.setOnClickListener(this);
         mohanishMail.setOnClickListener(this);
+        paramMail.setOnClickListener(this);
 
 
         //Write your code above this
@@ -222,6 +235,29 @@ public class CulturalFragment extends Fragment implements View.OnClickListener{
             startActivity(Intent.createChooser(emailIntent, "Send email..."));
         }
 
+        if(v.getId()==R.id.prem_call){
+            Intent intent = new Intent(Intent.ACTION_DIAL, Uri.fromParts("tel", "+91 8291473881", null));
+            startActivity(intent);
+        }
+
+        if(v.getId() == R.id.prem_mail){
+            Intent emailIntent = new Intent(Intent.ACTION_SENDTO, Uri.parse("mailto:" + "prem28ag@gmail.com")
+                    .buildUpon()
+                    .build());
+            startActivity(Intent.createChooser(emailIntent, "Send email..."));
+
+            if(v.getId()==R.id.param_call){
+                Intent intent = new Intent(Intent.ACTION_DIAL, Uri.fromParts("tel", "+91 9594764738", null));
+                startActivity(intent);
+            }
+
+          /*  if(v.getId() == R.id.param_mail){
+                Intent emailIntent = new Intent(Intent.ACTION_SENDTO, Uri.parse("mailto:" + "param.shah18@gmail.com")
+                        .buildUpon()
+                        .build());
+                startActivity(Intent.createChooser(emailIntent, "Send email..."));
+            }*/
+        }
 
     }
 

@@ -72,8 +72,6 @@ public class MainActivity extends AppCompatActivity {
         eventFragment = new EventsFragment();
 
 
-//        Log.d("MAIN ACTIVITY", "MAIN ACTIVITY EVENTS SIZE: " + events.size() );
-
 
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);

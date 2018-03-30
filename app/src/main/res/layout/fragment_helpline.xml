@@ -102,6 +102,7 @@
                 android:orientation="vertical">
 
                 <TextView
+                    android:id="@+id/hospi_call"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="+91-2225722149"
@@ -229,6 +230,7 @@
                 android:textSize="20sp" />
 
             <TextView
+                android:id="@+id/police_call"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -253,6 +255,7 @@
                 android:textSize="20sp" />
 
             <TextView
+                android:id="@+id/fire_call"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
