@@ -53,19 +53,15 @@ public class MessFragment extends Fragment {
         mainActivity = new MainActivity();
 
         Log.d("Mess fragment", "onCreate reached");
-
-
         }
-
-
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for getActivity() fragment
-//
-        Log.d("Mess fragment", "onCreateView reached" );
 
+        // update the data, define the elements, connect with UI
+        mainActivity.updateMess(db);
         View view = inflater.inflate(R.layout.fragment_mess, container, false);
         mySwipeRefreshLayout = (SwipeRefreshLayout) view.findViewById(R.id.swiperefresh);
         recyclerView = (RecyclerView) view.findViewById(R.id.RecyclerView);
@@ -76,6 +72,8 @@ public class MessFragment extends Fragment {
     @Override
     public void onViewCreated(View view, Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
+
+        //this method is called just after onCreateView. loadData method takes the data from database and load in recycler view
         loadData(db);
 
         mySwipeRefreshLayout.setOnRefreshListener(
@@ -83,8 +81,6 @@ public class MessFragment extends Fragment {
                     @Override
                     public void onRefresh() {
                         Log.i(TAG, "onRefresh called from SwipeRefreshLayout");
-
-
                         new LongOperation().execute("");
                         mySwipeRefreshLayout.setRefreshing(false);
                     }
@@ -98,6 +94,14 @@ public class MessFragment extends Fragment {
 
         Log.d("Mess fragment", "loadData  reached" );
         messs = db.getAllMesses();
+        // in the start of app, on the first time, the UI is loaded first, but there is no data in the database to load yet,
+        //  as the downloading from server happens after the UI is set.
+        // so if the size of the data fetched is 0, asked the user to swipe, which reloads the view, and now database is updated,
+        // so no problem. data loads smoothly.
+        if (messs.size()==0)
+        {
+            Toast.makeText(getActivity(), "Swipe down to update the data...", Toast.LENGTH_LONG).show();
+        }
         recyclerView.setLayoutManager(new LinearLayoutManager(getActivity()));
         recyclerView.setAdapter(new MessAdapter(messs, R.layout.list_mess, getActivity()));
         Log.d("Mess fragment", "recycler view mess set up " );
@@ -109,7 +113,7 @@ public class MessFragment extends Fragment {
         @Override
         protected String doInBackground(String... params) {
 
-            mainActivity.updateEvents(db);
+            mainActivity.updateMess(db);
             Log.d(TAG, "Asynctask background done.");
             return "Executed";
         }

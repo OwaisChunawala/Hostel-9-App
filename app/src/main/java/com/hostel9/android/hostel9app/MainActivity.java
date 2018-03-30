@@ -68,21 +68,21 @@ public class MainActivity extends AppCompatActivity {
 
         Log.d("MAIN ACTIVITY", "MAIN ACTIVITY ON CREATE");
 
+        // defining important objects.
         db1 = new DatabaseHelper(this);
         eventFragment = new EventsFragment();
+        fragmentManager = getSupportFragmentManager();
 
+        homeFragment = new HomeFragment();
+        openFragment(homeFragment, "HomeFragment");
 
-
+        // for Navigation Drawer
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(this, drawer, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
         drawer.setDrawerListener(toggle);
         toggle.syncState();
-        fragmentManager = getSupportFragmentManager();
-
-        homeFragment = new HomeFragment();
-        openFragment(homeFragment, "HomeFragment");
 
 //        RecyclerView recyclerView = (RecyclerView) findViewById(R.id.RecyclerViewEvents);
 //        events = db1.getAllEvents();
@@ -116,10 +116,6 @@ public class MainActivity extends AppCompatActivity {
                     openFragment(helplineFragment, "Helpline fragment");
                 }
 
-//                FragmentTransaction transaction = fragmentManager.beginTransaction();
-//                transaction.replace(R.id.main_container_wrapper, fragment);
-//                transaction.addToBackStack("Added the frag to bstack");
-//                transaction.commit();
                 DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
                 assert drawer != null;
                 drawer.closeDrawer(GravityCompat.START);
@@ -140,27 +136,20 @@ public class MainActivity extends AppCompatActivity {
             connected = false;
 
         if (connected) {
-
             // if connected, then update the tables from the api
             updateMess(db1);
             updateEvents(db1);
             Log.d("MAIN ACTIVITY", "UPDATED THE DATA");
-
-//            eventFragment.loadData(db1);
-
-//            Intent intent = new Intent(MainActivity.this, MainActivity.class);
-//            startActivity(intent);
-
         }
-
-
+        else
+            Toast.makeText(MainActivity.this, "Check your internet connection", Toast.LENGTH_LONG).show();
     }
 
+// For upadating the mess information from the api
 
     public void updateMess(final DatabaseHelper db) {
-        ApiInterface apiService =
-                ApiClient.getClient().create(ApiInterface.class);
 
+        ApiInterface apiService = ApiClient.getClient().create(ApiInterface.class);
         Log.d(TAG, "downloading the MESS DATA");
 
         Call<List<Mess>> call = apiService.getMessWeek(/*API_KEY*/);
@@ -168,27 +157,18 @@ public class MainActivity extends AppCompatActivity {
 
             @Override
             public void onResponse(Call<List<Mess>> call, Response<List<Mess>> response) {
-                //  Collection<Mess> messs =response.body().getResults();
 
+                //  downloading the data and storing in api_mess
                 List<Mess> api_messs = response.body();
-
                 Log.d("UPDATE_MESS", "downloaded the RESPONSE, now updating tables");
 
-
+                // to delete the previous tables and update the tables with new data
                 db.upgradeMess();
-                int updated = 0;
+
                 for (int i = 0; i < api_messs.size(); i++) {
                     db.createMess(api_messs.get(i));
-                    updated++;
                 }
-//                    recyclerView.setAdapter(new MessAdapter(messs, R.layout.list_messs, getApplicationContext()));
-                messs = api_messs;
-//                Toast.makeText(MainActivity.this, "loaded from api", Toast.LENGTH_LONG).show();
-
-
                 Log.d("UPDATE_MESS", "TABLES UPDATED, Number of messs received: " + messs.size());
-
-
             }
 
 
@@ -202,36 +182,29 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
-    public void updateEvents(final DatabaseHelper db) {
+    // updating the events
+    public void updateEvents(final DatabaseHelper db){
 
-        // taking the events
-
-        ApiInterface apiService2 =
-                ApiClient.getClient().create(ApiInterface.class);
-
+        ApiInterface apiService2 = ApiClient.getClient().create(ApiInterface.class);
         Log.d( TAG, "downloading the EVENTS DATA");
 
         Call<List<Event>> call2 = apiService2.getEvents(/*API_KEY*/);
         call2.enqueue(new Callback<List<Event>>() {
             @Override
             public void onResponse(Call<List<Event>> call, Response<List<Event>> response) {
-                //  Collection<Event> messs =response.body().getResults();
+
+                //  downloading the data and storing in api_events
                 List<Event> api_events = response.body();
-
                 Log.d("UPDATE EVENTS", "INSIDE CALL. Events   RECIEVED : " + api_events.size());
-//                Log.d("Event fragment", "downloading the data2" );
 
-
-                int updated = 0;
-
+                // to delete the previous tables and update the tables with new data
                 db.upgradeEvent();
 
                 for (int i = 0; i < api_events.size(); i++)
                     db.updateEventifFound(api_events.get(i));
 
                 Log.d("UPDATE EVENTS", "DATA UPDATED IN TABLES");
-//                Toast.makeText(MainActivity.this, "loaded from api" + api_events.size(), Toast.LENGTH_LONG).show();
-            }
+          }
 
 
             @Override
@@ -288,10 +261,6 @@ public class MainActivity extends AppCompatActivity {
         switch (item.getItemId()) {
             case R.id.refresh:
                 Toast.makeText(MainActivity.this, "Updating...", Toast.LENGTH_SHORT).show();
-//                Intent inten1 = new Intent(MainActivity.this, MainActivity.class);
-
-//                startActivity(inten1);
-
 
                 updateMess(db1);
                 updateEvents(db1);
