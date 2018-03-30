@@ -11,7 +11,7 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 
 
-public class CulturalFragment extends Fragment implements View.OnClickListener{
+public class CulturalFragment extends Fragment implements View.OnClickListener {
     //The call and mail buttons are imageView
     //Define the button object below
 
@@ -37,8 +37,6 @@ public class CulturalFragment extends Fragment implements View.OnClickListener{
     ImageView mohanishMail;
     ImageView premCall;
     ImageView premMail;
-
-
 
 
     @Override
@@ -92,7 +90,7 @@ public class CulturalFragment extends Fragment implements View.OnClickListener{
         mohanishMail = (ImageView) view.findViewById(R.id.mohanish_mail);
 
         paramCall = (ImageView) view.findViewById(R.id.param_call);
-        paramMail = (ImageView) view.findViewById(R.id.param_mail) ;
+        paramMail = (ImageView) view.findViewById(R.id.param_mail);
 
 
         //Set onClickListeners
@@ -128,141 +126,144 @@ public class CulturalFragment extends Fragment implements View.OnClickListener{
 
 
     @Override
-    public void onClick(View v)
-    {
-        if(v.getId()==R.id.shyam_call){
+    public void onClick(View v) {
+        if (v.getId() == R.id.shyam_call) {
             Intent intent = new Intent(Intent.ACTION_DIAL, Uri.fromParts("tel", "+91 9769217121", null));
             startActivity(intent);
         }
 
-        if(v.getId() == R.id.shyam_mail){
+        if (v.getId() == R.id.shyam_mail) {
             Intent emailIntent = new Intent(Intent.ACTION_SENDTO, Uri.parse("mailto:" + "shyambharatpatel@gmail.com")
                     .buildUpon()
                     .build());
             startActivity(Intent.createChooser(emailIntent, "Send email..."));
         }
-        if(v.getId()==R.id.ram_call){
+        if (v.getId() == R.id.ram_call) {
             Intent intent = new Intent(Intent.ACTION_DIAL, Uri.fromParts("tel", "+91 9987991947", null));
             startActivity(intent);
         }
 
-        if(v.getId() == R.id.ram_mail){
+        if (v.getId() == R.id.ram_mail) {
             Intent emailIntent = new Intent(Intent.ACTION_SENDTO, Uri.parse("mailto:" + "ramphalsuthar@gmail.com")
                     .buildUpon()
                     .build());
             startActivity(Intent.createChooser(emailIntent, "Send email..."));
         }
-        if(v.getId()==R.id.abhishek_bhagat_call){
+        if (v.getId() == R.id.abhishek_bhagat_call) {
             Intent intent = new Intent(Intent.ACTION_DIAL, Uri.fromParts("tel", "+91 7067648262", null));
             startActivity(intent);
         }
 
-        if(v.getId() == R.id.abhishek_bhagat_mail){
+        if (v.getId() == R.id.abhishek_bhagat_mail) {
             Intent emailIntent = new Intent(Intent.ACTION_SENDTO, Uri.parse("mailto:" + "abhishekbhagat4159@gmail.com")
                     .buildUpon()
                     .build());
             startActivity(Intent.createChooser(emailIntent, "Send email..."));
         }
 
-        if(v.getId()==R.id.prajjwal_call){
+        if (v.getId() == R.id.prajjwal_call) {
             Intent intent = new Intent(Intent.ACTION_DIAL, Uri.fromParts("tel", "+91 9967806776", null));
             startActivity(intent);
         }
 
-        if(v.getId() == R.id.prajjwal_mail){
+        if (v.getId() == R.id.prajjwal_mail) {
             Intent emailIntent = new Intent(Intent.ACTION_SENDTO, Uri.parse("mailto:" + "prajjwal.14nov@gmail.com")
                     .buildUpon()
                     .build());
             startActivity(Intent.createChooser(emailIntent, "Send email..."));
         }
-        if(v.getId()==R.id.harshit_call){
+        if (v.getId() == R.id.harshit_call) {
             Intent intent = new Intent(Intent.ACTION_DIAL, Uri.fromParts("tel", "+91 7506376720", null));
             startActivity(intent);
         }
 
-        if(v.getId() == R.id.harshit_mail){
+        if (v.getId() == R.id.harshit_mail) {
             Intent emailIntent = new Intent(Intent.ACTION_SENDTO, Uri.parse("mailto:" + "h.baranwal98@gmail.com")
                     .buildUpon()
                     .build());
             startActivity(Intent.createChooser(emailIntent, "Send email..."));
         }
 
-        if(v.getId()==R.id.nihal_call){
+        if (v.getId() == R.id.nihal_call) {
             Intent intent = new Intent(Intent.ACTION_DIAL, Uri.fromParts("tel", "+91 9405887565", null));
             startActivity(intent);
         }
 
-        if(v.getId() == R.id.nihal_mail){
+        if (v.getId() == R.id.nihal_mail) {
             Intent emailIntent = new Intent(Intent.ACTION_SENDTO, Uri.parse("mailto:" + "ramteke.nihal@gmail.com")
                     .buildUpon()
                     .build());
             startActivity(Intent.createChooser(emailIntent, "Send email..."));
         }
 
-        if(v.getId()==R.id.aryan_call){
+        if (v.getId() == R.id.aryan_call) {
             Intent intent = new Intent(Intent.ACTION_DIAL, Uri.fromParts("tel", "+91 9987991854", null));
             startActivity(intent);
         }
 
-        if(v.getId() == R.id.aryan_mail){
+        if (v.getId() == R.id.aryan_mail) {
             Intent emailIntent = new Intent(Intent.ACTION_SENDTO, Uri.parse("mailto:" + "aryan.panhekar@gmail.com")
                     .buildUpon()
                     .build());
             startActivity(Intent.createChooser(emailIntent, "Send email..."));
         }
 
-        if(v.getId()==R.id.soham_call){
+        if (v.getId() == R.id.soham_call) {
             Intent intent = new Intent(Intent.ACTION_DIAL, Uri.fromParts("tel", "+91 8454952533", null));
             startActivity(intent);
         }
 
-        if(v.getId() == R.id.soham_mail){
+        if (v.getId() == R.id.soham_mail) {
             Intent emailIntent = new Intent(Intent.ACTION_SENDTO, Uri.parse("mailto:" + "sdibyachintan1@gmail.com")
                     .buildUpon()
                     .build());
             startActivity(Intent.createChooser(emailIntent, "Send email..."));
         }
 
-        if(v.getId()==R.id.mohanish_call){
+        if (v.getId() == R.id.mohanish_call) {
             Intent intent = new Intent(Intent.ACTION_DIAL, Uri.fromParts("tel", "+91 8291474994", null));
             startActivity(intent);
         }
 
-        if(v.getId() == R.id.mohanish_mail){
+        if (v.getId() == R.id.mohanish_mail) {
             Intent emailIntent = new Intent(Intent.ACTION_SENDTO, Uri.parse("mailto:" + "Mohanishverma19@gmail.com")
                     .buildUpon()
                     .build());
             startActivity(Intent.createChooser(emailIntent, "Send email..."));
         }
 
-        if(v.getId()==R.id.prem_call){
+        if (v.getId() == R.id.prem_call) {
             Intent intent = new Intent(Intent.ACTION_DIAL, Uri.fromParts("tel", "+91 8291473881", null));
             startActivity(intent);
         }
 
-        if(v.getId() == R.id.prem_mail){
+        if (v.getId() == R.id.prem_mail) {
             Intent emailIntent = new Intent(Intent.ACTION_SENDTO, Uri.parse("mailto:" + "prem28ag@gmail.com")
                     .buildUpon()
                     .build());
             startActivity(Intent.createChooser(emailIntent, "Send email..."));
-
-            if(v.getId()==R.id.param_call){
-                Intent intent = new Intent(Intent.ACTION_DIAL, Uri.fromParts("tel", "+91 9594764738", null));
-                startActivity(intent);
-            }
-
-          /*  if(v.getId() == R.id.param_mail){
-                Intent emailIntent = new Intent(Intent.ACTION_SENDTO, Uri.parse("mailto:" + "param.shah18@gmail.com")
-                        .buildUpon()
-                        .build());
-                startActivity(Intent.createChooser(emailIntent, "Send email..."));
-            }*/
         }
+
+        if (v.getId() == R.id.param_call) {
+            Intent intent = new Intent(Intent.ACTION_DIAL, Uri.fromParts("tel", "+91 9594764738", null));
+            startActivity(intent);
+        }
+
+        if (v.getId() == R.id.param_mail) {
+            Intent emailIntent = new Intent(Intent.ACTION_SENDTO, Uri.parse("mailto:" + "param.shah18@gmail.com")
+                    .buildUpon()
+                    .build());
+            startActivity(Intent.createChooser(emailIntent, "Send email..."));
+        }
+
+
 
     }
 
-
-
-
 }
+
+
+
+
+
 

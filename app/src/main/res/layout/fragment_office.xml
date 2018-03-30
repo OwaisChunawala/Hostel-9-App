@@ -67,14 +67,13 @@
                             android:textColor="#000"
                             android:textSize="16dp" />
 
-                        <!--<TextView
+                        <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_gravity="center_horizontal"
                             android:text="Room No.: -"
                             android:textColor="#000"
                             android:textSize="16dp" />
--->
 
                         <LinearLayout
                             android:layout_width="match_parent"
@@ -85,7 +84,7 @@
 
                             <ImageView
                                 android:id="@+id/hall_manager_mail"
-                                android:layout_width="34dp"
+                                android:layout_width="match_parent"
                                 android:layout_height="match_parent"
                                 android:layout_weight="1"
                                 android:gravity="center"
@@ -162,17 +161,17 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_gravity="center_horizontal"
-                            android:text="Vivek Sampatrao Kamble"
+                            android:text="Vivek S. Kamble"
                             android:textColor="#000"
                             android:textSize="16dp" />
-<!--
+
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_gravity="center_horizontal"
                             android:text="Room No.: -"
                             android:textColor="#000"
-                            android:textSize="16dp" />-->
+                            android:textSize="16dp" />
 
 
                         <LinearLayout
@@ -184,7 +183,7 @@
                             <ImageView
                                 android:id="@+id/hall_boy_call"
                                 android:layout_width="match_parent"
-                                android:layout_height="34dp"
+                                android:layout_height="match_parent"
                                 android:layout_weight="1"
                                 android:gravity="center"
                                 android:paddingBottom="4dp"

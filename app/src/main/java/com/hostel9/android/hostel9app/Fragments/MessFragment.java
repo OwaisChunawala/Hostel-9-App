@@ -37,7 +37,6 @@ public class MessFragment extends Fragment {
     }
 
 
-
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -45,29 +44,27 @@ public class MessFragment extends Fragment {
         db = new DatabaseHelper(getActivity());
         messs = db.getAllMesses();
 
-        Log.d("Mess fragment", "onCreate reached" );
+        Log.d("Mess fragment", "onCreate reached");
 
-        if (messs.size()==0)
-        {
+        if (messs.size() == 0) {
 
             ApiInterface apiService =
                     ApiClient.getClient().create(ApiInterface.class);
 
-            Log.d("Mess fragment", "downloading the MESS DATA" );
+            Log.d("Mess fragment", "downloading the MESS DATA");
 
             Call<List<Mess>> call = apiService.getMessWeek(/*API_KEY*/);
             call.enqueue(new Callback<List<Mess>>() {
                 @Override
-                public void onResponse(Call<List<Mess>>call, Response<List<Mess>> response) {
+                public void onResponse(Call<List<Mess>> call, Response<List<Mess>> response) {
                     //  Collection<Mess> messs =response.body().getResults();
                     List<Mess> api_messs = response.body();
 
-                    Log.d("Mess fragment", "downloading the data2" );
+                    Log.d("Mess fragment", "downloading the data2");
 
 
-                    int updated=0;
-                    for (int i=0; i<api_messs.size(); i++)
-                    {
+                    int updated = 0;
+                    for (int i = 0; i < api_messs.size(); i++) {
                         db.updateMessifFound(api_messs.get(i));
                         updated++;
                     }
@@ -81,14 +78,12 @@ public class MessFragment extends Fragment {
 
 
                 @Override
-                public void onFailure(Call<List<Mess>>call, Throwable t) {
+                public void onFailure(Call<List<Mess>> call, Throwable t) {
                     // Log error here since request failed
                     Log.e(TAG, t.toString());
                 }
             });
         }
-
-
 
 
     }
@@ -105,8 +100,7 @@ public class MessFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for getActivity() fragment
-//
-        Log.d("Mess fragment", "onCreateView reached" );
+        Log.d("Mess fragment", "onCreateView reached");
 
 
         View view = inflater.inflate(R.layout.fragment_mess, container, false);
@@ -115,8 +109,7 @@ public class MessFragment extends Fragment {
 
         recyclerView.setAdapter(new MessAdapter(messs, R.layout.list_mess, getActivity()));
 
-return view;
-
+        return view;
 
 
     }
