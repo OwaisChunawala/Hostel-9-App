@@ -108,6 +108,14 @@ public class MainActivity extends AppCompatActivity {
                         getSupportFragmentManager().popBackStack();
                     }
                     openFragment(councilFramgent, "Council fragment");
+
+                } else if (id == R.id.nav_home) {
+                    HomeFragment homeFragment = new HomeFragment();
+                    if (getSupportFragmentManager().getBackStackEntryCount() > 1) {
+                        getSupportFragmentManager().popBackStack();
+                    }
+                    openFragment(homeFragment, "Home fragment");
+
                 } else if (id == R.id.nav_helpline) {
                     HelplineFragment helplineFragment = new HelplineFragment();
                     if (getSupportFragmentManager().getBackStackEntryCount() > 1) {
@@ -140,8 +148,7 @@ public class MainActivity extends AppCompatActivity {
             updateMess(db1);
             updateEvents(db1);
             Log.d("MAIN ACTIVITY", "UPDATED THE DATA");
-        }
-        else
+        } else
             Toast.makeText(MainActivity.this, "Check your internet connection", Toast.LENGTH_LONG).show();
     }
 
@@ -168,7 +175,7 @@ public class MainActivity extends AppCompatActivity {
                 for (int i = 0; i < api_messs.size(); i++) {
                     db.createMess(api_messs.get(i));
                 }
-                Log.d("UPDATE_MESS", "TABLES UPDATED, Number of messs received: " + messs.size());
+                Log.d("UPDATE_MESS", "TABLES UPDATED, Number of messs received: " + api_messs.size());
             }
 
 
@@ -183,10 +190,10 @@ public class MainActivity extends AppCompatActivity {
     }
 
     // updating the events
-    public void updateEvents(final DatabaseHelper db){
+    public void updateEvents(final DatabaseHelper db) {
 
         ApiInterface apiService2 = ApiClient.getClient().create(ApiInterface.class);
-        Log.d( TAG, "downloading the EVENTS DATA");
+        Log.d(TAG, "downloading the EVENTS DATA");
 
         Call<List<Event>> call2 = apiService2.getEvents(/*API_KEY*/);
         call2.enqueue(new Callback<List<Event>>() {
@@ -204,7 +211,7 @@ public class MainActivity extends AppCompatActivity {
                     db.updateEventifFound(api_events.get(i));
 
                 Log.d("UPDATE EVENTS", "DATA UPDATED IN TABLES");
-          }
+            }
 
 
             @Override
@@ -245,35 +252,37 @@ public class MainActivity extends AppCompatActivity {
         getSupportFragmentManager().popBackStackImmediate("MainFragment", 0);
 
     }
-
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-
-        MenuInflater inflater = getMenuInflater();
-        inflater.inflate(R.menu.menu, menu);
-
-        return true;
-    }
-
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-
-        switch (item.getItemId()) {
-            case R.id.refresh:
-                Toast.makeText(MainActivity.this, "Updating...", Toast.LENGTH_SHORT).show();
-
-                updateMess(db1);
-                updateEvents(db1);
-
-                FragmentManager fragmentManager = getSupportFragmentManager();
-                final FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
-                HomeFragment homeFragment = new HomeFragment();
-                fragmentTransaction.replace(R.id.main_container_wrapper, homeFragment);
-                fragmentTransaction.commit();
-                return true;
-
-        }
-        return super.onOptionsItemSelected(item);
-    }
-
 }
+// To create menu on the top, but seemed useless as onf now.
+
+//    @Override
+//    public boolean onCreateOptionsMenu(Menu menu) {
+//
+//        MenuInflater inflater = getMenuInflater();
+//        inflater.inflate(R.menu.menu, menu);
+//
+//        return true;
+//    }
+//
+//    @Override
+//    public boolean onOptionsItemSelected(MenuItem item) {
+//
+//        switch (item.getItemId()) {
+//            case R.id.refresh:
+//                Toast.makeText(MainActivity.this, "Updating...", Toast.LENGTH_SHORT).show();
+//
+//                updateMess(db1);
+//                updateEvents(db1);
+//
+//                FragmentManager fragmentManager = getSupportFragmentManager();
+//                final FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+//                HomeFragment homeFragment = new HomeFragment();
+//                fragmentTransaction.replace(R.id.main_container_wrapper, homeFragment);
+//                fragmentTransaction.commit();
+//                return true;
+//
+//        }
+//        return super.onOptionsItemSelected(item);
+//    }
+//
+//}

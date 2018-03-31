@@ -102,7 +102,7 @@
                 android:orientation="vertical">
 
                 <TextView
-                    android:id="@+id/hospi_call"
+                    android:id="@+id/hospital_call"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="+91-2225722149"
@@ -264,14 +264,14 @@
                 android:textSize="20sp" />
 
         </LinearLayout>
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="12dp"
-            android:text="Tap on the numbers to call"
-            android:textColor="@color/colorAccent"
-            android:gravity="center_horizontal"
-            android:layout_marginBottom="12dp"/>
+        <!--<TextView-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginTop="12dp"-->
+            <!--android:text="Tap on the numbers to call"-->
+            <!--android:textColor="@color/colorAccent"-->
+            <!--android:gravity="center_horizontal"-->
+            <!--android:layout_marginBottom="12dp"/>-->
 
     </LinearLayout>
 </ScrollView><!--<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"--><!--xmlns:tools="http://schemas.android.com/tools"--><!--android:layout_width="match_parent"--><!--android:layout_height="match_parent"--><!--tools:context="com.hostel9.android.hostel9app.Fragments.HelplineFragment">-->
